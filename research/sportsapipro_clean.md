@@ -11,7 +11,6 @@
 This document contains the investigation of multiple endpoints
 from `sportsapipro.com`.
 
-
 ---
 
 # Endpoint: `seasons`
@@ -31,13 +30,6 @@ from `sportsapipro.com`.
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -75,76 +67,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-### `seasons`
-
-Showing 2 representative record(s).
-
-```json
-[
-  {
-    "id": 96668,
-    "name": "Premier League 26/27",
-    "year": "26/27",
-    "tournamentId": 17
-  },
-  {
-    "id": 76986,
-    "name": "Premier League 25/26",
-    "year": "25/26",
-    "tournamentId": 17
-  }
-]
-```
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/standings`
-
 ## 1. Request
 
 | Property | Value |
@@ -160,13 +82,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -212,88 +127,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-### `standings`
-
-Showing 2 representative record(s).
-
-```json
-[
-  {
-    "position": 1,
-    "teamId": 42,
-    "teamName": "Arsenal",
-    "played": 38,
-    "won": 26,
-    "drawn": 7,
-    "lost": 5,
-    "goalsFor": 71,
-    "goalsAgainst": 27,
-    "points": 85
-  },
-  {
-    "position": 2,
-    "teamId": 17,
-    "teamName": "Manchester City",
-    "played": 38,
-    "won": 23,
-    "drawn": 9,
-    "lost": 6,
-    "goalsFor": 77,
-    "goalsAgainst": 35,
-    "points": 78
-  }
-]
-```
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/events`
-
 ## 1. Request
 
 | Property | Value |
@@ -309,13 +142,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -582,57 +408,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/match`
-
 ## 1. Request
 
 | Property | Value |
@@ -648,13 +423,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -1420,57 +1188,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/match/lineups`
-
 ## 1. Request
 
 | Property | Value |
@@ -1486,13 +1203,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -1799,57 +1509,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/match/statistics`
-
 ## 1. Request
 
 | Property | Value |
@@ -1865,13 +1524,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -1924,57 +1576,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/match/incidents`
-
 ## 1. Request
 
 | Property | Value |
@@ -1990,13 +1591,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -2066,57 +1660,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/match/shotmap`
-
 ## 1. Request
 
 | Property | Value |
@@ -2132,13 +1675,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -2250,57 +1786,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/match/graph`
-
 ## 1. Request
 
 | Property | Value |
@@ -2316,13 +1801,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -2365,57 +1843,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `seasons/match/average-positions`
-
 ## 1. Request
 
 | Property | Value |
@@ -2431,13 +1858,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the fixtures endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -2576,57 +1996,6 @@ complete JSON response.
 
 ---
 
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
-
----
-
-# Endpoint: `teams/players`
-
 ## 1. Request
 
 | Property | Value |
@@ -2642,13 +2011,6 @@ _Add conclusions here after inspecting this endpoint._
 ### Query Parameters
 
 _No query parameters._
-
-### Notes
-
-Premier League 2025/26 season.
-Initial investigation of the players endpoint.
-
----
 
 ## 2. Response Metadata
 
@@ -3597,50 +2959,3 @@ complete JSON response.
 | `$.timezone.country` | `string` |
 
 ---
-
-## 5. Representative Response Examples
-
-_No top-level record array detected._
-
----
-
-## 6. Initial Investigation
-
-### Data availability
-
-- [ ] Does this endpoint contain the data we expected?
-- [ ] Is the previous Premier League season fully represented?
-- [ ] Are there missing or null fields?
-- [ ] Is pagination present?
-- [ ] Are there API-specific limits?
-
-### Data modelling
-
-- [ ] What are the stable identifiers?
-- [ ] Which fields represent entities?
-- [ ] Which fields represent relationships?
-- [ ] Which nested objects should become separate entities/tables?
-- [ ] Which fields overlap with the other API?
-- [ ] Which fields are unique to this source?
-
-### Pipeline relevance
-
-- [ ] Is this endpoint required?
-- [ ] Is this endpoint a source of truth for any canonical field?
-- [ ] Does it need to be called once per season?
-- [ ] Does it need to be called once per team?
-- [ ] Does it need to be called once per match?
-- [ ] How many requests would a complete season require?
-- [ ] Can the response be cached and reused?
-
-### Cross-source mapping
-
-- [ ] What provider IDs need canonical mapping?
-- [ ] Can entities be matched deterministically?
-- [ ] Are there naming differences between providers?
-- [ ] Are there provider-specific fields we need to preserve?
-
-### Decisions / observations
-
-_Add conclusions here after inspecting this endpoint._
-
