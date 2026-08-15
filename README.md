@@ -11,3 +11,9 @@ gone throgh some of the endpoints required in the api providres and found fbref 
 Day 3 - 13-08-2026
 
 added code for loading data from football-data.org 
+
+Day 4 - 14-08-2026
+AWS basic setup done
+
+Day 5 - 15-08-2026
+Loaded Football-data.org data to S3
