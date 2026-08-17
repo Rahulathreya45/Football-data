@@ -17,3 +17,6 @@ AWS basic setup done
 
 Day 5 - 15-08-2026
 Loaded Football-data.org data to S3
+
+Day 6 - 17-08-2026
+Loaded Sports api pro and fbref data to S3
