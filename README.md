@@ -20,3 +20,6 @@ Loaded Football-data.org data to S3
 
 Day 6 - 17-08-2026
 Loaded Sports api pro and fbref data to S3
+
+Day 7 - 18-08-2026
+Created Data model architecture from all the data sources
