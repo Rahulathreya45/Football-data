@@ -26,3 +26,6 @@ Created Data model architecture from all the data sources
 
 Day 8 - 20-08-2026
 Started Creating canonical models complted seasons
+
+Day 9 - 21-08-2026
+Completed Teams table
