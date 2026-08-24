@@ -32,3 +32,6 @@ Completed Teams table
 
 Day 10 - 22-09-2026
 completed Players table and standings table
+
+Day 11 - 24-09-2026
+completed Matches table
