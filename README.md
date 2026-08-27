@@ -38,3 +38,9 @@ completed Matches table
 
 Day 12 - 25-09-2026
 Completed Player and Teams season and match stats
+
+Day 13 - 26-09-2026
+Started adding the loading logic for all the tables 
+
+Day 14 - 27-09-2026
+completed adding delta table loading logic for all the tables
