@@ -44,3 +44,5 @@ Started adding the loading logic for all the tables
 
 Day 14 - 27-09-2026
 completed adding delta table loading logic for all the tables
+
+Day 15 - 28-09-2026
