@@ -1,0 +1,312 @@
+league,season,game,team,player,jersey_number,nation,pos,age,min,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,game_id
+,,,,,,,,,,Gls,Ast,PK,PKatt,Sh,SoT,CrdY,CrdR,Fls,Fld,Off,Crs,TklW,Int,OG,PKwon,PKcon,
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Ben White,4,ENG,RB,28-317,90,0,1,0,0,1,0,0,0,1,0,1,3,1,1,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Bukayo Saka,7,ENG,AM,24-350,67,1,0,0,0,3,1,0,0,0,1,1,5,1,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Christos Tzolis,17,GRE,AM,24-203,75,0,0,0,0,4,2,0,0,0,2,1,3,1,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Cristhian Mosquera,3,ESP,CB,22-055,90,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,David Raya,1,ESP,GK,30-340,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Declan Rice,41,ENG,DM,27-219,67,0,0,0,0,2,0,0,0,2,0,0,4,0,1,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Eberechi Eze,10,ENG,"FW,MF",28-053,15,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Gabriel Magalhães,6,BRA,CB,28-245,90,0,0,0,0,1,0,1,0,2,2,0,0,0,1,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Kai Havertz,29,GER,FW,27-071,90,1,0,0,0,1,1,0,0,2,2,2,0,0,1,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Martin Ødegaard,8,NOR,AM,27-247,75,1,0,0,0,3,1,0,0,0,1,0,2,2,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Martín Zubimendi,36,ESP,MF,27-200,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Mikel Merino,23,ESP,MF,30-060,15,0,0,0,0,2,1,0,0,1,0,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Myles Lewis-Skelly,49,ENG,DM,19-329,90,0,0,0,0,1,0,0,0,1,3,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Noni Madueke,20,ENG,"FW,MF",24-164,23,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Piero Hincapié,5,ECU,DF,24-224,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Arsenal,Riccardo Calafiori,33,ITA,LB,24-094,81,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Aurèle Amenda,24,SUI,CB,23-021,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Bobby Thomas,4,ENG,CB,25-203,90,0,0,0,0,1,0,0,0,2,1,0,0,1,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Brandon Thomas-Asante,23,GHA,LW,27-235,69,0,0,0,0,0,0,0,0,0,2,0,1,0,4,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Caleb Yirenkyi,8,GHA,AM,20-218,61,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Carl Rushworth,19,ENG,GK,25-050,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Ellis Simms,9,ENG,FW,25-228,69,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Frank Onyeka,16,NGA,AM,28-232,90,0,0,0,0,0,0,0,0,3,1,0,0,1,3,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Gustavo Hamer,38,NED,MF,29-058,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Jack Rudoni,5,ENG,MF,26-087,21,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Jay Dasilva,3,WAL,LB,28-121,90,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Loum Tchaouna,18,FRA,RW,22-347,81,0,0,0,0,2,0,0,0,1,2,0,2,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Matt Grimes,6,ENG,DM,31-037,90,0,0,0,0,0,0,0,0,0,2,0,3,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Milan van Ewijk,27,NED,RB,25-347,90,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Taiwo Awoniyi,14,NGA,FW,29-009,21,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,,,3085a362
+ENG-Premier League,2627,2026-08-21 Arsenal-Coventry City,Coventry City,Victor Torp,29,DEN,MF,27-022,29,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,,,3085a362
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Aaron Hickey,2,SCO,"DF,MF",24-073,15,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Callum Wilson,13,ENG,FW,34-176,8,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Caoimhín Kelleher,1,IRL,GK,27-272,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Dango Ouattara,11,BFA,AM,24-192,66,0,0,0,0,2,0,0,0,3,2,1,1,0,2,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Igor Thiago,9,BRA,FW,25-057,82,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Jaidon Anthony,19,ENG,"FW,MF",26-264,24,0,0,0,0,1,0,0,0,1,0,1,2,1,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Keane Lewis-Potter,23,ENG,LB,25-181,90,1,0,0,0,2,1,0,0,1,0,0,4,0,2,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Kevin Schade,7,GER,AM,24-268,90,0,0,0,0,5,2,0,0,0,2,0,0,3,1,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Kristoffer Ajer,20,NOR,CB,28-127,90,0,0,0,0,1,1,0,0,1,1,0,0,1,2,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Mamadou Sangare,18,MLI,DM,24-057,75,0,1,0,0,1,1,0,0,1,3,0,1,0,2,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Mathias Jensen,8,DEN,AM,30-233,66,0,0,0,0,2,1,0,0,3,0,0,5,1,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Michael Kayode,33,ITA,RB,22-043,75,1,0,0,0,4,1,0,0,0,3,0,0,0,1,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Mikkel Damsgaard,24,DEN,"FW,MF",26-050,15,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Nathan Collins,22,IRL,CB,25-114,90,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Vitaly Janelt,27,GER,DM,28-104,90,1,0,0,0,2,1,1,0,4,1,0,5,3,4,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Brentford,Yehor Yarmoliuk,6,UKR,MF,22-174,24,0,0,0,0,1,0,0,0,1,1,0,1,2,1,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Andy Robertson,3,SCO,LB,32-164,90,0,0,0,0,0,0,0,0,0,2,0,5,2,2,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Antonín Kinský,31,CZE,GK,23-162,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Archie Gray,14,ENG,RB,20-163,85,0,0,0,0,0,0,0,0,0,2,0,0,1,1,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Conor Gallagher,8,ENG,AM,26-197,45,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Destiny Udogie,13,ITA,"DF,MF",23-267,5,0,0,0,0,0,0,0,0,1,1,0,2,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Dominic Solanke,19,ENG,FW,28-342,23,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,James Maddison,10,ENG,"FW,MF",29-272,23,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Jan Paul van Hecke,6,NED,CB,26-075,90,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Lucas Bergvall,15,SWE,DM,20-201,45,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Marcos Senesi,5,ARG,CB,29-104,90,0,0,0,0,0,0,0,0,2,3,1,0,4,2,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Mateus Fernandes,18,POR,MF,22-043,45,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Mathys Tel,11,FRA,AM,21-117,90,0,0,0,0,2,0,0,0,2,0,0,2,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Mikey Moore,47,ENG,AM,19-011,67,0,0,0,0,3,3,0,0,0,1,0,1,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Richarlison,9,BRA,FW,29-104,67,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Rodrigo Bentancur,30,URU,MF,29-058,45,0,0,0,0,0,0,0,0,3,0,0,0,2,1,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Brentford-Tottenham,Tottenham Hotspur,Sandro Tonali,16,ITA,DM,26-106,90,0,0,0,0,2,1,0,0,1,1,0,2,1,0,0,,,01f07042
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Adam Wharton,20,ENG,DM,22-197,90,0,0,0,0,0,0,0,0,0,2,0,0,0,3,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Anan Khalaili,25,ISR,MF,21-353,36,0,0,0,0,0,0,0,0,1,0,0,2,2,1,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Chadi Riad,4,MAR,CB,23-066,71,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Chris Richards,26,USA,CB,26-147,90,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Daichi Kamada,18,JPN,DM,30-017,90,0,0,0,0,0,0,1,0,1,2,0,4,3,1,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Daniel Muñoz,2,COL,DM,30-088,54,0,0,0,0,2,1,0,0,1,0,0,0,1,1,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Dean Henderson,1,ENG,GK,29-163,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Dwight McNeil,11,ENG,AM,26-273,62,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Eddie Nketiah,9,ENG,AM,27-084,54,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Evann Guessand,29,CIV,"FW,MF",25-052,28,0,0,0,0,1,1,0,0,2,0,0,1,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Jaydee Canvot,6,FRA,CB,20-024,90,0,0,0,0,1,0,0,0,0,0,0,0,3,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Jean-Philippe Mateta,14,FRA,FW,29-055,62,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Jørgen Strand Larsen,22,NOR,FW,26-197,28,0,0,0,0,1,1,0,0,2,0,0,0,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Takehiro Tomiyasu,17,JPN,DF,27-290,19,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Tyrick Mitchell,3,ENG,DM,26-355,90,0,0,0,0,0,0,0,0,2,0,0,4,2,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Crystal Palace,Yéremy Pino,10,ESP,"FW,MF",23-306,36,0,0,0,0,2,0,0,0,1,0,0,2,1,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Beto,9,GNB,FW,28-203,12,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Brennan Johnson,22,WAL,"FW,MF",25-091,7,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Carlos Alcaraz,24,ARG,MF,23-265,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Harrison Armstrong,45,ENG,DM,19-215,90,0,1,0,0,0,0,0,0,3,2,0,0,1,2,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Hayden Hackney,30,ENG,DM,24-057,78,0,0,0,0,1,0,0,0,1,3,0,2,1,1,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Iliman Ndiaye,10,SEN,AM,26-169,90,0,1,0,0,2,2,0,0,0,1,0,2,1,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,James Garner,37,ENG,MF,25-162,12,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,James Tarkowski,6,ENG,CB,33-276,90,0,0,0,0,1,0,0,0,0,2,0,0,1,3,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Jarrad Branthwaite,4,ENG,CB,24-056,90,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Jordan Pickford,1,ENG,GK,32-168,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Kiernan Dewsbury-Hall,8,ENG,AM,27-350,89,1,0,0,0,3,1,0,0,0,2,0,6,1,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Merlin Röhl,34,GER,RB,24-048,90,0,0,0,0,0,0,0,0,0,0,0,2,1,1,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Thierno Barry,11,FRA,FW,23-305,78,1,0,0,0,2,1,0,0,0,1,0,1,1,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Tyrique George,19,ENG,AM,20-199,83,0,0,0,0,5,0,0,0,0,0,1,1,0,2,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Everton-Crystal Palace,Everton,Vitaliy Mykolenko,16,UKR,LB,27-085,90,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,,,cbc27eaf
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Bachir Belloumi,10,ALG,RM,24-082,90,0,0,0,0,2,0,0,0,2,1,0,1,1,1,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Cody Drameh,18,ENG,"DF,MF",24-257,21,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Elliot Stroud,21,SWE,LM,24-061,70,0,0,0,0,0,0,0,0,0,0,0,2,2,1,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,John Egan,15,IRL,CB,33-306,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Kostas Tzolakis,19,GRE,GK,23-287,90,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Lewie Coyle,2,ENG,RB,30-311,69,0,0,0,0,0,0,0,0,1,2,0,2,1,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Liam Millar,7,CAN,"FW,MF",26-329,20,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Lucas Herrington,22,AUS,DF,18-351,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Matt Crooks,25,ENG,CM,32-214,90,0,0,0,0,0,0,1,0,2,1,0,0,3,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Matt Targett,23,ENG,"DF,MF",30-338,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Nobel Mendy,32,SEN,CB,21-353,63,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Oliver McBurnie,9,SCO,FW,30-079,90,0,0,0,0,2,2,0,0,1,2,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Paddy McNair,17,NIR,"DF,MF",31-117,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Regan Slater,27,ENG,CM,26-345,90,0,1,0,0,0,0,0,0,2,0,0,2,1,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Ryan Giles,3,ENG,LB,26-208,84,0,0,0,0,1,0,0,0,0,0,0,8,1,1,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Hull City,Semi Ajayi,6,NGA,CB,32-286,63,1,0,0,0,1,1,0,0,0,0,0,0,0,2,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Andrey Santos,17,BRA,DM,22-111,66,0,0,0,0,0,0,0,0,1,2,0,0,1,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Ayden Heaven,26,ENG,CB,19-334,90,0,0,0,0,2,0,0,0,1,2,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Benjamin Šeško,30,SVN,FW,23-083,24,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Bruno Fernandes,8,POR,AM,31-348,90,0,0,0,0,3,1,0,0,0,0,0,6,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Bryan Mbeumo,19,CMR,AM,27-015,90,0,0,0,0,4,2,0,0,0,0,1,10,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Diogo Dalot,2,POR,"DF,MF",27-157,11,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Harry Maguire,5,ENG,CB,33-170,90,0,0,0,0,2,1,0,0,0,0,0,2,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Kobbie Mainoo,37,ENG,MF,21-125,24,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Luke Shaw,23,ENG,LB,31-041,90,0,0,0,0,0,0,0,0,0,0,0,7,1,1,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Marcus Rashford,9,ENG,"FW,MF",28-295,45,0,0,0,0,0,0,0,0,0,1,1,3,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Matheus Cunha,10,BRA,FW,27-087,79,0,0,0,0,3,1,0,0,0,1,0,3,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Noussair Mazraoui,3,MAR,RB,28-281,79,0,0,0,0,1,0,0,0,1,0,0,5,1,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Patrick Dorgu,13,DEN,AM,21-300,45,0,0,0,0,3,0,1,0,4,0,1,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Senne Lammens,1,BEL,GK,24-046,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Shea Lacey,31,ENG,FW,19-130,11,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Hull City-Manchester Utd,Manchester United,Youri Tielemans,18,BEL,DM,29-107,66,0,0,0,0,1,0,0,0,1,3,0,1,0,0,0,,,69e3855f
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Abdoul Ouattara,42,FRA,MF,20-304,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Abdul Fatawu Issahaku,7,GHA,AM,22-167,65,0,0,0,0,0,0,0,0,1,3,0,6,2,1,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Chuba Akpom,29,ENG,"FW,MF",30-317,25,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Daizen Maeda,38,JPN,AM,28-306,79,0,0,0,0,1,0,0,0,2,0,0,2,3,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Dara O'Shea,26,IRL,RB,27-171,90,0,0,0,0,0,0,0,0,0,2,0,1,1,1,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Emersonn,19,BRA,FW,22-037,65,1,0,0,0,3,2,0,0,0,1,0,1,1,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Issa Diop,6,MAR,CB,29-225,90,0,0,0,0,0,0,0,0,2,0,0,0,1,2,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Jack Clarke,47,ENG,"FW,MF",25-272,20,1,0,0,0,2,1,0,0,0,0,0,0,1,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Jacob Greaves,24,ENG,CB,25-344,90,0,0,0,0,0,0,0,0,1,2,0,0,2,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Julio Enciso,10,PAR,AM,22-211,70,0,1,0,0,3,0,0,0,1,2,1,0,1,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Kasey McAteer,20,IRL,MF,24-273,25,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Kjell Scherpen,37,NED,GK,26-211,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Leif Davis,3,ENG,LB,26-234,90,0,0,0,0,0,0,0,0,0,1,0,2,0,1,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Marcelino Núñez,32,CHI,DM,26-174,79,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Saša Lukić,23,SRB,DM,30-009,90,0,1,0,0,0,0,0,0,1,0,0,2,1,1,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Ipswich Town,Sindre Egeli,8,NOR,"FW,MF",20-062,11,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Brian Brobbey,9,NED,FW,24-202,66,0,0,0,0,2,1,0,0,2,0,2,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Chemsdine Talbi,7,MAR,MF,21-105,32,0,0,0,0,0,0,0,0,1,0,1,3,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Chris Rigg,11,ENG,MF,19-065,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Daniel Ballard,5,NIR,CB,26-334,90,0,0,0,0,0,0,1,0,2,1,0,0,1,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Enzo Le Fée,28,FRA,AM,26-200,79,0,0,0,0,0,0,0,0,0,1,1,2,1,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Granit Xhaka,34,SUI,DM,33-329,90,0,0,0,0,0,0,0,0,1,4,0,6,1,2,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Habib Diarra,19,SEN,MF,22-231,11,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Luke O'Nien,13,ENG,CB,31-274,66,0,0,0,0,1,0,1,0,2,0,0,2,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Nilson Angulo,10,ECU,AM,23-064,58,1,0,0,0,2,1,1,0,0,1,0,2,1,1,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Noah Sadiki,27,COD,DM,21-248,90,0,0,0,0,1,1,0,0,1,3,0,1,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Omar Alderete,15,PAR,DF,29-239,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Reinildo Mandava,17,MOZ,LB,32-213,90,0,0,0,0,0,0,0,0,2,1,0,2,1,3,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Robin Roefs,22,NED,GK,23-217,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Thomas Meunier,12,BEL,RB,34-344,90,0,0,0,0,2,1,0,0,1,0,0,4,1,2,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Trai Hume,32,NIR,AM,24-157,79,0,0,0,0,2,0,0,0,2,0,0,1,2,1,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Ipswich Town-Sunderland,Sunderland,Wilson Isidor,18,HAI,"FW,MF",25-360,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,2d0f0fb4
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Anton Stach,18,GER,DM,27-280,90,1,0,0,0,3,1,0,0,2,4,0,1,2,4,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Brenden Aaronson,11,USA,AM,25-304,81,0,0,0,0,1,1,0,0,0,2,0,0,1,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Dominic Calvert-Lewin,9,ENG,FW,29-159,90,0,0,0,0,3,0,1,0,2,0,2,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Ethan Ampadu,4,WAL,DM,25-342,90,0,0,0,0,0,0,0,0,2,2,0,0,1,2,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Harry Wilson,10,WAL,AM,29-153,65,0,0,0,0,0,0,0,0,1,0,1,3,1,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Jaka Bijol,15,SVN,CB,27-198,90,0,0,0,0,2,0,0,0,1,1,0,1,1,2,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,James Justin,24,ENG,DM,28-180,90,0,0,0,0,0,0,0,0,1,2,0,1,3,1,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,James Trafford,1,ENG,GK,23-316,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Jayden Bogle,2,ENG,DM,26-026,90,0,0,0,0,0,0,0,0,1,3,0,0,1,1,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Joe Rodon,6,WAL,CB,28-304,90,0,0,0,0,1,0,0,0,2,1,0,1,0,2,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Noah Okafor,19,SUI,"FW,MF",26-090,25,0,0,0,0,0,0,0,0,1,0,0,1,2,1,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Sean Longstaff,8,ENG,MF,28-296,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Leeds United,Tarik Muharemovic,5,BIH,CB,23-175,90,0,0,0,0,1,1,0,0,1,0,0,0,0,2,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Arnaud Kalimuendo,15,FRA,FW,24-214,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Chris Wood,9,NZL,FW,34-258,29,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Dan Ndoye,14,SUI,AM,25-301,61,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Ibrahim Sangaré,6,CIV,DM,28-263,90,0,0,0,0,1,0,0,0,2,1,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Igor Jesus,11,BRA,FW,25-178,90,0,0,0,0,3,1,0,0,1,3,1,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Jair Cunha,23,BRA,CB,21-168,90,0,0,0,0,0,0,1,0,2,2,0,1,0,1,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,James Mcatee,24,ENG,DM,23-308,73,0,0,0,0,0,0,0,0,0,2,0,5,1,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Luca Netz,25,GER,"DF,MF",23-099,17,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Matz Sels,26,BEL,GK,34-177,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Morgan Gibbs-White,10,ENG,AM,26-207,90,0,0,0,0,3,0,0,0,1,2,1,4,0,1,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Murillo,5,BRA,CB,24-049,89,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Neco Williams,3,WAL,DM,25-131,90,0,0,0,0,0,0,0,0,1,1,1,5,3,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Nikola Milenković,31,SRB,CB,28-314,90,0,0,0,0,2,0,0,0,3,1,0,0,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Ola Aina,34,NGA,DM,29-318,73,0,0,0,0,2,1,1,0,1,0,0,4,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-22 Nottingham-Leeds United,Nottingham Forest,Xaver Schlager,21,AUT,MF,28-328,17,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,,,b6600c62
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Alejandro Garnacho,17,ARG,MF,22-053,5,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Alysson,47,BRA,MF,20-110,9,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Boubacar Kamara,8,FRA,DM,26-273,90,0,0,0,0,0,0,0,0,2,1,0,0,1,1,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Emi Buendía,10,ARG,FW,29-241,85,0,0,0,0,3,0,0,0,2,2,1,1,0,2,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,George Hemmings,53,ENG,AM,19-172,90,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Ian Maatsen,22,NED,LB,24-166,81,0,0,0,0,1,0,0,0,0,0,0,1,0,2,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,John McGinn,7,SCO,AM,31-309,81,0,0,0,0,1,0,1,0,1,4,0,2,0,1,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,João Gomes,35,BRA,DM,25-192,39,0,0,0,0,0,0,1,1,1,1,0,0,2,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Lamare Bogarde,26,NED,"DF,MF",22-230,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Marco Bizot,40,NED,GK,35-166,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Matteo Ruggeri,13,ITA,"DF,MF",24-043,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Matty Cash,2,POL,RB,29-016,90,0,0,0,0,0,0,1,0,2,2,0,0,2,1,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Pau Torres,14,ESP,CB,29-219,73,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Ross Barkley,6,ENG,AM,32-261,73,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Tyrone Mings,5,ENG,DF,33-163,17,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Aston Villa,Victor Lindelöf,3,SWE,CB,32-037,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Bart Verbruggen,1,NED,GK,24-005,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Charalampos Kostoulas,19,GRE,FW,19-085,27,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Costinha,20,POR,"DF,MF",26-150,27,0,0,0,0,2,1,0,0,0,0,0,0,1,1,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Diego Gómez,25,PAR,AM,23-149,85,0,1,0,0,3,2,0,0,0,0,2,2,2,1,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Georginio Rutter,10,FRA,FW,24-125,90,0,1,0,0,2,0,0,0,0,0,2,0,2,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Ibrahim Osman,15,GHA,"FW,MF",21-267,13,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Jack Hinshelwood,8,ENG,AM,21-134,63,2,0,0,0,3,2,0,0,0,2,0,0,2,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Lewis Dunk,5,ENG,CB,34-275,90,0,0,0,0,0,0,0,0,2,0,0,1,1,2,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Luka Vušković,44,CRO,CB,19-180,90,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Malick Yalcouye,35,CIV,MF,20-278,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Mats Wieffer,27,NED,RB,26-280,77,0,0,0,0,1,0,0,0,1,2,0,1,1,3,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Maxim De Cuyper,29,BEL,AM,25-244,77,1,0,0,0,4,1,0,0,4,0,1,5,3,1,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Olivier Boscagli,21,FRA,LB,28-278,90,0,0,0,0,0,0,0,0,0,1,0,3,1,2,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Pascal Groß,13,GER,DM,35-069,90,0,0,0,0,0,0,1,0,1,0,0,10,1,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Yasin Ayari,26,SWE,DM,22-321,63,0,0,0,0,2,0,1,0,2,1,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Brighton-Aston Villa,Brighton & Hove Albion,Zadok Yohanna,36,NGA,FW,19-055,13,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,,,cc39f2ef
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Adam Smith,15,ENG,RB,35-116,90,0,0,0,0,0,0,0,0,1,3,0,1,1,2,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Adrien Truffert,3,FRA,LB,24-276,90,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Alex Scott,8,ENG,DM,23-002,90,0,0,0,0,0,0,0,0,0,1,0,2,2,1,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Alex Tóth,27,HUN,MF,20-304,16,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,António Silva,14,POR,CB,22-297,90,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Ben Gannon-Doak,11,SCO,MF,20-285,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Daniel Jebbison,29,CAN,FW,23-010,16,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Evanilson,9,BRA,FW,26-321,74,0,1,0,0,0,0,1,0,2,1,0,0,0,3,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,James Hill,5,ENG,CB,24-225,90,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Justin Kluivert,19,NED,AM,27-110,74,0,0,0,0,1,1,0,0,1,1,0,1,2,1,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Lewis Cook,4,ENG,DM,29-201,74,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Marcus Tavernier,16,ENG,AM,27-154,90,1,0,0,0,2,1,0,0,1,3,0,3,1,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Rayan,37,BRA,AM,20-020,88,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Tyler Adams,12,USA,MF,27-190,16,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Bournemouth,Đorđe Petrović,1,SRB,GK,26-319,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Abdukodir Khusanov,45,UZB,CB,22-175,90,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Antoine Semenyo,42,GHA,AM,26-228,90,0,0,0,0,1,1,0,0,2,2,2,1,1,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Elliot Anderson,5,ENG,DM,23-290,62,0,0,0,0,0,0,0,0,3,2,0,3,0,2,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Erling Haaland,9,NOR,FW,26-033,90,0,0,0,0,5,2,0,0,0,0,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Gianluigi Donnarumma,1,ITA,GK,27-179,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Jack Grealish,18,ENG,"FW,MF",30-347,9,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Joško Gvardiol,24,CRO,LB,24-212,90,1,0,0,0,1,1,0,0,0,0,0,1,1,2,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Marc Guéhi,6,ENG,DM,26-041,90,1,0,0,0,2,1,0,0,1,2,0,0,3,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Mateo Kovačić,8,CRO,MF,32-109,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Matheus Nunes,27,POR,"DF,MF",27-361,34,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Nico O'Reilly,33,ENG,AM,21-155,62,0,0,0,0,1,0,0,0,1,0,0,4,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Phil Foden,47,ENG,AM,26-087,81,0,0,0,0,2,0,1,0,2,2,0,8,1,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Rayan Cherki,10,FRA,"FW,MF",23-006,28,0,2,0,0,0,0,0,0,0,0,0,3,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Rico Lewis,82,ENG,RB,21-275,56,0,0,0,0,1,1,0,0,1,2,0,2,0,2,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Manchester City-Bournemouth,Manchester City,Rúben Dias,3,POR,CB,29-101,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,029e3234
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Alexander Isak,9,SWE,FW,26-336,90,0,0,0,0,4,2,0,0,0,2,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Alexis Mac Allister,10,ARG,MF,27-242,28,0,0,0,0,0,0,0,0,0,2,0,0,2,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Alisson,1,BRA,GK,33-325,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Cody Gakpo,18,NED,AM,27-108,90,1,0,0,0,6,1,0,0,4,3,1,3,3,3,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Dominik Szoboszlai,8,HUN,DM,25-302,90,1,0,1,1,3,1,0,0,2,1,0,10,0,1,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Florian Wirtz,7,GER,AM,23-112,62,0,0,0,0,3,1,0,0,0,1,0,1,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Jeremie Frimpong,30,NED,RB,25-256,90,0,0,0,0,1,0,1,0,2,0,0,5,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Jérémy Jacquet,5,FRA,CB,21-041,69,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Lewis Koumas,67,WAL,MF,20-338,13,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Milos Kerkez,6,HUN,LB,22-289,90,0,0,0,0,2,1,1,0,3,1,0,2,1,1,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Rio Ngumoha,73,ENG,AM,17-359,62,0,0,0,0,1,0,0,0,1,1,0,2,1,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Ronald Araújo,33,URU,DF,27-169,21,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Ryan Gravenberch,38,NED,DM,24-099,77,0,1,0,0,2,0,0,0,1,3,0,0,0,2,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Virgil van Dijk,4,NED,CB,35-046,90,0,0,0,0,2,1,1,0,0,0,0,0,1,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Liverpool,Víctor Muñoz,23,ESP,MF,23-041,28,0,0,0,0,2,0,0,0,0,1,0,4,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Aladji Bamba,8,FRA,MF,20-040,15,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Amar Dedić,37,BIH,RB,24-005,90,0,0,0,0,1,0,0,0,3,2,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Anthony Elanga,19,SWE,AM,24-118,75,1,0,0,0,2,2,0,0,1,3,0,1,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Fabian Schär,5,SUI,DF,34-246,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Harvey Barnes,11,ENG,AM,28-257,90,0,0,0,0,1,0,0,0,1,3,0,0,1,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Jacob Murphy,23,ENG,"DF,FW",31-180,15,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Jacob Ramsey,41,ENG,MF,25-087,35,0,0,0,0,1,0,1,0,1,0,0,0,1,1,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Joe Willock,28,ENG,MF,27-003,35,1,0,0,0,1,1,0,0,2,0,0,2,1,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Lewis Hall,3,ENG,LB,21-349,90,0,0,0,0,0,0,0,0,2,0,0,4,3,2,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Lewis Miley,67,ENG,DM,20-114,75,0,0,0,0,1,0,1,0,1,1,0,0,0,1,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Lukáš Horníček,21,CZE,GK,24-041,90,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Malick Thiaw,12,GER,CB,25-015,90,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Sean Steur,14,NED,DM,18-224,55,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Sven Botman,4,NED,CB,26-223,90,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,William Osula,10,DEN,FW,23-019,55,0,1,0,0,2,0,0,0,0,0,0,0,1,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-23 Newcastle-Liverpool,Newcastle United,Yoane Wissa,9,COD,AM,29-354,89,0,1,0,0,4,1,1,0,3,4,2,0,0,0,0,,,a02c581c
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Cole Palmer,10,ENG,AM,24-110,82,1,1,0,0,5,2,0,0,0,3,1,2,1,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Enzo Fernández,8,ARG,MF,25-219,26,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Estêvão Willian,41,BRA,MF,19-122,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Geovany Quenda,23,POR,MF,19-116,9,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Jorrel Hato,21,NED,DM,20-170,64,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Joshua Acheampong,34,ENG,CB,20-111,90,0,0,0,0,0,0,0,0,0,1,1,1,4,1,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,João Pedro,9,BRA,FW,24-332,90,1,1,0,0,4,1,0,0,1,1,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Levi Colwill,6,ENG,CB,23-179,90,0,0,0,0,1,0,1,0,1,1,0,0,2,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Malo Gusto,27,FRA,DM,23-097,75,0,0,0,0,0,0,0,0,1,0,0,3,1,1,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Maxence Lacroix,5,FRA,CB,26-140,90,0,1,0,0,0,0,0,0,1,1,0,0,3,2,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Morgan Rogers,17,ENG,AM,24-029,81,1,0,0,0,3,1,0,0,1,1,0,1,1,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Pedro Neto,7,POR,"FW,MF",26-168,15,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Pep Chavarría,29,ESP,"DF,MF",28-136,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Reece James,24,ENG,DM,26-259,90,0,0,0,0,2,1,1,0,1,0,0,3,0,2,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Robert Sánchez,1,ESP,GK,28-279,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,Roméo Lavia,45,BEL,DM,22-230,64,0,0,0,0,1,1,1,0,1,0,0,0,2,1,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Alex Iwobi,17,NGA,DM,30-113,90,0,0,0,0,0,0,0,0,0,0,0,2,1,3,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Antonee Robinson,33,USA,LB,29-016,81,0,0,0,0,1,0,0,0,0,0,0,3,3,1,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Bernd Leno,1,GER,GK,34-173,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Calvin Bassey,3,NGA,CB,26-236,90,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,César Palacios,8,ESP,AM,21-286,72,0,0,0,0,2,0,0,0,2,0,0,0,1,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Gonzalo García,7,ESP,FW,22-153,90,1,0,0,0,3,1,0,0,2,2,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Jorge Cuenca,4,ESP,CB,26-280,90,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Joshua King,24,ENG,AM,19-233,90,1,0,0,0,3,2,0,0,2,1,0,2,2,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Kevin,11,BRA,MF,23-232,18,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Oscar Bobb,14,NOR,AM,23-043,66,0,0,0,0,0,0,0,0,1,1,0,3,1,1,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Rodrigo Muniz,9,BRA,FW,25-112,9,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Ryan Sessegnon,30,ENG,"DF,FW",26-098,18,0,0,0,0,1,1,0,0,0,0,0,2,0,1,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Sander Berge,16,NOR,DM,28-191,72,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Shea Charles,19,NIR,"DF,MF",22-292,24,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,,,98138a1e
+ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,Timothy Castagne,21,BEL,RB,30-262,90,0,1,0,0,1,1,1,0,2,2,0,2,1,1,0,,,98138a1e

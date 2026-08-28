@@ -1,0 +1,312 @@
+league,season,team,player,nation,pos,age,born,Playing Time,Playing Time,Playing Time,Playing Time,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Performance,Per 90 Minutes,Per 90 Minutes,Per 90 Minutes,Per 90 Minutes,Per 90 Minutes
+,,,,,,,,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,Gls,Ast,G+A,G-PK,G+A-PK
+ENG-Premier League,2627,Arsenal,Ben White,ENG,DF,28-324,1997,1,1,90,1.0,0,1,1,0,0,0,0,0,0.0,1.0,1.0,0.0,1.0
+ENG-Premier League,2627,Arsenal,Bukayo Saka,ENG,MF,24-357,2001,1,1,67,0.7,1,0,1,1,0,0,0,0,1.34,0.0,1.34,1.34,1.34
+ENG-Premier League,2627,Arsenal,Christos Tzolis,GRE,MF,24-210,2002,1,1,75,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Cristhian Mosquera,ESP,DF,22-062,2004,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,David Raya,ESP,GK,30-347,1995,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Declan Rice,ENG,MF,27-226,1999,1,1,67,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Eberechi Eze,ENG,"FW,MF",28-060,1998,1,0,15,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Gabriel Magalhães,BRA,DF,28-252,1997,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Kai Havertz,GER,FW,27-078,1999,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Arsenal,Martin Ødegaard,NOR,MF,27-254,1998,1,1,75,0.8,1,0,1,1,0,0,0,0,1.2,0.0,1.2,1.2,1.2
+ENG-Premier League,2627,Arsenal,Martín Zubimendi,ESP,MF,27-207,1999,1,0,23,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Mikel Merino,ESP,MF,30-067,1996,1,0,15,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Myles Lewis-Skelly,ENG,MF,19-336,2006,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Noni Madueke,ENG,"FW,MF",24-171,2002,1,0,23,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Piero Hincapié,ECU,DF,24-231,2002,1,0,9,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Arsenal,Riccardo Calafiori,ITA,DF,24-101,2002,1,1,81,0.9,0,1,1,0,0,0,0,0,0.0,1.11,1.11,0.0,1.11
+ENG-Premier League,2627,Aston Villa,Alejandro Garnacho,ARG,MF,22-058,2004,1,0,5,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Alysson,BRA,MF,20-115,2006,1,0,9,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Boubacar Kamara,FRA,MF,26-278,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Emi Buendía,ARG,FW,29-246,1996,1,1,85,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,George Hemmings,ENG,MF,19-177,2007,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Ian Maatsen,NED,DF,24-171,2002,1,1,81,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,John McGinn,SCO,MF,31-314,1994,1,1,81,0.9,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,João Gomes,BRA,MF,25-197,2001,1,1,39,0.4,0,0,0,0,0,0,1,1,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Lamare Bogarde,NED,"DF,MF",22-235,2004,1,0,17,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Marco Bizot,NED,GK,35-171,1991,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Matteo Ruggeri,ITA,"DF,MF",24-048,2002,1,0,9,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Matty Cash,POL,DF,29-021,1997,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Pau Torres,ESP,DF,29-224,1997,1,1,73,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Ross Barkley,ENG,MF,32-266,1993,1,1,73,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Tyrone Mings,ENG,DF,33-168,1993,1,0,17,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Aston Villa,Victor Lindelöf,SWE,DF,32-042,1994,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Adam Smith,ENG,DF,35-121,1991,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Adrien Truffert,FRA,DF,24-281,2001,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Alex Scott,ENG,MF,23-007,2003,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Alex Tóth,HUN,MF,20-309,2005,1,0,16,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,António Silva,POR,DF,22-302,2003,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Ben Gannon-Doak,SCO,MF,20-290,2005,1,0,2,0.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Daniel Jebbison,CAN,FW,23-015,2003,1,0,16,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Evanilson,BRA,FW,26-326,1999,1,1,74,0.8,0,1,1,0,0,0,1,0,0.0,1.22,1.22,0.0,1.22
+ENG-Premier League,2627,Bournemouth,James Hill,ENG,DF,24-230,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Justin Kluivert,NED,MF,27-115,1999,1,1,74,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Lewis Cook,ENG,MF,29-206,1997,1,1,74,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Marcus Tavernier,ENG,MF,27-159,1999,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Bournemouth,Rayan,BRA,MF,20-025,2006,1,1,88,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Tyler Adams,USA,MF,27-195,1999,1,0,16,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Bournemouth,Đorđe Petrović,SRB,GK,26-324,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Aaron Hickey,SCO,"DF,MF",24-079,2002,1,0,15,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Callum Wilson,ENG,FW,34-182,1992,1,0,8,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Caoimhín Kelleher,IRL,GK,27-278,1998,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Dango Ouattara,BFA,MF,24-198,2002,1,1,66,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Igor Thiago,BRA,FW,25-063,2001,1,1,82,0.9,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Jaidon Anthony,ENG,"FW,MF",26-270,1999,1,0,24,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Keane Lewis-Potter,ENG,DF,25-187,2001,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Brentford,Kevin Schade,GER,MF,24-274,2001,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Kristoffer Ajer,NOR,DF,28-133,1998,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Mamadou Sangare,MLI,MF,24-063,2002,1,1,75,0.8,0,1,1,0,0,0,0,0,0.0,1.2,1.2,0.0,1.2
+ENG-Premier League,2627,Brentford,Mathias Jensen,DEN,MF,30-239,1996,1,1,66,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Michael Kayode,ITA,DF,22-049,2004,1,1,75,0.8,1,0,1,1,0,0,0,0,1.2,0.0,1.2,1.2,1.2
+ENG-Premier League,2627,Brentford,Mikkel Damsgaard,DEN,"FW,MF",26-056,2000,1,0,15,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Nathan Collins,IRL,DF,25-120,2001,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brentford,Vitaly Janelt,GER,MF,28-110,1998,1,1,90,1.0,1,0,1,1,0,0,1,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Brentford,Yehor Yarmoliuk,UKR,MF,22-180,2004,1,0,24,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Bart Verbruggen,NED,GK,24-010,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Charalampos Kostoulas,GRE,FW,19-090,2007,1,0,27,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Costinha,POR,"DF,MF",26-155,2000,1,0,27,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Diego Gómez,PAR,MF,23-154,2003,1,1,85,0.9,0,1,1,0,0,0,0,0,0.0,1.06,1.06,0.0,1.06
+ENG-Premier League,2627,Brighton,Georginio Rutter,FRA,FW,24-130,2002,1,1,90,1.0,0,1,1,0,0,0,0,0,0.0,1.0,1.0,0.0,1.0
+ENG-Premier League,2627,Brighton,Ibrahim Osman,GHA,"FW,MF",21-272,2004,1,0,13,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Jack Hinshelwood,ENG,MF,21-139,2005,1,1,63,0.7,2,0,2,2,0,0,0,0,2.86,0.0,2.86,2.86,2.86
+ENG-Premier League,2627,Brighton,Lewis Dunk,ENG,DF,34-280,1991,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Luka Vušković,CRO,DF,19-185,2007,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Malick Yalcouye,CIV,MF,20-283,2005,1,0,5,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Mats Wieffer,NED,DF,26-285,1999,1,1,77,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Maxim De Cuyper,BEL,MF,25-249,2000,1,1,77,0.9,1,0,1,1,0,0,0,0,1.17,0.0,1.17,1.17,1.17
+ENG-Premier League,2627,Brighton,Olivier Boscagli,FRA,DF,28-283,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Pascal Groß,GER,MF,35-074,1991,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Yasin Ayari,SWE,MF,22-326,2003,1,1,63,0.7,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Brighton,Zadok Yohanna,NGA,FW,19-060,2007,1,0,13,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Cole Palmer,ENG,MF,24-114,2002,1,1,82,0.9,1,1,2,1,0,0,0,0,1.1,1.1,2.2,1.1,2.2
+ENG-Premier League,2627,Chelsea,Enzo Fernández,ARG,MF,25-223,2001,1,0,26,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Estêvão Willian,BRA,MF,19-126,2007,1,0,8,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Geovany Quenda,POR,MF,19-120,2007,1,0,9,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Jorrel Hato,NED,MF,20-174,2006,1,1,64,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Joshua Acheampong,ENG,DF,20-115,2006,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,João Pedro,BRA,FW,24-336,2001,1,1,90,1.0,1,1,2,1,0,0,0,0,1.0,1.0,2.0,1.0,2.0
+ENG-Premier League,2627,Chelsea,Levi Colwill,ENG,DF,23-183,2003,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Malo Gusto,FRA,MF,23-101,2003,1,1,75,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Maxence Lacroix,FRA,DF,26-144,2000,1,1,90,1.0,0,1,1,0,0,0,0,0,0.0,1.0,1.0,0.0,1.0
+ENG-Premier League,2627,Chelsea,Morgan Rogers,ENG,MF,24-033,2002,1,1,81,0.9,1,0,1,1,0,0,0,0,1.11,0.0,1.11,1.11,1.11
+ENG-Premier League,2627,Chelsea,Pedro Neto,POR,"FW,MF",26-172,2000,1,0,15,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Pep Chavarría,ESP,"DF,MF",28-140,1998,1,0,26,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Reece James,ENG,MF,26-263,1999,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Robert Sánchez,ESP,GK,28-283,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Chelsea,Roméo Lavia,BEL,MF,22-234,2004,1,1,64,0.7,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Aurèle Amenda,SUI,DF,23-028,2003,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Bobby Thomas,ENG,DF,25-210,2001,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Brandon Thomas-Asante,GHA,MF,27-242,1998,1,1,69,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Caleb Yirenkyi,GHA,MF,20-225,2006,1,1,61,0.7,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Carl Rushworth,ENG,GK,25-057,2001,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Ellis Simms,ENG,FW,25-235,2001,1,1,69,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Frank Onyeka,NGA,MF,28-239,1998,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Gustavo Hamer,NED,MF,29-065,1997,1,0,9,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Jack Rudoni,ENG,MF,26-094,2000,1,0,21,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Jay Dasilva,WAL,DF,28-128,1998,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Loum Tchaouna,FRA,MF,22-354,2003,1,1,81,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Matt Grimes,ENG,MF,31-044,1995,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Milan van Ewijk,NED,DF,25-354,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Taiwo Awoniyi,NGA,FW,29-016,1997,1,0,21,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Coventry City,Victor Torp,DEN,MF,27-029,1999,1,0,29,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Adam Wharton,ENG,MF,22-203,2004,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Anan Khalaili,ISR,MF,21-359,2004,1,0,36,0.4,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Chadi Riad,MAR,DF,23-072,2003,1,1,71,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Chris Richards,USA,DF,26-153,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Daichi Kamada,JPN,MF,30-023,1996,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Daniel Muñoz,COL,MF,30-094,1996,1,1,54,0.6,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Dean Henderson,ENG,GK,29-169,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Dwight McNeil,ENG,MF,26-279,1999,1,1,62,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Eddie Nketiah,ENG,MF,27-090,1999,1,1,54,0.6,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Evann Guessand,CIV,"FW,MF",25-058,2001,1,0,28,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Jaydee Canvot,FRA,DF,20-030,2006,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Jean-Philippe Mateta,FRA,FW,29-061,1997,1,1,62,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Jørgen Strand Larsen,NOR,FW,26-203,2000,1,0,28,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Takehiro Tomiyasu,JPN,DF,27-296,1998,1,0,19,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Tyrick Mitchell,ENG,MF,26-361,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Crystal Palace,Yéremy Pino,ESP,"FW,MF",23-312,2002,1,0,36,0.4,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Beto,GNB,FW,28-209,1998,1,0,12,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Brennan Johnson,WAL,"FW,MF",25-097,2001,1,0,7,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Carlos Alcaraz,ARG,MF,23-271,2002,1,0,1,0.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Harrison Armstrong,ENG,MF,19-221,2007,1,1,90,1.0,0,1,1,0,0,0,0,0,0.0,1.0,1.0,0.0,1.0
+ENG-Premier League,2627,Everton,Hayden Hackney,ENG,MF,24-063,2002,1,1,78,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Iliman Ndiaye,SEN,MF,26-175,2000,1,1,90,1.0,0,1,1,0,0,0,0,0,0.0,1.0,1.0,0.0,1.0
+ENG-Premier League,2627,Everton,James Garner,ENG,MF,25-168,2001,1,0,12,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,James Tarkowski,ENG,DF,33-282,1992,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Jarrad Branthwaite,ENG,DF,24-062,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Jordan Pickford,ENG,GK,32-174,1994,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Kiernan Dewsbury-Hall,ENG,MF,27-356,1998,1,1,89,1.0,1,0,1,1,0,0,0,0,1.01,0.0,1.01,1.01,1.01
+ENG-Premier League,2627,Everton,Merlin Röhl,GER,DF,24-054,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Thierno Barry,FRA,FW,23-311,2002,1,1,78,0.9,1,0,1,1,0,0,0,0,1.15,0.0,1.15,1.15,1.15
+ENG-Premier League,2627,Everton,Tyrique George,ENG,MF,20-205,2006,1,1,83,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Everton,Vitaliy Mykolenko,UKR,DF,27-091,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Alex Iwobi,NGA,MF,30-117,1996,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Antonee Robinson,USA,DF,29-020,1997,1,1,81,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Bernd Leno,GER,GK,34-177,1992,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Calvin Bassey,NGA,DF,26-240,1999,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,César Palacios,ESP,MF,21-290,2004,1,1,72,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Gonzalo García,ESP,FW,22-157,2004,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Fulham,Jorge Cuenca,ESP,DF,26-284,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Joshua King,ENG,MF,19-237,2007,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Fulham,Kevin,BRA,MF,23-236,2003,1,0,18,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Oscar Bobb,NOR,MF,23-047,2003,1,1,66,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Rodrigo Muniz,BRA,FW,25-116,2001,1,0,9,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Ryan Sessegnon,ENG,"DF,FW",26-102,2000,1,0,18,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Sander Berge,NOR,MF,28-195,1998,1,1,72,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Shea Charles,NIR,"DF,MF",22-296,2003,1,0,24,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Fulham,Timothy Castagne,BEL,DF,30-266,1995,1,1,90,1.0,0,1,1,0,0,0,1,0,0.0,1.0,1.0,0.0,1.0
+ENG-Premier League,2627,Hull City,Bachir Belloumi,ALG,MF,24-088,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Cody Drameh,ENG,"DF,MF",24-263,2001,1,0,21,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Elliot Stroud,SWE,MF,24-067,2002,1,1,70,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,John Egan,IRL,DF,33-312,1992,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Kostas Tzolakis,GRE,GK,23-293,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Lewie Coyle,ENG,DF,30-317,1995,1,1,69,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Liam Millar,CAN,"FW,MF",26-335,1999,1,0,20,0.2,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Lucas Herrington,AUS,DF,18-357,2007,1,0,27,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Matt Crooks,ENG,MF,32-220,1994,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Matt Targett,ENG,"DF,MF",30-344,1995,1,0,6,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Nobel Mendy,SEN,DF,21-359,2004,1,1,63,0.7,1,0,1,1,0,0,0,0,1.43,0.0,1.43,1.43,1.43
+ENG-Premier League,2627,Hull City,Oliver McBurnie,SCO,FW,30-085,1996,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Paddy McNair,NIR,"DF,MF",31-123,1995,1,0,27,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Regan Slater,ENG,MF,26-351,1999,1,1,90,1.0,0,1,1,0,0,0,0,0,0.0,1.0,1.0,0.0,1.0
+ENG-Premier League,2627,Hull City,Ryan Giles,ENG,DF,26-214,2000,1,1,84,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Hull City,Semi Ajayi,NGA,DF,32-292,1993,1,1,63,0.7,1,0,1,1,0,0,0,0,1.43,0.0,1.43,1.43,1.43
+ENG-Premier League,2627,Ipswich Town,Abdoul Ouattara,FRA,MF,20-310,2005,1,0,11,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Abdul Fatawu Issahaku,GHA,MF,22-173,2004,1,1,65,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Chuba Akpom,ENG,"FW,MF",30-323,1995,1,0,25,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Daizen Maeda,JPN,MF,28-312,1997,1,1,79,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Dara O'Shea,IRL,DF,27-177,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Emersonn,BRA,FW,22-043,2004,1,1,65,0.7,1,0,1,1,0,0,0,0,1.38,0.0,1.38,1.38,1.38
+ENG-Premier League,2627,Ipswich Town,Issa Diop,MAR,DF,29-231,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Jack Clarke,ENG,"FW,MF",25-278,2000,1,0,20,0.2,1,0,1,1,0,0,0,0,4.5,0.0,4.5,4.5,4.5
+ENG-Premier League,2627,Ipswich Town,Jacob Greaves,ENG,DF,25-350,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Julio Enciso,PAR,MF,22-217,2004,1,1,70,0.8,0,1,1,0,0,0,0,0,0.0,1.29,1.29,0.0,1.29
+ENG-Premier League,2627,Ipswich Town,Kasey McAteer,IRL,MF,24-279,2001,1,0,25,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Kjell Scherpen,NED,GK,26-217,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Leif Davis,ENG,DF,26-240,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Marcelino Núñez,CHI,MF,26-180,2000,1,1,79,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Ipswich Town,Saša Lukić,SRB,MF,30-015,1996,1,1,90,1.0,0,1,1,0,0,0,0,0,0.0,1.0,1.0,0.0,1.0
+ENG-Premier League,2627,Ipswich Town,Sindre Egeli,NOR,"FW,MF",20-068,2006,1,0,11,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Anton Stach,GER,MF,27-286,1998,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Leeds United,Brenden Aaronson,USA,MF,25-310,2000,1,1,81,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Dominic Calvert-Lewin,ENG,FW,29-165,1997,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Ethan Ampadu,WAL,MF,25-348,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Harry Wilson,WAL,MF,29-159,1997,1,1,65,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Jaka Bijol,SVN,DF,27-204,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,James Justin,ENG,MF,28-186,1998,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,James Trafford,ENG,GK,23-322,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Jayden Bogle,ENG,MF,26-032,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Joe Rodon,WAL,DF,28-310,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Noah Okafor,SUI,"FW,MF",26-096,2000,1,0,25,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Sean Longstaff,ENG,MF,28-302,1997,1,0,9,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Leeds United,Tarik Muharemovic,BIH,DF,23-181,2003,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Alexander Isak,SWE,FW,26-341,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Alexis Mac Allister,ARG,MF,27-247,1998,1,0,28,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Alisson,BRA,GK,33-330,1992,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Cody Gakpo,NED,MF,27-113,1999,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Liverpool,Dominik Szoboszlai,HUN,MF,25-307,2000,1,1,90,1.0,1,0,1,0,1,1,0,0,1.0,0.0,1.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Florian Wirtz,GER,MF,23-117,2003,1,1,62,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Jeremie Frimpong,NED,DF,25-261,2000,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Jérémy Jacquet,FRA,DF,21-046,2005,1,1,69,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Lewis Koumas,WAL,MF,20-343,2005,1,0,13,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Milos Kerkez,HUN,DF,22-294,2003,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Rio Ngumoha,ENG,MF,17-364,2008,1,1,62,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Ronald Araújo,URU,DF,27-174,1999,1,0,21,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Ryan Gravenberch,NED,MF,24-104,2002,1,1,77,0.9,0,1,1,0,0,0,0,0,0.0,1.17,1.17,0.0,1.17
+ENG-Premier League,2627,Liverpool,Virgil van Dijk,NED,DF,35-051,1991,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Liverpool,Víctor Muñoz,ESP,MF,23-046,2003,1,0,28,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Abdukodir Khusanov,UZB,DF,22-180,2004,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Antoine Semenyo,GHA,MF,26-233,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Elliot Anderson,ENG,MF,23-295,2002,1,1,62,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Erling Haaland,NOR,FW,26-038,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Gianluigi Donnarumma,ITA,GK,27-184,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Jack Grealish,ENG,"FW,MF",30-352,1995,1,0,9,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Joško Gvardiol,CRO,DF,24-217,2002,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Manchester City,Marc Guéhi,ENG,MF,26-046,2000,1,1,90,1.0,1,0,1,1,0,0,0,0,1.0,0.0,1.0,1.0,1.0
+ENG-Premier League,2627,Manchester City,Mateo Kovačić,CRO,MF,32-114,1994,1,0,28,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Matheus Nunes,POR,"DF,MF",28-001,1998,1,0,34,0.4,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Nico O'Reilly,ENG,MF,21-160,2005,1,1,62,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Phil Foden,ENG,MF,26-092,2000,1,1,81,0.9,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Rayan Cherki,FRA,"FW,MF",23-011,2003,1,0,28,0.3,0,2,2,0,0,0,0,0,0.0,6.43,6.43,0.0,6.43
+ENG-Premier League,2627,Manchester City,Rico Lewis,ENG,DF,21-280,2004,1,1,56,0.6,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester City,Rúben Dias,POR,DF,29-106,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Andrey Santos,BRA,MF,22-117,2004,1,1,66,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Ayden Heaven,ENG,DF,19-340,2006,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Benjamin Šeško,SVN,FW,23-089,2003,1,0,24,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Bruno Fernandes,POR,MF,31-354,1994,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Bryan Mbeumo,CMR,MF,27-021,1999,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Diogo Dalot,POR,"DF,MF",27-163,1999,1,0,11,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Harry Maguire,ENG,DF,33-176,1993,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Kobbie Mainoo,ENG,MF,21-131,2005,1,0,24,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Luke Shaw,ENG,DF,31-047,1995,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Marcus Rashford,ENG,"FW,MF",28-301,1997,1,0,45,0.5,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Matheus Cunha,BRA,FW,27-093,1999,1,1,79,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Noussair Mazraoui,MAR,DF,28-287,1997,1,1,79,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Patrick Dorgu,DEN,MF,21-306,2004,1,1,45,0.5,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Senne Lammens,BEL,GK,24-052,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Shea Lacey,ENG,FW,19-136,2007,1,0,11,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Manchester Utd,Youri Tielemans,BEL,MF,29-113,1997,1,1,66,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Aladji Bamba,FRA,MF,20-045,2006,1,0,15,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Amar Dedić,BIH,DF,24-010,2002,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Anthony Elanga,SWE,MF,24-123,2002,1,1,75,0.8,1,0,1,1,0,0,0,0,1.2,0.0,1.2,1.2,1.2
+ENG-Premier League,2627,Newcastle,Fabian Schär,SUI,DF,34-251,1991,1,0,1,0.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Harvey Barnes,ENG,MF,28-262,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Jacob Murphy,ENG,"DF,FW",31-185,1995,1,0,15,0.2,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Jacob Ramsey,ENG,MF,25-092,2001,1,0,35,0.4,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Joe Willock,ENG,MF,27-008,1999,1,0,35,0.4,1,0,1,1,0,0,0,0,2.57,0.0,2.57,2.57,2.57
+ENG-Premier League,2627,Newcastle,Lewis Hall,ENG,DF,21-354,2004,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Lewis Miley,ENG,MF,20-119,2006,1,1,75,0.8,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Lukáš Horníček,CZE,GK,24-046,2002,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Malick Thiaw,GER,DF,25-020,2001,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Sean Steur,NED,MF,18-229,2008,1,1,55,0.6,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,Sven Botman,NED,DF,26-228,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Newcastle,William Osula,DEN,FW,23-024,2003,1,1,55,0.6,0,1,1,0,0,0,0,0,0.0,1.64,1.64,0.0,1.64
+ENG-Premier League,2627,Newcastle,Yoane Wissa,COD,MF,29-359,1996,1,1,89,1.0,0,1,1,0,0,0,1,0,0.0,1.01,1.01,0.0,1.01
+ENG-Premier League,2627,Nottingham,Arnaud Kalimuendo,FRA,FW,24-220,2002,1,0,1,0.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Chris Wood,NZL,FW,34-264,1991,1,0,29,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Dan Ndoye,SUI,MF,25-307,2000,1,1,61,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Ibrahim Sangaré,CIV,MF,28-269,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Igor Jesus,BRA,FW,25-184,2001,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Jair Cunha,BRA,DF,21-174,2005,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,James Mcatee,ENG,MF,23-314,2002,1,1,73,0.8,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Luca Netz,GER,"DF,MF",23-105,2003,1,0,17,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Matz Sels,BEL,GK,34-183,1992,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Morgan Gibbs-White,ENG,MF,26-213,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Murillo,BRA,DF,24-055,2002,1,1,89,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Neco Williams,WAL,MF,25-137,2001,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Nikola Milenković,SRB,DF,28-320,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Ola Aina,NGA,MF,29-324,1996,1,1,73,0.8,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Nottingham,Xaver Schlager,AUT,MF,28-334,1997,1,0,17,0.2,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Brian Brobbey,NED,FW,24-208,2002,1,1,66,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Chemsdine Talbi,MAR,MF,21-111,2005,1,0,32,0.4,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Chris Rigg,ENG,MF,19-071,2007,1,0,11,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Daniel Ballard,NIR,DF,26-340,1999,1,1,90,1.0,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Enzo Le Fée,FRA,MF,26-206,2000,1,1,79,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Granit Xhaka,SUI,MF,33-335,1992,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Habib Diarra,SEN,MF,22-237,2004,1,0,11,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Luke O'Nien,ENG,DF,31-280,1994,1,1,66,0.7,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Nilson Angulo,ECU,MF,23-070,2003,1,1,58,0.6,1,0,1,1,0,0,1,0,1.55,0.0,1.55,1.55,1.55
+ENG-Premier League,2627,Sunderland,Noah Sadiki,COD,MF,21-254,2004,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Omar Alderete,PAR,DF,29-245,1996,1,0,24,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Reinildo Mandava,MOZ,DF,32-219,1994,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Robin Roefs,NED,GK,23-223,2003,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Thomas Meunier,BEL,DF,34-350,1991,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Trai Hume,NIR,MF,24-163,2002,1,1,79,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Sunderland,Wilson Isidor,HAI,"FW,MF",26-001,2000,1,0,24,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Andy Robertson,SCO,DF,32-170,1994,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Antonín Kinský,CZE,GK,23-168,2003,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Archie Gray,ENG,DF,20-169,2006,1,1,85,0.9,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Conor Gallagher,ENG,MF,26-203,2000,1,1,45,0.5,0,0,0,0,0,0,1,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Destiny Udogie,ITA,"DF,MF",23-273,2002,1,0,5,0.1,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Dominic Solanke,ENG,FW,28-348,1997,1,0,23,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,James Maddison,ENG,"FW,MF",29-278,1996,1,0,23,0.3,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Jan Paul van Hecke,NED,DF,26-081,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Lucas Bergvall,SWE,MF,20-207,2006,1,1,45,0.5,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Marcos Senesi,ARG,DF,29-110,1997,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Mateus Fernandes,POR,MF,22-049,2004,1,0,45,0.5,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Mathys Tel,FRA,MF,21-123,2005,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Mikey Moore,ENG,MF,19-017,2007,1,1,67,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Richarlison,BRA,FW,29-110,1997,1,1,67,0.7,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Rodrigo Bentancur,URU,MF,29-064,1997,1,0,45,0.5,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0
+ENG-Premier League,2627,Tottenham,Sandro Tonali,ITA,MF,26-112,2000,1,1,90,1.0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0

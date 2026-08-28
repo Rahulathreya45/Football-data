@@ -1,0 +1,22 @@
+league,season,team,game,date,round,day,venue,result,GF,GA,opponent,Performance,Performance,Performance,Performance,Performance,Penalty Kicks,Penalty Kicks,Penalty Kicks,Penalty Kicks,time,match_report
+,,,,,,,,,,,,SoTA,GA,Saves,Save%,CS,PKatt,PKA,PKsv,PKm,,
+ENG-Premier League,2627,,2026-08-21 Arsenal-nan,2026-08-21,Matchweek 1,Fri,Away,L,0,3,Arsenal,5,3,2,40.0,0,0,0,0,0,20:00:00,/en/matches/3085a362/Arsenal-Coventry-City-August-21-2026-Premier-League
+ENG-Premier League,2627,,2026-08-21 nan-Coventry City,2026-08-21,Matchweek 1,Fri,Home,W,3,0,Coventry City,1,0,1,100.0,1,0,0,0,0,20:00:00,/en/matches/3085a362/Arsenal-Coventry-City-August-21-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 Brentford-nan,2026-08-22,Matchweek 1,Sat,Away,L,0,3,Brentford,8,3,5,62.5,0,1,0,0,1,17:30:00,/en/matches/01f07042/Brentford-Tottenham-Hotspur-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 Everton-nan,2026-08-22,Matchweek 1,Sat,Away,L,0,2,Everton,5,2,3,60.0,0,0,0,0,0,15:00:00,/en/matches/cbc27eaf/Everton-Crystal-Palace-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 Hull City-nan,2026-08-22,Matchweek 1,Sat,Away,L,0,2,Hull City,4,2,2,50.0,0,0,0,0,0,12:30:00,/en/matches/69e3855f/Hull-City-Manchester-United-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 Ipswich Town-nan,2026-08-22,Matchweek 1,Sat,Away,L,1,2,Ipswich Town,3,2,1,33.3,0,0,0,0,0,15:00:00,/en/matches/2d0f0fb4/Ipswich-Town-Sunderland-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 Nottingham-nan,2026-08-22,Matchweek 1,Sat,Away,W,1,0,Nottingham,3,0,2,100.0,1,0,0,0,0,15:00:00,/en/matches/b6600c62/Nottingham-Forest-Leeds-United-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 nan-Crystal Palace,2026-08-22,Matchweek 1,Sat,Home,W,2,0,Crystal Palace,4,0,4,100.0,1,0,0,0,0,15:00:00,/en/matches/cbc27eaf/Everton-Crystal-Palace-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 nan-Leeds United,2026-08-22,Matchweek 1,Sat,Home,L,0,1,Leeds United,3,1,2,66.7,0,0,0,0,0,15:00:00,/en/matches/b6600c62/Nottingham-Forest-Leeds-United-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 nan-Manchester Utd,2026-08-22,Matchweek 1,Sat,Home,W,2,0,Manchester Utd,5,0,5,100.0,1,0,0,0,0,12:30:00,/en/matches/69e3855f/Hull-City-Manchester-United-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 nan-Sunderland,2026-08-22,Matchweek 1,Sat,Home,W,2,1,Sunderland,3,1,2,66.7,0,0,0,0,0,15:00:00,/en/matches/2d0f0fb4/Ipswich-Town-Sunderland-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-22 nan-Tottenham,2026-08-22,Matchweek 1,Sat,Home,W,3,0,Tottenham,4,0,4,100.0,1,0,0,0,0,17:30:00,/en/matches/01f07042/Brentford-Tottenham-Hotspur-August-22-2026-Premier-League
+ENG-Premier League,2627,,2026-08-23 Brighton-nan,2026-08-23,Matchweek 1,Sun,Away,L,0,4,Brighton,7,4,3,42.9,0,0,0,0,0,14:00:00,/en/matches/cc39f2ef/Brighton-and-Hove-Albion-Aston-Villa-August-23-2026-Premier-League
+ENG-Premier League,2627,,2026-08-23 Manchester City-nan,2026-08-23,Matchweek 1,Sun,Away,L,1,2,Manchester City,6,2,4,66.7,0,0,0,0,0,14:00:00,/en/matches/029e3234/Manchester-City-Bournemouth-August-23-2026-Premier-League
+ENG-Premier League,2627,,2026-08-23 Newcastle-nan,2026-08-23,Matchweek 1,Sun,Away,D,2,2,Newcastle,5,2,3,60.0,0,0,0,0,0,16:30:00,/en/matches/a02c581c/Newcastle-United-Liverpool-August-23-2026-Premier-League
+ENG-Premier League,2627,,2026-08-23 nan-Aston Villa,2026-08-23,Matchweek 1,Sun,Home,W,4,0,Aston Villa,0,0,0,,1,0,0,0,0,14:00:00,/en/matches/cc39f2ef/Brighton-and-Hove-Albion-Aston-Villa-August-23-2026-Premier-League
+ENG-Premier League,2627,,2026-08-23 nan-Bournemouth,2026-08-23,Matchweek 1,Sun,Home,W,2,1,Bournemouth,4,1,3,75.0,0,0,0,0,0,14:00:00,/en/matches/029e3234/Manchester-City-Bournemouth-August-23-2026-Premier-League
+ENG-Premier League,2627,,2026-08-23 nan-Liverpool,2026-08-23,Matchweek 1,Sun,Home,D,2,2,Liverpool,7,2,5,71.4,0,1,1,0,0,16:30:00,/en/matches/a02c581c/Newcastle-United-Liverpool-August-23-2026-Premier-League
+ENG-Premier League,2627,,2026-08-24 Fulham-nan,2026-08-24,Matchweek 1,Mon,Away,W,3,2,Fulham,6,2,4,66.7,0,0,0,0,0,20:00:00,/en/matches/98138a1e/Fulham-Chelsea-August-24-2026-Premier-League
+ENG-Premier League,2627,,2026-08-24 nan-Chelsea,2026-08-24,Matchweek 1,Mon,Home,L,2,3,Chelsea,6,3,3,50.0,0,0,0,0,0,20:00:00,/en/matches/98138a1e/Fulham-Chelsea-August-24-2026-Premier-League
