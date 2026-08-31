@@ -46,3 +46,7 @@ Day 14 - 27-09-2026
 completed adding delta table loading logic for all the tables
 
 Day 15 - 28-09-2026
+started adding two seasons data into silver layer
+
+Day 16 - 29-09-2026
+compelted silver layer with 2 years data
