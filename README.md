@@ -30,23 +30,26 @@ Started Creating canonical models complted seasons
 Day 9 - 21-08-2026
 Completed Teams table
 
-Day 10 - 22-09-2026
+Day 10 - 22-08-2026
 completed Players table and standings table
 
-Day 11 - 24-09-2026
+Day 11 - 24-08-2026
 completed Matches table
 
-Day 12 - 25-09-2026
+Day 12 - 25-08-2026
 Completed Player and Teams season and match stats
 
-Day 13 - 26-09-2026
+Day 13 - 26-08-2026
 Started adding the loading logic for all the tables 
 
-Day 14 - 27-09-2026
+Day 14 - 27-08-2026
 completed adding delta table loading logic for all the tables
 
-Day 15 - 28-09-2026
+Day 15 - 28-08-2026
 started adding two seasons data into silver layer
 
-Day 16 - 29-09-2026
+Day 16 - 29-08-2026
 compelted silver layer with 2 years data
+
+Day 17 - 31-08-2026
+statred with creating gold tables
