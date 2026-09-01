@@ -53,3 +53,6 @@ compelted silver layer with 2 years data
 
 Day 17 - 31-08-2026
 statred with creating gold tables
+
+Day 18 - 01-09-2026
+Created Gold tables
