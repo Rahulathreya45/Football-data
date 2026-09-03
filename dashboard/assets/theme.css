@@ -1,0 +1,80 @@
+:root {
+    --accent: #00d26a;
+    --accent-soft: rgba(0, 210, 106, 0.12);
+    --card-bg: #161b22;
+    --card-border: #262d38;
+    --text-muted: #8b949e;
+}
+
+.stApp {
+    background: linear-gradient(180deg, #0d1117 0%, #0a0d12 100%);
+}
+
+/* st.container(border=True) wrapper - selector may need adjusting for your
+   Streamlit version; inspect via devtools if it doesn't apply. */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    border-radius: 14px !important;
+    border: 1px solid var(--card-border) !important;
+    background: var(--card-bg) !important;
+    transition: border-color 0.15s ease;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    border-color: var(--accent) !important;
+}
+
+.team-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding-top: 10px;
+}
+.team-name.right { text-align: right; }
+.team-name.left { text-align: left; }
+.team-name.winner { color: var(--accent); }
+
+.score-pill {
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 8px;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-top: 0px;
+    white-space: nowrap;
+}
+
+.navbar-divider {
+    border: none;
+    border-top: 1px solid var(--card-border);
+    margin: 4px 0 20px 0;
+}
+
+.event-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 3px 4px 3px 0;
+}
+.event-badge.goal { background: rgba(0, 210, 106, 0.12); color: #00d26a; }
+.event-badge.yellow-card { background: rgba(255, 193, 7, 0.14); color: #ffc107; }
+.event-badge.red-card { background: rgba(255, 69, 58, 0.14); color: #ff453a; }
+.event-badge.sub { background: rgba(88, 166, 255, 0.14); color: #58a6ff; }
+
+.section-header {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+}
