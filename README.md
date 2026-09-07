@@ -56,3 +56,15 @@ statred with creating gold tables
 
 Day 18 - 01-09-2026
 Created Gold tables
+
+Day 19 - 02-09-2026
+Completed gold table and planned out the dashboard
+
+Day 20 - 03-09-2026
+completed match listing page
+
+Day 21 - 04-09-2026
+completed match details page compelted 
+
+Day 22 - 07-09-2026
+Completed lineups and events tabs
