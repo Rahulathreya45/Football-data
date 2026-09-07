@@ -48,3 +48,62 @@ def get_matches_count(season_id: int) -> int:
     """
     df = run_query(sql, (season_id,))
     return int(df["cnt"].iloc[0])
+
+def get_match(match_id: int):
+    """Single match row (all columns) for the Match Detail page, or None
+    if the id doesn't exist."""
+    sql = f"""
+        SELECT *
+        FROM delta_scan('{TABLES["fact_match_summary"]}')
+        WHERE match_id = ?
+    """
+    df = run_query(sql, (match_id,))
+    return None if df.empty else df.iloc[0]
+ 
+ 
+def get_match_goals(match_id: int) -> pd.DataFrame:
+    sql = f"""
+        SELECT *
+        FROM delta_scan('{TABLES["fact_goals"]}')
+        WHERE match_id = ?
+    """
+    return run_query(sql, (match_id,))
+
+def get_match_cards(match_id: int) -> pd.DataFrame:
+    sql = f"""
+        SELECT *
+        FROM delta_scan('{TABLES["fact_card"]}')
+        WHERE match_id = ?
+    """
+    return run_query(sql, (match_id,))
+ 
+ 
+def get_match_subs(match_id: int) -> pd.DataFrame:
+    sql = f"""
+        SELECT *
+        FROM delta_scan('{TABLES["fact_subs"]}')
+        WHERE match_id = ?
+    """
+    return run_query(sql, (match_id,))
+
+def get_match_lineups(match_id: int) -> pd.DataFrame:
+    """fact_match_lineups joined to dim_player for the display name.
+    ASSUMPTION: dim_player has player_id + player_name (full name) -
+    unconfirmed, matching the pattern dim_team uses (team_id/team_name).
+    Fix the join/column below if your actual schema differs.
+    """
+    sql = f"""
+        SELECT
+            l.jersey_number,
+            l.position,
+            l.is_starter,
+            l.minutes_played,
+            l.team_id,
+            l.player_id,
+            l.team_formation,
+            p.player_name
+        FROM delta_scan('{TABLES["fact_match_lineups"]}') l
+        JOIN delta_scan('{TABLES["dim_player"]}') p ON p.player_id = l.player_id
+        WHERE l.match_id = ?
+    """
+    return run_query(sql, (match_id,))
