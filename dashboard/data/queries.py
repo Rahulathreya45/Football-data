@@ -86,6 +86,31 @@ def get_match_subs(match_id: int) -> pd.DataFrame:
     """
     return run_query(sql, (match_id,))
 
+def get_team_match_performance(match_id: int) -> pd.DataFrame:
+    sql = f"""
+        SELECT *
+        FROM delta_scan('{TABLES["fact_team_match_performance"]}')
+        WHERE match_id = ?
+    """
+    return run_query(sql, (match_id,))
+
+def get_player_match_performance(match_id: int) -> pd.DataFrame:
+    sql = f"""
+        SELECT *
+        FROM delta_scan('{TABLES["fact_player_match_performance"]}')
+        WHERE match_id = ?
+    """
+    return run_query(sql, (match_id,))
+ 
+ 
+def get_goalkeeper_match_performance(match_id: int) -> pd.DataFrame:
+    sql = f"""
+        SELECT *
+        FROM delta_scan('{TABLES["fact_goal_keeper_match_performance"]}')
+        WHERE match_id = ?
+    """
+    return run_query(sql, (match_id,))
+
 def get_match_lineups(match_id: int) -> pd.DataFrame:
     """fact_match_lineups joined to dim_player for the display name.
     ASSUMPTION: dim_player has player_id + player_name (full name) -

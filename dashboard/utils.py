@@ -1,34 +1,36 @@
 import base64
+import re
 from pathlib import Path
- 
+
 import streamlit as st
- 
+
 ASSETS_DIR = Path(__file__).resolve().parent / "assets"
+
+
 def minute_sort_key(minute) -> int:
     """'45+2' -> 4502, '90' -> 9000. A single sortable int (base*100 +
-    stoppage), rather than a tuple - pandas can silently mis-sort a column
-    of same-length tuples (numpy coerces it into a 2D array instead of
-    keeping tuple objects), so a plain int is safer here.
+    stoppage). Pulls digit groups out with regex rather than splitting on
+    '+' specifically, so it doesn't silently fail (and fall back to the
+    end-of-list default) if a table uses a slightly different format -
+    e.g. a unicode prime (′) instead of a straight apostrophe, or extra
+    whitespace.
     """
     if minute is None:
         return 99900
-    text = str(minute).strip().replace("'", "")
-    if "+" in text:
-        base, extra = text.split("+", 1)
-        try:
-            return int(base) * 100 + int(extra)
-        except ValueError:
-            return 99900
-    try:
-        return int(text) * 100
-    except ValueError:
+    numbers = re.findall(r"\d+", str(minute))
+    if not numbers:
         return 99900
+    base = int(numbers[0])
+    extra = int(numbers[1]) if len(numbers) > 1 else 0
+    return base * 100 + extra
 
 
 def format_minute(minute) -> str:
     if minute is None:
         return ""
-    return f"{str(minute).strip()}'"
+    text = str(minute).strip().rstrip("'′")
+    return f"{text}'"
+
 
 def abbreviate_name(full_name: str) -> str:
     """'Bukayo Saka' -> 'B. Saka'. Splits on the first space only, so
@@ -41,11 +43,11 @@ def abbreviate_name(full_name: str) -> str:
         return parts[0]
     first, rest = parts
     return f"{first[0]}. {rest}"
- 
- 
+
+
 _MIME_TYPES = {".png": "image/png", ".svg": "image/svg+xml"}
- 
- 
+
+
 @st.cache_data(show_spinner=False)
 def asset_data_uri(filename: str) -> str:
     """Base64-encode a local file from assets/ (goal.png, penalty-kick.png,

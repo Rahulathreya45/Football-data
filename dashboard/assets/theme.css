@@ -79,6 +79,59 @@ div[data-testid="stVerticalBlockBorderWrapper"]:hover {
     white-space: nowrap;
 }
 
+.stat-bar-block {
+    margin-bottom: 16px;
+}
+.stat-bar-label {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+.stat-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.stat-bar-value {
+    font-size: 0.88rem;
+    font-weight: 700;
+    min-width: 34px;
+}
+.stat-bar-value.left { text-align: right; }
+.stat-bar-value.right { text-align: left; }
+.stat-bar-track {
+    flex: 1;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    background: var(--card-border);
+}
+.stat-bar-fill { height: 100%; }
+.stat-bar-fill.home { background: var(--accent); }
+.stat-bar-fill.away { background: #58a6ff; }
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--card-border);
+}
+.stat-row-value {
+    font-weight: 700;
+    font-size: 0.9rem;
+    min-width: 36px;
+    text-align: center;
+}
+.stat-row-label {
+    flex: 1;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+}
+
 .score-pill {
     background: var(--accent-soft);
     color: var(--accent);

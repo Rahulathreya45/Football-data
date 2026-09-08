@@ -84,16 +84,6 @@ def render_events_tab(
     cards_df: pd.DataFrame,
     subs_df: pd.DataFrame,
 ):
-    stadium = match.get("stadium")
-    referee = match.get("referee")  # ASSUMPTION - confirm actual column name
-    meta_bits = [b for b in [f"🏟️ {stadium}" if stadium else None,
-                              f"🧑‍⚖️ {referee}" if referee else None] if b]
-    if meta_bits:
-        st.markdown(
-            f"<div class='match-meta' style='margin-bottom:18px;'>{' · '.join(meta_bits)}</div>",
-            unsafe_allow_html=True,
-        )
-
     frames = []
     if not goals_df.empty:
         frames.append(goals_df.assign(event_type="goal"))

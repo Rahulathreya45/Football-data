@@ -171,6 +171,8 @@ def render_score_header(match: pd.Series):
         meta_bits = [format_match_date(match["match_date"])]
         if match.get("stadium"):
             meta_bits.append(match["stadium"])
+        if match.get("match_referee"):
+            meta_bits.append(f"Referee: {match['match_referee']}")
         st.markdown(
             f"<div class='match-meta'>{' · '.join(meta_bits)}</div>",
             unsafe_allow_html=True,

@@ -3,6 +3,7 @@ import streamlit as st
 from components.ui import render_header, render_score_header, render_goals_section
 from components.lineups import render_lineups_tab
 from components.events import render_events_tab
+from components.stats import render_stats_tab
 from data.queries import (
     get_match,
     get_match_goals,
@@ -47,4 +48,4 @@ with tab_events:
     render_events_tab(match, goals_df, cards_df, subs_df)
 
 with tab_stats:
-    st.caption("Coming next.")
+    render_stats_tab(match)
