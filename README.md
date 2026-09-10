@@ -68,3 +68,12 @@ completed match details page compelted
 
 Day 22 - 07-09-2026
 Completed lineups and events tabs
+
+Day 23 - 08-09-2026
+Completed match stats tab
+
+Day 23 - 09-09-2026
+Completed team and players season stats
+
+Day 24 - 10-09-2026
+completed searching for soureces for live data ingestion
