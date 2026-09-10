@@ -32,6 +32,16 @@ def format_minute(minute) -> str:
     return f"{text}'"
 
 
+def humanize_column(col: str) -> str:
+    """'gk_save_pct' -> 'Save Pct', 'shots_on_target' -> 'Shots On Target'.
+    Strips a redundant 'gk_' prefix (used when the surrounding table/view
+    already makes clear it's goalkeeper data) and title-cases the rest.
+    """
+    text = col[3:] if col.startswith("gk_") else col
+    text = text.replace("_", " ").title()
+    return "Player" if text == "Player Name" else text
+
+
 def abbreviate_name(full_name: str) -> str:
     """'Bukayo Saka' -> 'B. Saka'. Splits on the first space only, so
     multi-word surnames ('Kevin De Bruyne' -> 'K. De Bruyne') stay intact.

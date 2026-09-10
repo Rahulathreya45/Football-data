@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 
+from utils import humanize_column
 from data.queries import (
     get_team_match_performance,
     get_player_match_performance,
@@ -20,12 +21,6 @@ GOALKEEPER_COLUMNS = [
     "player_name", "minutes_played",
     "gk_shots_on_target_against", "gk_goals_against", "gk_saves", "gk_save_pct",
 ]
-
-
-def _humanize(col: str) -> str:
-    text = col[3:] if col.startswith("gk_") else col
-    text = text.replace("_", " ").title()
-    return "Player" if text == "Player Name" else text
 
 
 def _fmt(val, fmt: str) -> str:
@@ -178,12 +173,12 @@ def _render_team_table(df: pd.DataFrame, team_id: int, columns: list, sort_by: s
     if sort_by and sort_by in team_df.columns:
         team_df = team_df.sort_values(sort_by)
 
-    team_df.columns = [_humanize(c) for c in team_df.columns]
+    team_df.columns = [humanize_column(c) for c in team_df.columns]
     st.dataframe(team_df, hide_index=True, use_container_width=True)
 
 
 def render_player_stats_tab(match: pd.Series):
-    view = st.selectbox("Show", ["Players", "Goalkeepers"])
+    view = st.selectbox("Show", ["Players", "Goalkeepers"], width=200)
 
     match_id = int(match["match_id"])
     home_id = int(match["home_team_id"])

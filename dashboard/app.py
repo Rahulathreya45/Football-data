@@ -13,11 +13,12 @@ load_css()
 
 matches_page = st.Page("views/home_matches.py", title="Matches", icon="⚽", default=True)
 match_detail_page = st.Page("views/match_detail.py", title="Match Detail", icon="📋")
+teams_list_page = st.Page("views/teams_list.py", title="Teams", icon="🏟️")
 team_page = st.Page("views/team.py", title="Team", icon="🏟️")
 standings_page = st.Page("views/standings.py", title="Standings", icon="🏆")
 
 pg = st.navigation(
-    [matches_page, standings_page, match_detail_page, team_page],
+    [matches_page, standings_page, match_detail_page, teams_list_page, team_page],
     position="hidden",
 )
 

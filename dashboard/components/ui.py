@@ -11,7 +11,7 @@ def render_header(title: str, seasons_df: pd.DataFrame = None, selected_season_i
 
     Returns the selected season_id if seasons_df was passed, else None.
     """
-    c_title, c_dropdown, c_spacer, c_nav1, c_nav2 = st.columns([2, 2, 4, 1, 1])
+    c_title, c_dropdown, c_spacer, c_nav1, c_nav2, c_nav3 = st.columns([2, 2, 3, 1, 1, 1])
 
     new_season_id = selected_season_id
 
@@ -36,6 +36,8 @@ def render_header(title: str, seasons_df: pd.DataFrame = None, selected_season_i
     with c_nav1:
         st.page_link("views/home_matches.py", label="Matches", icon="⚽")
     with c_nav2:
+        st.page_link("views/teams_list.py", label="Teams", icon="🏟️")
+    with c_nav3:
         st.page_link("views/standings.py", label="Standings", icon="🏆")
 
     st.markdown("<hr class='navbar-divider'>", unsafe_allow_html=True)
@@ -78,7 +80,8 @@ def render_match_card(row, season_id):
 
         with c1:
             _render_team(
-                row["home_team_crest"], row["home_team_name"], align="right",
+                row["home_team_crest"], row["home_team_name"], row["home_team_id"],
+                row["match_id"], season_id, side="home",
                 is_winner=(winner == "HOME_TEAM"),
             )
 
@@ -91,7 +94,8 @@ def render_match_card(row, season_id):
 
         with c3:
             _render_team(
-                row["away_team_crest"], row["away_team_name"], align="left",
+                row["away_team_crest"], row["away_team_name"], row["away_team_id"],
+                row["match_id"], season_id, side="away",
                 is_winner=(winner == "AWAY_TEAM"),
             )
 
@@ -113,17 +117,41 @@ def render_match_card(row, season_id):
         st.caption(f"📅 {format_match_date(row['match_date'])}{gw_txt}")
 
 
-def _render_team(crest_url, name, align, is_winner=False):
-    crest_html = (
-        f"<img src='{crest_url}' width='22' style='vertical-align:middle;margin:0 6px;'>"
-        if crest_url else ""
+def _render_team(crest_url, name, team_id, match_id, season_id, side, is_winner=False):
+    key = f"teamlink_{match_id}_{side}"
+    color = "var(--accent)" if is_winner else "inherit"
+    justify = "flex-end" if side == "home" else "flex-start"
+    st.markdown(
+        f"<style>"
+        f".st-key-{key} button {{ font-size: 1.05rem; font-weight: 600; "
+        f"color: {color} !important; justify-content: {justify}; }}"
+        f".st-key-{key} button img {{ width: 22px; height: 22px; object-fit: contain; "
+        f"vertical-align: middle; margin: 0 6px; }}"
+        f"</style>",
+        unsafe_allow_html=True,
     )
-    winner_class = " winner" if is_winner else ""
-    if align == "right":
-        html = f"<div class='team-name right{winner_class}'>{name}{crest_html}</div>"
-    else:
-        html = f"<div class='team-name left{winner_class}'>{crest_html}{name}</div>"
-    st.markdown(html, unsafe_allow_html=True)
+    label = f"![]({crest_url}) {name}" if crest_url else name
+    if st.button(label, key=key, type="tertiary", width="stretch"):
+        st.switch_page(
+            "views/team.py",
+            query_params={"team_id": str(team_id), "season_id": str(season_id)},
+        )
+
+
+def render_team_grid_card(row, season_id):
+    with st.container(border=True):
+        st.markdown(
+            "<div style='text-align:center;'>"
+            f"<img src='{row.get('team_crest', '')}' style='width:52px;height:52px;object-fit:contain;'>"
+            f"<div style='font-weight:700;margin-top:8px;font-size:0.88rem;'>{row['team_name']}</div>"
+            "</div>",
+            unsafe_allow_html=True,
+        )
+        if st.button("View", key=f"teamcard_{row['team_id']}", use_container_width=True):
+            st.switch_page(
+                "views/team.py",
+                query_params={"team_id": str(row["team_id"]), "season_id": str(season_id)},
+            )
 
 
 def render_score_header(match: pd.Series):
