@@ -77,3 +77,9 @@ Completed team and players season stats
 
 Day 24 - 10-09-2026
 completed searching for soureces for live data ingestion
+
+Day 25 - 19-09-2026
+streamed the data from source to kafka
+
+Day 26 - 21-09-2026
+created the table structure and updated the streaming architercture 
