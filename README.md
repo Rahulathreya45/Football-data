@@ -83,3 +83,6 @@ streamed the data from source to kafka
 
 Day 26 - 21-09-2026
 created the table structure and updated the streaming architercture 
+
+Day 27 -22-09-2026
+did the data analysis and noticed the pattrens for bulding the dynamoDB/Delta 
