@@ -15,6 +15,7 @@ from data.queries import (
 )
 from data.db import DataSourceError
 from data.live import find_live_match_id, get_live_match_data
+from data.live_history import get_match_flow
 from utils import parse_int
 
 BACK_PAGE, BACK_LABEL = "views/home_matches.py", "Back to matches"
@@ -86,7 +87,15 @@ if show_live:
             except DataSourceError as e:
                 live_error = e
         if live is not None:
-            render_live_tab(match, live)
+            # History for Match flow / Leaderboard / halves lives in S3; if it
+            # can't be read, only those parts of the tab show an error.
+            flow, flow_error = None, None
+            try:
+                with st.spinner("Loading match history..."):
+                    flow = get_match_flow(live_match_id, match["match_date"])
+            except DataSourceError as e:
+                flow_error = e
+            render_live_tab(match, live, flow, flow_error)
         else:
             st.warning(
                 "Couldn't load the live feed right now. The live data store may be "

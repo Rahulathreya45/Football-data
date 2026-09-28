@@ -1,6 +1,6 @@
 import pandas as pd
 
-from config import TABLES
+from config import TABLES, LIVE_DELTA_TS_ZONE
 from data.db import run_query
 
 def get_seasons() -> pd.DataFrame:
@@ -237,3 +237,57 @@ def get_match_keys() -> pd.DataFrame:
         FROM delta_scan('{TABLES["fact_match_summary"]}')
     """
     return run_query(sql)
+
+
+# ---------------------------------------------------------------- live feed history (S3 Delta)
+# event_ts in live_delta is the feed's UTC clock stored as LIVE_DELTA_TS_ZONE
+# time; reading it back as that zone's wall clock and re-labelling it UTC
+# gives the real instant.
+_LIVE_TS = f"timezone('UTC', timezone('{LIVE_DELTA_TS_ZONE}', event_ts))"
+
+
+def get_live_team_stats_history(live_match_id: int) -> pd.DataFrame:
+    """Every team-stats snapshot the live feed sent for a match (cumulative,
+    full-match values), one row per side per message."""
+    sql = f"""
+        SELECT side, {_LIVE_TS} AS event_ts, kafka_offset,
+               possession, xg, big_chances, shots_total, shots_off_target, saves,
+               passes, passes_accurate, fouls, tackles, interceptions, clearances,
+               recoveries, touches_opp_box, final_third_entries, duels_won_pct
+        FROM delta_scan('{TABLES["live_team_stats"]}')
+        WHERE match_id = ?
+        ORDER BY event_ts, side
+    """
+    return run_query(sql, (live_match_id,))
+
+
+def get_live_player_stats_history(live_match_id: int) -> pd.DataFrame:
+    """Every lineup snapshot for a match: each player's cumulative stats per message."""
+    sql = f"""
+        SELECT side, player_name, shirt_number, is_sub, position,
+               {_LIVE_TS} AS event_ts, kafka_offset,
+               minutes, touches, passes, passes_accurate, shots, xg, xa,
+               duels_won, duels_lost, recoveries, clearances
+        FROM delta_scan('{TABLES["live_lineups"]}')
+        WHERE match_id = ?
+        ORDER BY event_ts
+    """
+    return run_query(sql, (live_match_id,))
+
+
+def get_live_incident_first_seen(live_match_id: int) -> pd.DataFrame:
+    """When each incident (and each added-time board, with its length) first
+    reached the feed, with its match minute - the anchors for turning clock
+    time into match minutes."""
+    sql = f"""
+        SELECT 'goal' AS kind, id, time, NULL AS length, min({_LIVE_TS}) AS first_seen FROM delta_scan('{TABLES["live_goals"]}') WHERE match_id = ? GROUP BY ALL
+        UNION ALL
+        SELECT 'card', id, time, NULL, min({_LIVE_TS}) FROM delta_scan('{TABLES["live_cards"]}') WHERE match_id = ? GROUP BY ALL
+        UNION ALL
+        SELECT 'sub', id, time, NULL, min({_LIVE_TS}) FROM delta_scan('{TABLES["live_subs"]}') WHERE match_id = ? GROUP BY ALL
+        UNION ALL
+        SELECT 'var', id, time, NULL, min({_LIVE_TS}) FROM delta_scan('{TABLES["live_var_decisions"]}') WHERE match_id = ? GROUP BY ALL
+        UNION ALL
+        SELECT 'injury', NULL, time, max(length), min({_LIVE_TS}) FROM delta_scan('{TABLES["live_injury_time"]}') WHERE match_id = ? GROUP BY time
+    """
+    return run_query(sql, (live_match_id,) * 5)

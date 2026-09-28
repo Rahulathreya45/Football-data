@@ -109,9 +109,7 @@ def render_team_lineup(team_df: pd.DataFrame, team_name: str, crest_url: str):
         st.markdown("<div class='subs-label'>Substitutes</div>", unsafe_allow_html=True)
         for _, srow in subs.iterrows():
             num = int(srow["jersey_number"]) if pd.notna(srow["jersey_number"]) else "-"
-            # Unused subs have no position in the FBref lineup.
-            pos = f" ({_primary_position(srow['position'])})" if pd.notna(srow["position"]) and srow["position"] else ""
-            st.caption(f"{num} · {srow['player_name']}{pos}")
+            st.caption(f"{num} · {srow['player_name']}")
 
 
 def render_lineups_tab(match: pd.Series, lineups_df: pd.DataFrame):

@@ -398,3 +398,17 @@ div[data-testid="stVerticalBlockBorderWrapper"]:hover {
 [data-testid="stSpinner"] {
     padding: 1.5rem 0;
 }
+
+/* Live tab summary cards (components/live.py _render_summary): centred. */
+.st-key-live_summary [data-testid="stMetric"] {
+    text-align: center;
+}
+.st-key-live_summary [data-testid="stMetricLabel"],
+.st-key-live_summary [data-testid="stMetricValue"] {
+    justify-content: center;
+}
+
+/* Pagination page picker (components/ui.py render_pagination): centre the number. */
+[class*="st-key-page_jump_"] input {
+    text-align: center;
+}

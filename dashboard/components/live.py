@@ -5,8 +5,10 @@ import streamlit as st
 
 from components.events import render_card_row, render_sub_row, render_time_marker
 from components.lineups import render_team_lineup
+from components.live_flow import render_leaderboard, render_match_flow
 from components.stats import render_stat_bar
 from components.ui import render_goal_row
+from data.live_history import split_halves
 from utils import format_minute
 
 # sportsapipro positions are just G/D/M/F; the shared lineup renderer
@@ -73,6 +75,18 @@ def _minute(value):
     return int(value) if pd.notna(value) else None
 
 
+# A VAR decision the review didn't confirm was overturned.
+_OVERTURNED = {"goalAwarded": "Goal disallowed", "penaltyAwarded": "Penalty overturned"}
+
+
+def _var_label(incident_class, confirmed) -> str:
+    """'goalAwarded' + confirmed=False -> 'Goal disallowed'; otherwise the
+    humanized class ('goalAwarded' -> 'Goal awarded')."""
+    if incident_class in _OVERTURNED and confirmed is not None and pd.notna(confirmed) and not bool(confirmed):
+        return _OVERTURNED[incident_class]
+    return _humanize_class(incident_class)
+
+
 def _humanize_class(value) -> str:
     """'goalAwarded' -> 'Goal awarded'."""
     words = re.sub(r"(?<!^)(?=[A-Z])", " ", str(value or "")).lower()
@@ -107,7 +121,7 @@ def _render_summary(live: dict):
     home_score, away_score = _feed_score(live["goals"])
     home, away = _side_stats(live["stats"], "home"), _side_stats(live["stats"], "away")
 
-    with st.container(horizontal=True):
+    with st.container(horizontal=True, key="live_summary"):
         st.metric("Score (live feed)", f"{home_score} - {away_score}", border=True)
         if not home.empty and not away.empty:
             st.metric("xG", f"{home.get('xg', 0):.2f} - {away.get('xg', 0):.2f}", border=True)
@@ -142,7 +156,7 @@ def _timeline_events(live: dict) -> list[dict]:
     for _, v in live["var"].iterrows():
         events.append(dict(
             kind="var", time=_minute(v.get("time")), id=v.get("id"), side=v.get("side"),
-            minute=_minute(v.get("time")), label=_humanize_class(v.get("incident_class")),
+            minute=_minute(v.get("time")), label=_var_label(v.get("incident_class"), v.get("confirmed")),
         ))
     return sorted(events, key=lambda e: (e["time"] or 0, _KIND_ORDER[e["kind"]], e["id"] or 0))
 
@@ -199,11 +213,33 @@ def _render_timeline(live: dict):
 
 
 # ---------------------------------------------------------------- team stats
-def _render_team_stats(live: dict, match: pd.Series):
-    home, away = _side_stats(live["stats"], "home"), _side_stats(live["stats"], "away")
+PERIODS = ["Full match", "1st half", "2nd half"]
+
+
+def _render_team_stats(live: dict, match: pd.Series, halves: dict | None):
+    """halves (data/live_history.split_halves) is only passed once the match
+    has finished; it adds the 1st/2nd-half filter."""
+    period = "Full match"
+    if halves is not None:
+        period = st.segmented_control(
+            "Period", PERIODS, default="Full match", key="live_team_stats_period",
+            label_visibility="collapsed",
+        ) or "Full match"
+
+    if period == "Full match":
+        home, away = _side_stats(live["stats"], "home"), _side_stats(live["stats"], "away")
+    else:
+        half = halves["1st" if period == "1st half" else "2nd"]
+        home = half.loc["home"] if "home" in half.index else pd.Series(dtype=object)
+        away = half.loc["away"] if "away" in half.index else pd.Series(dtype=object)
     if home.empty or away.empty:
         st.caption("The live feed has no team stats for this match.")
         return
+    if period != "Full match":
+        st.caption(
+            "Split from the feed's snapshots at half-time. Counts are exact; "
+            "2nd-half possession is an estimate."
+        )
 
     c1, c2 = st.columns(2)
     with c1:
@@ -278,18 +314,44 @@ def _render_player_stats(live: dict, match: pd.Series):
     st.caption("Players who got on the pitch. xG/xA: expected goals/assists.")
 
 
-def render_live_tab(match: pd.Series, live: dict):
-    """Live tab on Match Detail: what the v2 live feed captured for this
-    match (data/live.py get_live_match_data), in sub-tabs."""
+def _flow_unavailable(error: Exception):
+    st.warning(
+        "Couldn't load the match history right now - please try again in a moment.",
+        icon=":material/cloud_off:",
+    )
+    with st.expander("Error details"):
+        st.exception(error)
+
+
+def render_live_tab(match: pd.Series, live: dict, flow: dict | None, flow_error: Exception | None = None):
+    """Live tab on Match Detail, in sub-tabs. `live` is the latest state
+    (DynamoDB, data/live.py); `flow` is the message history (S3 Delta,
+    data/live_history.py) behind Match flow, Leaderboard and the half filter."""
     _render_summary(live)
 
-    tab_timeline, tab_stats, tab_lineups, tab_players = st.tabs(
-        ["Timeline", "Team stats", "Lineups", "Player stats"]
+    finished = pd.notna(match.get("full_time_home_team_score")) or (
+        flow is not None and not flow["team"].empty
+        and flow["team"]["half"].max() == 2 and flow["team"]["minute"].max() >= 90
+    )
+    halves = split_halves(flow) if flow is not None and finished else None
+
+    tab_timeline, tab_flow, tab_stats, tab_board, tab_lineups, tab_players = st.tabs(
+        ["Timeline", "Match flow", "Team stats", "Leaderboard", "Lineups", "Player stats"]
     )
     with tab_timeline:
         _render_timeline(live)
+    with tab_flow:
+        if flow is None:
+            _flow_unavailable(flow_error)
+        else:
+            render_match_flow(flow, live, match)
     with tab_stats:
-        _render_team_stats(live, match)
+        _render_team_stats(live, match, halves)
+    with tab_board:
+        if flow is None:
+            _flow_unavailable(flow_error)
+        else:
+            render_leaderboard(flow, match)
     with tab_lineups:
         _render_lineups(live, match)
     with tab_players:

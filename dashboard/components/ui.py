@@ -68,11 +68,21 @@ def render_pagination(current_page: int, total_pages: int):
             st.query_params["page"] = str(current_page - 1)
             st.rerun()
     with col2:
-        st.markdown(
-            f"<div style='text-align:center;padding-top:8px;color:var(--text-muted);'>"
-            f"Page {current_page} of {total_pages}</div>",
-            unsafe_allow_html=True,
-        )
+        # Jump straight to a page. The key includes the current page so the
+        # box always shows it (e.g. after Next/Previous or browser back).
+        def _jump(key):
+            st.query_params["page"] = str(st.session_state[key])
+
+        key = f"page_jump_{current_page}_{total_pages}"
+        with st.container(horizontal=True, horizontal_alignment="center", vertical_alignment="center"):
+            st.selectbox(
+                "Page", options=list(range(1, total_pages + 1)), index=current_page - 1,
+                key=key, on_change=_jump, args=(key,), label_visibility="collapsed", width=90,
+            )
+            st.markdown(
+                f"<span style='color:var(--text-muted);'>of {total_pages}</span>",
+                unsafe_allow_html=True, width="content",
+            )
     with col3:
         if current_page < total_pages and st.button("Next →", width="stretch"):
             st.query_params["page"] = str(current_page + 1)
