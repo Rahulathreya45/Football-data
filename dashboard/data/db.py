@@ -20,6 +20,32 @@ def _has_deployed_secrets() -> bool:
         return False
 
 
+def _login_hint() -> str:
+    return (
+        f"Could not obtain AWS credentials for profile "
+        f"'{AWS_PROFILE}'. Make sure you have logged in with "
+        f"'aws sso login --profile \"{AWS_PROFILE}\"'."
+    )
+
+
+@st.cache_resource(show_spinner=False)
+def get_aws_session() -> boto3.Session:
+    """boto3 session shared by everything that talks to AWS directly (the
+    DuckDB S3 secret below, DynamoDB in data/live.py). Same two auth paths:
+    deployed reads st.secrets["aws"], local reads the AWS_PROFILE SSO profile."""
+    if _has_deployed_secrets():
+        aws = st.secrets["aws"]
+        return boto3.Session(
+            aws_access_key_id=aws["access_key_id"],
+            aws_secret_access_key=aws["secret_access_key"],
+            region_name=S3_REGION,
+        )
+    try:
+        return boto3.Session(profile_name=AWS_PROFILE, region_name=S3_REGION)
+    except (BotoCoreError, ClientError) as e:
+        raise DataSourceError(f"{_login_hint()} ({e})") from e
+
+
 @st.cache_resource(show_spinner="Connecting to the data warehouse...")
 def get_connection() -> duckdb.DuckDBPyConnection:
     con = duckdb.connect(database=":memory:")
@@ -49,23 +75,14 @@ def get_connection() -> duckdb.DuckDBPyConnection:
         )
 
     else:
-        login_hint = (
-            f"Could not obtain AWS credentials for profile "
-            f"'{AWS_PROFILE}'. Make sure you have logged in with "
-            f"'aws sso login --profile \"{AWS_PROFILE}\"'."
-        )
         try:
-            session = boto3.Session(
-                profile_name=AWS_PROFILE,
-                region_name=S3_REGION,
-            )
-            credentials = session.get_credentials()
+            credentials = get_aws_session().get_credentials()
             if credentials is None:
-                raise DataSourceError(login_hint)
+                raise DataSourceError(_login_hint())
             # SSO tokens are resolved lazily here, so an expired login fails on this line.
             frozen_credentials = credentials.get_frozen_credentials()
         except (BotoCoreError, ClientError) as e:
-            raise DataSourceError(f"{login_hint} ({e})") from e
+            raise DataSourceError(f"{_login_hint()} ({e})") from e
 
         # Temporary credentials returned by AWS SSO.
         if frozen_credentials.token:

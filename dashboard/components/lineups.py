@@ -88,7 +88,10 @@ def _render_formation_rows(starters: pd.DataFrame, formation: str):
                 _player_card(prow)
 
 
-def _render_team_column(team_df: pd.DataFrame, team_name: str, crest_url: str):
+def render_team_lineup(team_df: pd.DataFrame, team_name: str, crest_url: str):
+    """One team's formation label, pitch rows and substitutes. Shared with
+    the Live tab; team_df needs team_formation, is_starter, position (FBref
+    codes like GK/CB/DM), jersey_number and player_name."""
     formation = team_df["team_formation"].dropna()
     formation = formation.iloc[0] if not formation.empty else ""
 
@@ -106,7 +109,9 @@ def _render_team_column(team_df: pd.DataFrame, team_name: str, crest_url: str):
         st.markdown("<div class='subs-label'>Substitutes</div>", unsafe_allow_html=True)
         for _, srow in subs.iterrows():
             num = int(srow["jersey_number"]) if pd.notna(srow["jersey_number"]) else "-"
-            st.caption(f"{num} · {srow['player_name']} ({_primary_position(srow['position'])})")
+            # Unused subs have no position in the FBref lineup.
+            pos = f" ({_primary_position(srow['position'])})" if pd.notna(srow["position"]) and srow["position"] else ""
+            st.caption(f"{num} · {srow['player_name']}{pos}")
 
 
 def render_lineups_tab(match: pd.Series, lineups_df: pd.DataFrame):
@@ -120,7 +125,7 @@ def render_lineups_tab(match: pd.Series, lineups_df: pd.DataFrame):
     c1, c2 = st.columns(2)
     with c1:
         with st.container(border=True):
-            _render_team_column(home_df, match["home_team_name"], match.get("home_team_crest", ""))
+            render_team_lineup(home_df, match["home_team_name"], match.get("home_team_crest", ""))
     with c2:
         with st.container(border=True):
-            _render_team_column(away_df, match["away_team_name"], match.get("away_team_crest", ""))
+            render_team_lineup(away_df, match["away_team_name"], match.get("away_team_crest", ""))

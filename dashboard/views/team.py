@@ -3,6 +3,7 @@ import streamlit as st
 from components.ui import render_header, render_match_card, render_pagination, render_invalid_link
 from components.team_stats import render_team_season_stats_tab, render_team_players_season_tab
 from data.queries import get_team, get_seasons, get_team_matches, get_team_matches_count
+from data.live import recorded_match_ids
 from config import MATCHES_PER_PAGE
 from utils import parse_int
 
@@ -56,9 +57,10 @@ with tab_matches:
             page = min(page, total_pages)
 
             matches_df = get_team_matches(team_id, season_id, page=page, page_size=MATCHES_PER_PAGE)
+            live_ids = recorded_match_ids()
         st.caption(f"{total} matches this season")
         for _, row in matches_df.iterrows():
-            render_match_card(row, season_id=season_id)
+            render_match_card(row, season_id=season_id, has_live=row["match_id"] in live_ids)
         render_pagination(page, total_pages)
 
 with tab_team_stats:

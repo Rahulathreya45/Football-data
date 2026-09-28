@@ -87,26 +87,10 @@ def get_match_subs(match_id: int) -> pd.DataFrame:
     return run_query(sql, (match_id,))
 
 def get_team_match_performance(match_id: int) -> pd.DataFrame:
-    # WORKAROUND - remove once the Databricks gold job is fixed: in
-    # fact_team_match_performance every team's row carries its OPPONENT's
-    # stats and captain (only the formation columns are right), e.g. Arsenal
-    # 3-0 Coventry has Arsenal with 0 goals and Coventry's captain. Take the
-    # stats/captain from the other team's row; keep ids + formations.
-    # Once the ETL is fixed this would swap them back wrong - revert to a
-    # plain SELECT *.
     sql = f"""
-        WITH perf AS (
-            SELECT *
-            FROM delta_scan('{TABLES["fact_team_match_performance"]}')
-            WHERE match_id = ?
-        )
-        SELECT
-            own.match_id, own.team_id, own.season_id,
-            own.team_formation, own.opponent_formation,
-            opp.* EXCLUDE (match_id, team_id, season_id, team_formation, opponent_formation)
-        FROM perf AS own
-        JOIN perf AS opp
-          ON opp.match_id = own.match_id AND opp.team_id <> own.team_id
+        SELECT *
+        FROM delta_scan('{TABLES["fact_team_match_performance"]}')
+        WHERE match_id = ?
     """
     return run_query(sql, (match_id,))
 
@@ -233,3 +217,23 @@ def get_match_lineups(match_id: int) -> pd.DataFrame:
         WHERE l.match_id = ?
     """
     return run_query(sql, (match_id,))
+
+def get_team_sports_api_ids() -> pd.DataFrame:
+    """dim_team's team_id <-> sportsapipro team id, for mapping the live feed
+    (which only knows sportsapipro ids) onto dashboard teams."""
+    sql = f"""
+        SELECT team_id, sports_api_pro_team_id
+        FROM delta_scan('{TABLES["dim_team"]}')
+        WHERE sports_api_pro_team_id IS NOT NULL
+    """
+    return run_query(sql)
+
+
+def get_match_keys() -> pd.DataFrame:
+    """Every match's teams and kickoff, all seasons - the live-feed mapping
+    finds a dashboard match by (home team, away team, date)."""
+    sql = f"""
+        SELECT match_id, home_team_id, away_team_id, match_date
+        FROM delta_scan('{TABLES["fact_match_summary"]}')
+    """
+    return run_query(sql)

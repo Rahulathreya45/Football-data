@@ -5,6 +5,7 @@ from components.ui import render_header, render_score_header, render_goals_secti
 from components.lineups import render_lineups_tab
 from components.events import render_events_tab
 from components.stats import render_stats_tab
+from components.live import render_live_tab
 from data.queries import (
     get_match,
     get_match_goals,
@@ -12,6 +13,8 @@ from data.queries import (
     get_match_cards,
     get_match_subs,
 )
+from data.db import DataSourceError
+from data.live import find_live_match_id, get_live_match_data
 from utils import parse_int
 
 BACK_PAGE, BACK_LABEL = "views/home_matches.py", "Back to matches"
@@ -45,7 +48,19 @@ with st.spinner("Loading goals..."):
     goals_df = get_match_goals(match_id)
 render_goals_section(match, goals_df)
 
-tab_lineups, tab_events, tab_stats = st.tabs(["Lineups", "Events", "Stats"])
+# The Live tab only appears for matches whose live feed was recorded. If
+# DynamoDB can't be reached we can't tell, so show the tab with the error
+# rather than fail the whole page.
+live_match_id, live_error = None, None
+try:
+    with st.spinner("Checking for a live feed..."):
+        live_match_id = find_live_match_id(match_id)
+except DataSourceError as e:
+    live_error = e
+show_live = live_match_id is not None or live_error is not None
+
+tab_labels = ["Lineups", "Events", "Stats"] + (["Live"] if show_live else [])
+tab_lineups, tab_events, tab_stats, *tab_live = st.tabs(tab_labels)
 
 with tab_lineups:
     with st.spinner("Loading lineups..."):
@@ -60,3 +75,23 @@ with tab_events:
 
 with tab_stats:
     render_stats_tab(match)
+
+if show_live:
+    with tab_live[0]:
+        live = None
+        if live_error is None:
+            try:
+                with st.spinner("Loading live feed..."):
+                    live = get_live_match_data(live_match_id)
+            except DataSourceError as e:
+                live_error = e
+        if live is not None:
+            render_live_tab(match, live)
+        else:
+            st.warning(
+                "Couldn't load the live feed right now. The live data store may be "
+                "unreachable - please try again in a moment.",
+                icon=":material/cloud_off:",
+            )
+            with st.expander("Error details"):
+                st.exception(live_error)

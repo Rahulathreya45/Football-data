@@ -79,10 +79,11 @@ def render_pagination(current_page: int, total_pages: int):
             st.rerun()
 
 
-def render_match_card(row, season_id):
+def render_match_card(row, season_id, has_live=False):
     """The whole card is clickable: an invisible button (key matchopen_*) is
     stretched over the bordered container by the rules in theme.css and
-    opens Match Detail - for scheduled matches too."""
+    opens Match Detail - for scheduled matches too. has_live adds a badge
+    for matches whose v2 live feed was recorded."""
     match_id = row["match_id"]
     played = pd.notna(row["full_time_home_team_score"])
 
@@ -105,7 +106,8 @@ def render_match_card(row, season_id):
         gw = row.get("gameweek")
         gw_txt = f" · Gameweek {int(gw)}" if pd.notna(gw) else ""
         status = "Full time" if played else "Scheduled"
-        st.caption(f"📅 {format_match_date(row['match_date'])}{gw_txt} · {status}")
+        live_txt = " · :red-badge[:material/sensors: Live feed]" if has_live else ""
+        st.caption(f"📅 {format_match_date(row['match_date'])}{gw_txt} · {status}{live_txt}")
 
         if st.button("Open match", key=f"matchopen_{match_id}"):
             st.switch_page(
@@ -252,7 +254,7 @@ def render_goal_row(row, align: str = "left"):
     icon_html = f"<img src='{icon_uri}'>" if icon_uri else fallback
 
     minute_txt = format_minute(row["minute"])
-    scorer = row["scorer"]
+    scorer = row["scorer"] if pd.notna(row["scorer"]) and str(row["scorer"]).strip() else "Unknown player"
     tag_html = f" <span class='goal-tag'>({tag})</span>" if tag else ""
 
     assist = row.get("assist")

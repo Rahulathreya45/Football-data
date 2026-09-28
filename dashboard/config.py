@@ -27,3 +27,8 @@ TABLES = {
 }
 
 MATCHES_PER_PAGE = 10
+
+# v2 live feed: DynamoDB table written by live/consumer/kafka_to_dynamo.py
+# (same env vars as the live/ scripts).
+LIVE_MATCH_TABLE = os.getenv("LIVE_MATCH_TABLE", "live_match_state")
+LIVE_REGION = os.getenv("AWS_REGION", S3_REGION)
