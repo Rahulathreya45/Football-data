@@ -86,3 +86,15 @@ created the table structure and updated the streaming architercture
 
 Day 27 -22-09-2026
 did the data analysis and noticed the pattrens for bulding the dynamoDB/Delta 
+
+Day 28 - 23-09-2026
+built the dynamoDB pipline
+
+Day 30 - 24-09-2026
+Built the s3 pipline
+
+Day 31 - 25-09-2026
+dashboard integration started
+
+Day 32 - 28-09-2026
+Dashboard Integration completed
