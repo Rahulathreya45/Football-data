@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 
+from data.db import DataSourceError
 from utils import minute_sort_key, format_minute, asset_data_uri
 
 
@@ -10,6 +11,8 @@ def render_header(title: str, seasons_df: pd.DataFrame = None, selected_season_i
     the season picker (currently just the Matches/home page).
 
     Returns the selected season_id if seasons_df was passed, else None.
+    The season is kept in the season_id query param only once the user
+    changes it; without one the latest season is shown.
     """
     c_title, c_dropdown, c_spacer, c_nav1, c_nav2, c_nav3 = st.columns([2, 2, 3, 1, 1, 1])
 
@@ -19,7 +22,7 @@ def render_header(title: str, seasons_df: pd.DataFrame = None, selected_season_i
         st.markdown(f"<div class='page-title'>{title}</div>", unsafe_allow_html=True)
 
     with c_dropdown:
-        if seasons_df is not None:
+        if seasons_df is not None and not seasons_df.empty:
             options = dict(zip(seasons_df["season_name"], seasons_df["season_id"]))
             names = list(options.keys())
             default_index = 0
@@ -32,6 +35,11 @@ def render_header(title: str, seasons_df: pd.DataFrame = None, selected_season_i
                 "Season", names, index=default_index, label_visibility="collapsed",
             )
             new_season_id = options[chosen_name]
+            # Only write the URL when the user picks a different season:
+            # rewriting it on every run adds a browser-history entry each
+            # time and breaks the back button (see fix_history_navigation).
+            if new_season_id != list(options.values())[default_index]:
+                st.query_params["season_id"] = str(new_season_id)
 
     with c_nav1:
         st.page_link("views/home_matches.py", label="Matches", icon="⚽")
@@ -56,7 +64,7 @@ def format_match_date(raw) -> str:
 def render_pagination(current_page: int, total_pages: int):
     col1, col2, col3 = st.columns([1, 2, 1])
     with col1:
-        if current_page > 1 and st.button("← Previous", use_container_width=True):
+        if current_page > 1 and st.button("← Previous", width="stretch"):
             st.query_params["page"] = str(current_page - 1)
             st.rerun()
     with col2:
@@ -66,24 +74,23 @@ def render_pagination(current_page: int, total_pages: int):
             unsafe_allow_html=True,
         )
     with col3:
-        if current_page < total_pages and st.button("Next →", use_container_width=True):
+        if current_page < total_pages and st.button("Next →", width="stretch"):
             st.query_params["page"] = str(current_page + 1)
             st.rerun()
 
 
 def render_match_card(row, season_id):
-    with st.container(border=True):
-        c1, c2, c3, c4 = st.columns([4, 2, 4, 2])
+    """The whole card is clickable: an invisible button (key matchopen_*) is
+    stretched over the bordered container by the rules in theme.css and
+    opens Match Detail - for scheduled matches too."""
+    match_id = row["match_id"]
+    played = pd.notna(row["full_time_home_team_score"])
 
-        played = pd.notna(row["full_time_home_team_score"])
-        winner = row.get("winner")
+    with st.container(border=True, key=f"matchcard_{match_id}"):
+        c1, c2, c3 = st.columns([4, 2, 4], vertical_alignment="center")
 
         with c1:
-            _render_team(
-                row["home_team_crest"], row["home_team_name"], row["home_team_id"],
-                row["match_id"], season_id, side="home",
-                is_winner=(winner == "HOME_TEAM"),
-            )
+            _render_team(row["home_team_crest"], row["home_team_name"], side="home")
 
         with c2:
             if played:
@@ -93,49 +100,30 @@ def render_match_card(row, season_id):
             st.markdown(f"<div class='score-pill'>{score}</div>", unsafe_allow_html=True)
 
         with c3:
-            _render_team(
-                row["away_team_crest"], row["away_team_name"], row["away_team_id"],
-                row["match_id"], season_id, side="away",
-                is_winner=(winner == "AWAY_TEAM"),
-            )
-
-        with c4:
-            if played:
-                if st.button("Details →", key=f"match_{row['match_id']}", use_container_width=True):
-                    st.switch_page(
-                        "views/match_detail.py",
-                        query_params={"match_id": str(row["match_id"]), "season_id": str(season_id)},
-                    )
-            else:
-                st.button(
-                    "Scheduled", key=f"match_{row['match_id']}",
-                    use_container_width=True, disabled=True,
-                )
+            _render_team(row["away_team_crest"], row["away_team_name"], side="away")
 
         gw = row.get("gameweek")
         gw_txt = f" · Gameweek {int(gw)}" if pd.notna(gw) else ""
-        st.caption(f"📅 {format_match_date(row['match_date'])}{gw_txt}")
+        status = "Full time" if played else "Scheduled"
+        st.caption(f"📅 {format_match_date(row['match_date'])}{gw_txt} · {status}")
+
+        if st.button("Open match", key=f"matchopen_{match_id}"):
+            st.switch_page(
+                "views/match_detail.py",
+                query_params={"match_id": str(match_id), "season_id": str(season_id)},
+            )
 
 
-def _render_team(crest_url, name, team_id, match_id, season_id, side, is_winner=False):
-    key = f"teamlink_{match_id}_{side}"
-    color = "var(--accent)" if is_winner else "inherit"
-    justify = "flex-end" if side == "home" else "flex-start"
+def _render_team(crest_url, name, side):
+    crest = f"<img src='{crest_url}' class='match-card-crest'>" if crest_url else ""
+    if side == "home":
+        inner = f"<span>{name}</span>{crest}"
+    else:
+        inner = f"{crest}<span>{name}</span>"
     st.markdown(
-        f"<style>"
-        f".st-key-{key} button {{ font-size: 1.05rem; font-weight: 600; "
-        f"color: {color} !important; justify-content: {justify}; }}"
-        f".st-key-{key} button img {{ width: 22px; height: 22px; object-fit: contain; "
-        f"vertical-align: middle; margin: 0 6px; }}"
-        f"</style>",
+        f"<div class='match-card-team {side}'>{inner}</div>",
         unsafe_allow_html=True,
     )
-    label = f"![]({crest_url}) {name}" if crest_url else name
-    if st.button(label, key=key, type="tertiary", width="stretch"):
-        st.switch_page(
-            "views/team.py",
-            query_params={"team_id": str(team_id), "season_id": str(season_id)},
-        )
 
 
 def render_team_grid_card(row, season_id):
@@ -147,27 +135,21 @@ def render_team_grid_card(row, season_id):
             "</div>",
             unsafe_allow_html=True,
         )
-        if st.button("View", key=f"teamcard_{row['team_id']}", use_container_width=True):
+        if st.button("View", key=f"teamcard_{row['team_id']}", width="stretch"):
             st.switch_page(
                 "views/team.py",
                 query_params={"team_id": str(row["team_id"]), "season_id": str(season_id)},
             )
 
 
-def render_score_header(match: pd.Series):
+def render_score_header(match: pd.Series, season_id=None):
     played = pd.notna(match.get("full_time_home_team_score"))
 
     with st.container(border=True):
         c1, c2, c3 = st.columns([4, 3, 4])
 
         with c1:
-            st.markdown(
-                f"<div class='score-team'>"
-                f"<img src='{match.get('home_team_crest', '')}' class='score-crest'>"
-                f"<div class='score-team-name'>{match['home_team_name']}</div>"
-                f"</div>",
-                unsafe_allow_html=True,
-            )
+            _render_score_team(match, "home", season_id)
 
         with c2:
             if played:
@@ -188,13 +170,7 @@ def render_score_header(match: pd.Series):
                 )
 
         with c3:
-            st.markdown(
-                f"<div class='score-team'>"
-                f"<img src='{match.get('away_team_crest', '')}' class='score-crest'>"
-                f"<div class='score-team-name'>{match['away_team_name']}</div>"
-                f"</div>",
-                unsafe_allow_html=True,
-            )
+            _render_score_team(match, "away", season_id)
 
         meta_bits = [format_match_date(match["match_date"])]
         if match.get("stadium"):
@@ -205,6 +181,55 @@ def render_score_header(match: pd.Series):
             f"<div class='match-meta'>{' · '.join(meta_bits)}</div>",
             unsafe_allow_html=True,
         )
+
+
+def _render_score_team(match: pd.Series, side: str, season_id):
+    """Crest + team name; clicking either opens the team page (the link is
+    stretched over the whole keyed container by theme.css). The match
+    winner's name is highlighted via the _win key suffix."""
+    query_params = {"team_id": str(int(match[f"{side}_team_id"]))}
+    if season_id is not None:
+        query_params["season_id"] = str(season_id)
+    is_winner = match.get("winner") == match.get(f"{side}_team_tla")
+    key = f"scoreteam_{side}_win" if is_winner else f"scoreteam_{side}"
+    with st.container(key=key):
+        st.markdown(
+            f"<div class='score-team'>"
+            f"<img src='{match.get(f'{side}_team_crest', '')}' class='score-crest'>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+        st.page_link(
+            "views/team.py",
+            label=match[f"{side}_team_name"],
+            query_params=query_params,
+            width="stretch",
+        )
+
+
+def render_error(error: Exception):
+    """Friendly error message used by the error boundary in app.py."""
+    if isinstance(error, DataSourceError):
+        st.error(
+            "Couldn't load data right now. The data store may be unreachable "
+            "- please try again in a moment.",
+            icon=":material/cloud_off:",
+        )
+    else:
+        st.error(
+            "An unexpected error happened while loading this page.",
+            icon=":material/error:",
+        )
+    with st.expander("Error details"):
+        st.exception(error)
+    st.page_link("views/home_matches.py", label="Back to matches", icon=":material/arrow_back:")
+
+
+def render_invalid_link(message: str, back_page: str, back_label: str):
+    """Guard for missing/invalid/unknown ids in the query string."""
+    st.error(message, icon=":material/link_off:")
+    st.page_link(back_page, label=back_label, icon=":material/arrow_back:")
+    st.stop()
 
 
 def _goal_icon_info(row) -> tuple:
@@ -255,7 +280,10 @@ def render_goals_section(match: pd.Series, goals_df: pd.DataFrame):
     st.markdown("<div class='section-header'>Goals</div>", unsafe_allow_html=True)
 
     if goals_df.empty:
-        st.caption("No goals in this match.")
+        if pd.notna(match.get("full_time_home_team_score")):
+            st.caption("No goals in this match.")
+        else:
+            st.caption("This match hasn't been played yet.")
         return
 
     goals_df = goals_df.copy()

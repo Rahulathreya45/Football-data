@@ -71,3 +71,11 @@ def asset_data_uri(filename: str) -> str:
     mime = _MIME_TYPES.get(path.suffix.lower(), "application/octet-stream")
     data = base64.b64encode(path.read_bytes()).decode()
     return f"data:{mime};base64,{data}"
+
+def parse_int(value, default=None):
+    """int(value), or default when value is missing or not an integer
+    (query params come straight from the URL, so anything can be there)."""
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default

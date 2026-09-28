@@ -156,3 +156,623 @@ ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,82’,2:3,Rodrigo Muniz
 ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,82’,2:3,Geovany Quenda,Morgan Rogers,substitute_in
 ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Chelsea,83’,2:3,Estêvão Willian,Cole Palmer,substitute_in
 ENG-Premier League,2627,2026-08-24 Fulham-Chelsea,Fulham,88’,2:3,Timothy Castagne,,yellow_card
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,17’,0:1,Erling Haaland,Antoine Semenyo,goal
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,33’,0:1,Rayan Cherki,,yellow_card
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,54’,0:2,Rayan Cherki,Phil Foden,goal
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,55’,0:2,Elliot Anderson,,yellow_card
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Crystal Palace,56’,1:2,Gianluigi Donnarumma,,own_goal
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,59’,1:3,Rayan Cherki,Joško Gvardiol,goal
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Crystal Palace,63’,1:3,Evann Guessand,Jørgen Strand Larsen,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Crystal Palace,68’,1:3,Anan Khalaili,,yellow_card
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Crystal Palace,68’,1:3,Dwight McNeil,Eddie Nketiah,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Crystal Palace,68’,1:3,Zavier Gozo,Yéremy Pino,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Crystal Palace,75’,1:3,Axel Disasi,Takehiro Tomiyasu,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Crystal Palace,75’,1:3,Óscar Mingueza,Anan Khalaili,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,75’,1:3,Mateo Kovačić,Joško Gvardiol,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,82’,1:3,Ryan Mcaidoo,Rayan Cherki,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,82’,1:3,Ayyoub Bouaddi,Elliot Anderson,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,84’,1:4,Erling Haaland,Phil Foden,goal
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,89’,1:4,Vitor Reis,Abdukodir Khusanov,substitute_in
+ENG-Premier League,2627,2026-08-28 Crystal Palace-Manchester City,Manchester City,89’,1:4,Kaden Braithwaite,Nico O'Reilly,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Bournemouth,21’,0:0,Alex Scott,,yellow_card
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Bournemouth,23’,0:0,Adam Smith,,yellow_card
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Bournemouth,41’,1:0,Alex Scott,Evanilson,goal
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Bournemouth,53’,1:0,Marcus Tavernier,,yellow_card
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Everton,59’,1:0,James Garner,,yellow_card
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Everton,62’,1:0,Hayden Hackney,James Garner,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Everton,62’,1:0,Brennan Johnson,Tyrique George,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Bournemouth,69’,1:0,Tyler Adams,Lewis Cook,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Everton,70’,1:0,Beto,Thierno Barry,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Bournemouth,81’,1:0,David Brooks,Justin Kluivert,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Bournemouth,81’,1:0,Álvaro Rodríguez,Evanilson,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Everton,86’,1:0,Carlos Alcaraz,Harrison Armstrong,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Everton,86’,1:0,Tim Iroegbunam,Merlin Röhl,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Bournemouth,87’,1:0,Ryan Christie,Alex Scott,substitute_in
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Everton,90+1’,1:1,James Tarkowski,,goal
+ENG-Premier League,2627,2026-08-29 Bournemouth-Everton,Everton,90+5’,1:1,Carlos Alcaraz,,yellow_card
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,10’,0:0,Lewie Coyle,,yellow_card
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,46’,0:0,Lucas Gourna-Douath,Hidemasa Morita,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,46’,0:0,Cody Drameh,Lewie Coyle,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,51’,0:0,Regan Slater,,yellow_card
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,54’,0:0,Elliot Stroud,,yellow_card
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Coventry City,59’,0:0,Tatsuhiro Sakamoto,Loum Tchaouna,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Coventry City,59’,0:0,Brandon Thomas-Asante,Ephron Mason-Clark,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,59’,0:0,Lucas Herrington,Nobel Mendy,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,59’,0:0,Liam Millar,Elliot Stroud,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,68’,0:0,Oliver McBurnie,,yellow_card
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Coventry City,71’,0:0,Victor Torp,Caleb Yirenkyi,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Coventry City,71’,0:0,Gustavo Hamer,Jack Rudoni,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Coventry City,78’,0:0,Ethan Pinnock,Bobby Thomas,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,82’,0:1,Liam Millar,Bachir Belloumi,goal
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Hull City,83’,0:1,Mohamed Ali Cho,Bachir Belloumi,substitute_in
+ENG-Premier League,2627,2026-08-29 Coventry City-Hull City,Coventry City,84’,0:1,Aurèle Amenda,,yellow_card
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Nottingham Forest,24’,0:1,Dan Ndoye,Morgan Gibbs-White,goal
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Nottingham Forest,44’,0:1,Igor Jesus,,yellow_card
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Nottingham Forest,50’,0:1,Ola Aina,,yellow_card
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,54’,0:1,Víctor Muñoz,,yellow_card
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,59’,0:1,Florian Wirtz,,yellow_card
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,60’,1:1,Alexander Isak,Cody Gakpo,goal
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Nottingham Forest,66’,1:1,Liam Delap,Dan Ndoye,substitute_in
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,69’,1:1,Alisson,,yellow_card
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Nottingham Forest,70’,1:2,Morgan Gibbs-White,,penalty_goal
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,71’,1:2,Ryan Gravenberch,Jeremie Frimpong,substitute_in
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,71’,1:2,Kostas Tsimikas,Milos Kerkez,substitute_in
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,71’,1:2,Rio Ngumoha,Cody Gakpo,substitute_in
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,77’,1:2,Ronald Araújo,Jérémy Jacquet,substitute_in
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,77’,1:2,Trey Nyoni,Alexis Mac Allister,substitute_in
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,79’,1:2,Ronald Araújo,,yellow_card
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Liverpool,82’,2:2,Víctor Muñoz,Florian Wirtz,goal
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Nottingham Forest,86’,2:2,Luca Netz,Ola Aina,substitute_in
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Nottingham Forest,90+2’,2:2,Callum Hudson-Odoi,James Mcatee,substitute_in
+ENG-Premier League,2627,2026-08-29 Liverpool-Nottingham,Nottingham Forest,90+2’,2:2,Nicolás Domínguez,Igor Jesus,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,13’,0:0,Nicolás González,,yellow_card
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Tottenham Hotspur,3’,0:0,Micky van de Ven,,yellow_card
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,62’,0:1,Anthony Elanga,Amar Dedić,goal
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Tottenham Hotspur,68’,0:1,Mikey Moore,Archie Gray,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Tottenham Hotspur,68’,0:1,Destiny Udogie,Andy Robertson,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Tottenham Hotspur,68’,0:1,Mohammed Kudus,Mathys Tel,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,71’,0:1,Sean Steur,Nicolás González,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,71’,0:1,Nick Woltemade,Joe Willock,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,72’,0:2,Yoane Wissa,Nick Woltemade,goal
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Tottenham Hotspur,75’,0:2,Dominic Solanke,Sandro Tonali,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,79’,0:2,Sven Botman,,yellow_card
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,82’,0:2,Jacob Ramsey,Yoane Wissa,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,82’,0:2,Jacob Murphy,Anthony Elanga,substitute_in
+ENG-Premier League,2627,2026-08-29 Tottenham-Newcastle,Newcastle United,90+3’,0:2,Bazoumana Touré,Harvey Barnes,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,14’,2:0,Pedro Neto,Morgan Rogers,goal
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,32’,3:0,João Pedro,Jorrel Hato,goal
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,35’,3:1,Malick Yalcouye,,goal
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,4’,1:0,Roméo Lavia,,goal
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,55’,3:1,Wesley Fofana,,yellow_card
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,63’,3:2,João Pedro,,own_goal
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,68’,3:2,Reece James,Roméo Lavia,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,68’,3:2,Joshua Acheampong,Wesley Fofana,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,68’,3:2,Moisés Caicedo,Pedro Neto,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,70’,3:2,Lewis Dunk,,yellow_card
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,72’,3:2,Pep Chavarría,Levi Colwill,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,74’,4:2,Cole Palmer,João Pedro,goal
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,74’,3:2,Ibrahim Osman,Malick Yalcouye,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,80’,4:2,Promise David,Charalampos Kostoulas,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,80’,4:2,Costinha,Mats Wieffer,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Chelsea,82’,4:2,Valentín Barco,Moisés Caicedo,substitute_in
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,89’,4:2,Olivier Boscagli,,yellow_card
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,90+1’,4:2,Costinha,,yellow_card
+ENG-Premier League,2627,2026-08-30 Chelsea-Brighton,Brighton & Hove Albion,90+6’,4:3,Pascal Groß,,goal
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,30’,0:0,Jaidon Anthony,,yellow_card
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Leeds United,34’,0:0,Nico Elvedi,Joe Rodon,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,41’,0:1,Kevin Schade,Keane Lewis-Potter,goal
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Leeds United,46’,0:1,Harry Wilson,Brenden Aaronson,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Leeds United,46’,0:1,Ao Tanaka,Jaka Bijol,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,61’,0:1,Dango Ouattara,Jaidon Anthony,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Leeds United,68’,0:1,Daniel James,Jayden Bogle,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Leeds United,69’,0:1,Lukas Nmecha,Noah Okafor,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,69’,0:1,Yehor Yarmoliuk,Mikkel Damsgaard,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,74’,0:1,Kristoffer Ajer,,yellow_card
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,76’,0:1,Vitaly Janelt,,yellow_card
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Leeds United,79’,1:1,Dominic Calvert-Lewin,Lukas Nmecha,goal
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,88’,1:1,Rico Henry,Keane Lewis-Potter,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,88’,1:1,Callum Wilson,Michael Kayode,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,88’,1:1,Aaron Hickey,Kevin Schade,substitute_in
+ENG-Premier League,2627,2026-08-30 Leeds United-Brentford,Brentford,90+3’,1:1,Nathan Collins,,yellow_card
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,29’,0:1,Leif Davis,Abdul Fatawu Issahaku,goal
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,33’,0:1,Saša Lukić,,yellow_card
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,37’,0:1,Abdul Fatawu Issahaku,,yellow_card
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,40’,1:1,Bruno Fernandes,Matheus Cunha,goal
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,46’,1:1,Chuba Akpom,Emersonn,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,56’,2:1,Jacob Greaves,,own_goal
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,60’,2:1,Jacob Greaves,,yellow_card
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,61’,3:1,Bruno Fernandes,,penalty_goal
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,62’,3:1,Exequiel Palacios,Marcelino Núñez,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,68’,4:1,Bruno Fernandes,,goal
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,73’,4:1,Noussair Mazraoui,Luke Shaw,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,73’,4:1,Darnell Furlong,Daizen Maeda,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,73’,4:1,Abdoul Ouattara,Saša Lukić,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,74’,4:1,Leny Yoro,Diogo Dalot,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,80’,4:1,Benjamin Šeško,Matheus Cunha,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,80’,4:1,Patrick Dorgu,Marcus Rashford,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,80’,4:1,Andrey Santos,Kobbie Mainoo,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,82’,5:1,Bryan Mbeumo,Bruno Fernandes,goal
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,83’,5:1,Kasey McAteer,Abdul Fatawu Issahaku,substitute_in
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Ipswich Town,90+1’,5:2,Chuba Akpom,Julio Enciso,goal
+ENG-Premier League,2627,2026-08-30 Manchester Utd-Ipswich Town,Manchester United,90+3’,5:2,Bryan Mbeumo,,yellow_card
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Fulham,35’,0:0,Joachim Andersen,,yellow_card
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Fulham,59’,0:0,César Palacios,,yellow_card
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Sunderland,65’,0:0,Habib Diarra,Nilson Angulo,substitute_in
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Sunderland,65’,0:0,Wilson Isidor,Brian Brobbey,substitute_in
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Fulham,68’,0:0,Shea Charles,Oscar Bobb,substitute_in
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Fulham,68’,0:0,Ryan Sessegnon,Timothy Castagne,substitute_in
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Sunderland,75’,1:0,Wilson Isidor,Habib Diarra,goal
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Fulham,76’,1:0,Emile Smith Rowe,César Palacios,substitute_in
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Sunderland,83’,1:0,Chris Rigg,Habib Diarra,substitute_in
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Fulham,83’,1:0,Kevin,Sander Berge,substitute_in
+ENG-Premier League,2627,2026-08-30 Sunderland-Fulham,Sunderland,90’,1:0,Romaine Mundle,Enzo Le Fée,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Arsenal,29’,0:0,Christos Tzolis,,yellow_card
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Arsenal,46’,0:0,Eberechi Eze,Christos Tzolis,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Arsenal,59’,0:1,Bukayo Saka,Riccardo Calafiori,goal
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Aston Villa,71’,0:1,Alysson,George Hemmings,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Aston Villa,71’,0:1,Tammy Abraham,Nicolas Jackson,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Arsenal,71’,0:1,Mikel Merino,Martin Ødegaard,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Arsenal,71’,0:1,Bruno Guimarães,Myles Lewis-Skelly,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Aston Villa,78’,0:1,Aaron Wan-Bissaka,Matty Cash,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Aston Villa,78’,0:1,Alejandro Garnacho,Ross Barkley,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Arsenal,79’,0:1,Ezri Konsa,Cristhian Mosquera,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Aston Villa,80’,0:1,Alysson,,yellow_card
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Aston Villa,81’,0:1,John McGinn,,yellow_card
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Arsenal,85’,0:1,Martín Zubimendi,Declan Rice,substitute_in
+ENG-Premier League,2627,2026-08-31 Aston Villa-Arsenal,Aston Villa,90+6’,0:1,Ian Maatsen,,yellow_card
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,10’,0:2,Alexis Mac Allister,,yellow_card
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Ipswich Town,41’,0:2,Julio Enciso,,yellow_card
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,52’,0:2,Jérémy Jacquet,,yellow_card
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,57’,0:2,Milos Kerkez,,yellow_card
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,64’,0:2,Ryan Gravenberch,Alexander Isak,substitute_in
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,64’,0:2,Bradley Barcola,Víctor Muñoz,substitute_in
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Ipswich Town,66’,0:2,Jack Clarke,Daizen Maeda,substitute_in
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Ipswich Town,66’,0:2,Zian Flemming,Emersonn,substitute_in
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,6’,0:1,Alexander Isak,Cody Gakpo,goal
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Ipswich Town,78’,0:2,Abdoul Ouattara,Exequiel Palacios,substitute_in
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Ipswich Town,79’,0:2,Kasey McAteer,Abdul Fatawu Issahaku,substitute_in
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,84’,0:2,Trey Nyoni,Alexis Mac Allister,substitute_in
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,90+1’,0:2,Lewis Koumas,Florian Wirtz,substitute_in
+ENG-Premier League,2627,2026-09-04 Ipswich Town-Liverpool,Liverpool,9’,0:2,Alexander Isak,Cody Gakpo,goal
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Sunderland,14’,0:0,Noah Sadiki,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,17’,0:0,Jannik Schuster,Nathan Collins,substitute_in
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,30’,0:0,Mamadou Sangare,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,46’,0:0,Aaron Hickey,Michael Kayode,substitute_in
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,46’,0:0,Jaidon Anthony,Dango Ouattara,substitute_in
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,46’,0:0,Yehor Yarmoliuk,Mamadou Sangare,substitute_in
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,57’,1:0,Vitaly Janelt,,goal
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,62’,1:0,Vitaly Janelt,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Sunderland,64’,1:0,Trai Hume,Thomas Meunier,substitute_in
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Sunderland,64’,1:0,Wilson Isidor,Nilson Angulo,substitute_in
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,69’,1:0,Yehor Yarmoliuk,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Sunderland,74’,1:0,Malick Fofana,Noah Sadiki,substitute_in
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Sunderland,82’,1:1,Enzo Le Fée,,penalty_goal
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Brentford,86’,1:1,Callum Wilson,Mikkel Damsgaard,substitute_in
+ENG-Premier League,2627,2026-09-05 Brentford-Sunderland,Sunderland,88’,1:1,Granit Xhaka,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Leeds United,15’,0:1,Jayden Bogle,Ao Tanaka,goal
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Brighton & Hove Albion,38’,0:1,Pascal Groß,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Brighton & Hove Albion,49’,0:1,Maxim De Cuyper,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Leeds United,61’,0:1,Jaka Bijol,Jayden Bogle,substitute_in
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Leeds United,62’,0:1,Brenden Aaronson,Noah Okafor,substitute_in
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Leeds United,64’,0:1,Dominic Calvert-Lewin,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Leeds United,6’,0:0,Jayden Bogle,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Brighton & Hove Albion,71’,1:1,Luka Vušković,Maxim De Cuyper,goal
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Leeds United,73’,1:1,Harry Wilson,Ao Tanaka,substitute_in
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Leeds United,73’,1:1,Lukas Nmecha,Dominic Calvert-Lewin,substitute_in
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Brighton & Hove Albion,78’,1:1,Promise David,Maxim De Cuyper,substitute_in
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Brighton & Hove Albion,78’,1:1,Costinha,Ferdi Kadioglu,substitute_in
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Leeds United,85’,1:1,Harry Wilson,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Brighton & Hove Albion,88’,1:1,Promise David,,yellow_card
+ENG-Premier League,2627,2026-09-05 Brighton-Leeds United,Brighton & Hove Albion,90+3’,1:1,Pascal Struijk,Olivier Boscagli,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Fulham,11’,1:0,Joshua King,,goal
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Crystal Palace,35’,1:1,Tyrick Mitchell,Eddie Nketiah,goal
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Fulham,42’,2:1,César Palacios,,goal
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Crystal Palace,46’,2:1,Jørgen Strand Larsen,Eddie Nketiah,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Crystal Palace,54’,2:2,Tyrick Mitchell,,goal
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Fulham,61’,2:2,Sander Berge,César Palacios,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Crystal Palace,74’,2:2,Will Hughes,Quinten Timber,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Crystal Palace,74’,2:2,Ben Chilwell,Tyrick Mitchell,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Crystal Palace,77’,2:3,Ben Chilwell,Daichi Kamada,goal
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Fulham,79’,2:3,Ryan Sessegnon,Antonee Robinson,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Fulham,79’,2:3,Hugo Larsson,Oscar Bobb,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Fulham,79’,2:3,Emile Smith Rowe,Shea Charles,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Fulham,83’,2:3,Rodrigo Muniz,Alex Iwobi,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Crystal Palace,89’,2:3,Óscar Mingueza,Yéremy Pino,substitute_in
+ENG-Premier League,2627,2026-09-05 Fulham-Crystal Palace,Crystal Palace,89’,2:3,Darío Osorio,Daichi Kamada,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Hull City,39’,0:0,Semi Ajayi,,yellow_card
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Hull City,63’,0:0,Sorba Thomas,Elliot Stroud,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Hull City,64’,0:0,Brooke Norton-Cuffy,Lewie Coyle,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Hull City,67’,0:0,Lucas Gourna-Douath,,yellow_card
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Hull City,71’,0:0,Lucas Herrington,Nobel Mendy,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Aston Villa,75’,0:0,Matteo Ruggeri,Ian Maatsen,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Aston Villa,75’,0:0,Alejandro Garnacho,Emi Buendía,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Aston Villa,75’,0:0,Alysson,George Hemmings,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Hull City,82’,0:0,Jens Hjertø-Dahl,Lucas Gourna-Douath,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Hull City,82’,0:0,Mohamed Ali Cho,Bachir Belloumi,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Aston Villa,85’,0:0,Aaron Wan-Bissaka,Matty Cash,substitute_in
+ENG-Premier League,2627,2026-09-05 Hull City-Aston Villa,Aston Villa,85’,0:0,Tammy Abraham,Nicolas Jackson,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Coventry City,19’,0:0,Milan van Ewijk,,yellow_card
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Manchester City,26’,1:0,Erling Haaland,Antoine Semenyo,goal
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Coventry City,63’,1:0,Loum Tchaouna,Jack Rudoni,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Coventry City,63’,1:0,Caleb Yirenkyi,Frank Onyeka,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Manchester City,66’,1:0,Phil Foden,Rayan Cherki,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Coventry City,71’,1:0,Brandon Thomas-Asante,Ephron Mason-Clark,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Coventry City,71’,1:0,Ellis Simms,Taiwo Awoniyi,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Manchester City,76’,1:0,Ayyoub Bouaddi,Enzo Fernández,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Coventry City,85’,1:0,Gustavo Hamer,Jay Dasilva,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Manchester City,87’,1:0,Ryan Mcaidoo,Iliman Ndiaye,substitute_in
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Coventry City,90+2’,1:0,Ethan Pinnock,,yellow_card
+ENG-Premier League,2627,2026-09-05 Manchester City-Coventry City,Manchester City,90+5’,1:0,Abdukodir Khusanov,,yellow_card
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,28’,0:1,Anthony Elanga,,yellow_card
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,35’,0:2,Malick Thiaw,,own_goal
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,37’,1:2,Harvey Barnes,Lewis Hall,goal
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,57’,1:2,Yoane Wissa,,yellow_card
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,63’,1:2,Jacob Ramsey,Lewis Miley,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,63’,1:2,Matias Fernandez-Pardo,Joe Willock,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,66’,1:2,Justin Kluivert,,yellow_card
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,76’,1:2,Lewis Cook,Tyler Adams,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,76’,1:2,David Brooks,Justin Kluivert,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,77’,1:2,Sean Steur,Nicolás González,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,77’,1:2,Jacob Murphy,Anthony Elanga,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,87’,1:2,Adrien Truffert,,yellow_card
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,88’,2:2,Jacob Ramsey,,goal
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,89’,2:2,Daniel Jebbison,Marcus Tavernier,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,89’,2:2,Ben Gannon-Doak,Rayan,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,90+4’,2:2,Adam Smith,,yellow_card
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,90+6’,2:2,Ryan Christie,Alex Scott,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Newcastle United,90’,2:2,Tino Livramento,Lewis Hall,substitute_in
+ENG-Premier League,2627,2026-09-05 Newcastle-Bournemouth,Bournemouth,9’,0:1,Marcus Tavernier,,goal
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Tottenham Hotspur,45+1’,0:0,Destiny Udogie,,yellow_card
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Nottingham Forest,52’,0:0,Nikola Milenković,,yellow_card
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Nottingham Forest,59’,0:0,Daniel Muñoz,Ola Aina,substitute_in
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Nottingham Forest,59’,0:0,Igor Jesus,Dan Ndoye,substitute_in
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Tottenham Hotspur,61’,0:0,Andy Robertson,Destiny Udogie,substitute_in
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Tottenham Hotspur,61’,0:0,Mohammed Kudus,Sávio,substitute_in
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Nottingham Forest,74’,0:0,Chris Wood,Liam Delap,substitute_in
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Tottenham Hotspur,74’,0:0,Mykhailo Mudryk,Mathys Tel,substitute_in
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Nottingham Forest,78’,0:0,James Mcatee,,yellow_card
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Tottenham Hotspur,84’,0:0,Mateus Fernandes,Conor Gallagher,substitute_in
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Tottenham Hotspur,84’,0:0,Mateus Fernandes,,yellow_card
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Tottenham Hotspur,84’,0:0,Dominic Solanke,Omar Marmoush,substitute_in
+ENG-Premier League,2627,2026-09-05 Nottingham-Tottenham,Nottingham Forest,90’,0:0,Ousmane Diomande,Murillo,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,14’,0:1,João Pedro,,yellow_card
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,25’,1:1,Kai Havertz,Declan Rice,goal
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,2’,0:1,Morgan Rogers,Jorrel Hato,goal
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,45’,1:1,Cole Palmer,,yellow_card
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,50’,2:1,Martin Ødegaard,Christos Tzolis,goal
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,58’,2:1,Christos Tzolis,,yellow_card
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,58’,2:1,Maxence Lacroix,,yellow_card
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,60’,2:1,Pep Chavarría,Jorrel Hato,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,60’,2:1,Malo Gusto,Roméo Lavia,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,67’,2:1,Martín Zubimendi,Myles Lewis-Skelly,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,67’,2:1,Piero Hincapié,Riccardo Calafiori,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,78’,2:1,Viktor Gyökeres,Kai Havertz,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,78’,2:1,Mikel Merino,Martin Ødegaard,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,81’,2:1,Estêvão Willian,Pedro Neto,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,83’,2:1,Morgan Rogers,,yellow_card
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Chelsea,87’,2:1,Danny Welbeck,Morgan Rogers,substitute_in
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,90+5’,2:1,Mikel Merino,,yellow_card
+ENG-Premier League,2627,2026-09-06 Arsenal-Chelsea,Arsenal,90’,2:1,Noni Madueke,Bukayo Saka,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Everton,13’,0:0,Harrison Armstrong,,yellow_card
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Everton,34’,0:0,Brennan Johnson,,yellow_card
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,46’,0:1,Bryan Mbeumo,Kobbie Mainoo,goal
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,62’,0:1,Luke Shaw,,yellow_card
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Everton,64’,0:1,Merlin Röhl,,yellow_card
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Everton,66’,0:1,Jack Grealish,Brennan Johnson,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,70’,0:1,Patrick Dorgu,Marcus Rashford,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,70’,0:1,Benjamin Šeško,Matheus Cunha,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Everton,75’,0:1,Hayden Hackney,Merlin Röhl,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Everton,77’,0:1,Ainsley Maitland-Niles,James Garner,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,79’,0:1,Harry Maguire,,yellow_card
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,81’,0:1,Diogo Dalot,,yellow_card
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Everton,83’,1:1,Tyrique George,Hayden Hackney,goal
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,84’,1:1,Andrey Santos,Kobbie Mainoo,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,84’,1:1,Leny Yoro,Diogo Dalot,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,88’,1:2,Benjamin Šeško,Luke Shaw,goal
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Manchester United,90+1’,1:2,Noussair Mazraoui,Luke Shaw,substitute_in
+ENG-Premier League,2627,2026-09-06 Everton-Manchester Utd,Everton,90+6’,2:2,Ainsley Maitland-Niles,,goal
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Aston Villa,25’,0:0,Tyrone Mings,Pau Torres,substitute_in
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,43’,0:0,Dan Ndoye,,yellow_card
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,45+3’,0:0,Murillo,,yellow_card
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Aston Villa,45’,0:0,Nicolas Jackson,,yellow_card
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Aston Villa,46’,0:0,Tammy Abraham,Nicolas Jackson,substitute_in
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Aston Villa,46’,0:0,Alysson,George Hemmings,substitute_in
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,46’,0:1,Liam Delap,Murillo,goal
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,56’,0:1,Xaver Schlager,,yellow_card
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Aston Villa,63’,0:1,Johan Manzambi,Ross Barkley,substitute_in
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Aston Villa,63’,0:1,Ibrahim Mbaye,Emi Buendía,substitute_in
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Aston Villa,74’,1:1,Alysson,John McGinn,goal
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,74’,1:1,Liam Delap,,yellow_card
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,75’,1:1,Igor Jesus,Dan Ndoye,substitute_in
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,80’,1:1,James Mcatee,,yellow_card
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,82’,1:1,Ibrahim Sangaré,James Mcatee,substitute_in
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,88’,1:2,Igor Jesus,Morgan Gibbs-White,goal
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Nottingham Forest,90+1’,1:2,Chris Wood,Liam Delap,substitute_in
+ENG-Premier League,2627,2026-09-12 Aston Villa-Nottingham,Aston Villa,90+5’,1:2,Tyrone Mings,,yellow_card
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Brentford,34’,0:1,Kevin Schade,Yehor Yarmoliuk,goal
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,38’,1:1,Justin Kluivert,,goal
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Brentford,45+3’,1:1,Igor Thiago,,yellow_card
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,45+4’,1:1,Marcus Tavernier,,yellow_card
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,52’,2:1,Marcus Tavernier,Evanilson,goal
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Brentford,56’,2:2,Kevin Schade,,goal
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Brentford,60’,2:2,Mikkel Damsgaard,Yehor Yarmoliuk,substitute_in
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Brentford,60’,2:2,El Hadji Malick Diouf,Keane Lewis-Potter,substitute_in
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Brentford,60’,2:2,Dango Ouattara,Jaidon Anthony,substitute_in
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,63’,2:2,James Hill,,yellow_card
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,66’,2:2,Ryan Christie,Justin Kluivert,substitute_in
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Brentford,71’,2:2,Michael Kayode,Aaron Hickey,substitute_in
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,82’,2:2,Ben Gannon-Doak,Rayan,substitute_in
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,82’,2:2,Lewis Cook,Tyler Adams,substitute_in
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,83’,2:2,David Brooks,Marcus Tavernier,substitute_in
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,85’,2:2,Lewis Cook,,yellow_card
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,87’,2:2,Adam Smith,,yellow_card
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,89’,2:2,David Brooks,,yellow_card
+ENG-Premier League,2627,2026-09-12 Bournemouth-Brentford,Bournemouth,90+1’,2:2,Álvaro Rodríguez,Evanilson,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,17’,1:0,Oliver McBurnie,,yellow_card
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,28’,1:1,Bachir Belloumi,Ryan Giles,goal
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,34’,1:2,Bachir Belloumi,Oliver McBurnie,goal
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Chelsea,46’,1:2,Pep Chavarría,Jorrel Hato,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,50’,1:2,John Egan,,yellow_card
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,52’,1:2,Matt Crooks,,yellow_card
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,59’,1:2,Lucas Herrington,Nobel Mendy,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,60’,1:2,Mohamed Ali Cho,Bachir Belloumi,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,60’,1:2,Sorba Thomas,Elliot Stroud,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Chelsea,66’,2:2,João Pedro,Cole Palmer,goal
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Chelsea,69’,2:2,Valentín Barco,Roméo Lavia,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,69’,2:2,Tim Iroegbunam,Matt Crooks,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Chelsea,78’,2:2,Danny Welbeck,Malo Gusto,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Chelsea,7’,1:0,Morgan Rogers,João Pedro,goal
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Chelsea,80’,2:2,Valentín Barco,,yellow_card
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,82’,2:2,Brooke Norton-Cuffy,Lewie Coyle,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,82’,2:2,Robinio Vaz,Oliver McBurnie,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Chelsea,86’,2:2,Estêvão Willian,Pedro Neto,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Chelsea,86’,2:2,Maxence Lacroix,Wesley Fofana,substitute_in
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,88’,2:2,Tim Iroegbunam,,yellow_card
+ENG-Premier League,2627,2026-09-12 Chelsea-Hull City,Hull City,90+6’,2:2,Brooke Norton-Cuffy,,yellow_card
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,14’,1:0,Anan Khalaili,Daichi Kamada,goal
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,23’,1:1,Emersonn,Leif Davis,goal
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,34’,1:1,Axel Disasi,,red_card
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,37’,1:1,Takehiro Tomiyasu,Yéremy Pino,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,43’,1:1,Jack Clarke,,yellow_card
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,45’,1:2,Leif Davis,Emersonn,goal
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,58’,1:2,Abdul Fatawu Issahaku,,yellow_card
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,62’,1:2,Jaden Philogene Bidace,Abdul Fatawu Issahaku,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,63’,1:2,Daizen Maeda,Jack Clarke,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,63’,1:2,Zian Flemming,Emersonn,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,70’,1:2,Saša Lukić,,yellow_card
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,75’,2:2,Jørgen Strand Larsen,Daichi Kamada,goal
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,77’,2:2,Will Hughes,Adam Wharton,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,77’,2:2,Ben Chilwell,Tyrick Mitchell,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,77’,2:2,Florentino Luís,Saša Lukić,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,84’,2:2,Jefferson Lerma,Daichi Kamada,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,84’,2:2,Zavier Gozo,Jørgen Strand Larsen,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,88’,2:2,Abdoul Ouattara,Jacob Greaves,substitute_in
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Crystal Palace,90+4’,2:3,Chris Richards,,yellow_card
+ENG-Premier League,2627,2026-09-12 Crystal Palace-Ipswich Town,Ipswich Town,90’,2:3,Zian Flemming,,goal
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Liverpool,46’,0:0,Milos Kerkez,Kostas Tsimikas,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Liverpool,60’,0:0,Cody Gakpo,Víctor Muñoz,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Liverpool,60’,0:0,Alexis Mac Allister,Ryan Gravenberch,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Fulham,63’,0:0,Kenny Tete,Oscar Bobb,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Liverpool,72’,0:0,Jeremie Frimpong,Ronald Araújo,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Liverpool,72’,0:0,Rio Ngumoha,Bradley Barcola,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Fulham,72’,0:0,Kevin,Timothy Castagne,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Fulham,77’,0:0,Rodrigo Muniz,Gonzalo García,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Fulham,77’,0:0,Emile Smith Rowe,Joshua King,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Fulham,77’,0:0,Hugo Larsson,Alex Iwobi,substitute_in
+ENG-Premier League,2627,2026-09-12 Liverpool-Fulham,Fulham,81’,0:0,Kenny Tete,,yellow_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,28’,0:0,Reinildo Mandava,,yellow_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,46’,0:0,Jurriën Timber,Ben White,substitute_in
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,46’,0:0,Bruno Guimarães,Myles Lewis-Skelly,substitute_in
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,56’,0:0,Enzo Le Fée,David Raya,penalty_miss
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,58’,0:1,Bruno Guimarães,Declan Rice,goal
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,66’,0:1,Daniel Ballard,,yellow_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,69’,0:1,Granit Xhaka,,yellow_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,70’,0:1,Wilson Isidor,Nilson Angulo,substitute_in
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,76’,0:1,Malick Fofana,Thomas Meunier,substitute_in
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,81’,0:1,Brian Brobbey,,yellow_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,81’,0:1,Martín Zubimendi,Declan Rice,substitute_in
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,81’,0:1,Eberechi Eze,Christos Tzolis,substitute_in
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,85’,0:1,Mikel Merino,Martin Ødegaard,substitute_in
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,90+1’,0:1,Nordi Mukiele,,yellow_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,90+1’,0:1,Gabriel Magalhães,,yellow_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,90+3’,0:1,Kai Havertz,,yellow_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Sunderland,90+6’,0:1,Reinildo Mandava,,yellow_red_card
+ENG-Premier League,2627,2026-09-12 Sunderland-Arsenal,Arsenal,90+7’,0:2,Bukayo Saka,,penalty_goal
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Tottenham Hotspur,63’,0:0,Mathys Tel,Dominic Solanke,substitute_in
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Tottenham Hotspur,63’,0:0,Mohammed Kudus,Mateus Fernandes,substitute_in
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Tottenham Hotspur,63’,0:0,Lucas Bergvall,Rodrigo Bentancur,substitute_in
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Everton,65’,0:0,Jack Grealish,Tyrique George,substitute_in
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Everton,68’,0:0,Kiernan Dewsbury-Hall,,yellow_card
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Everton,75’,0:0,Hayden Hackney,Brennan Johnson,substitute_in
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Everton,75’,0:0,Jake O'Brien,Ainsley Maitland-Niles,substitute_in
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Tottenham Hotspur,77’,0:0,James Maddison,Omar Marmoush,substitute_in
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Everton,84’,0:0,James Garner,,yellow_card
+ENG-Premier League,2627,2026-09-12 Tottenham-Everton,Tottenham Hotspur,85’,0:0,Tosin Adarabioyo,Archie Gray,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,35’,0:1,Charalampos Kostoulas,Pascal Groß,goal
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,51’,0:2,Malick Yalcouye,Maxim De Cuyper,goal
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Coventry City,53’,0:2,Taiwo Awoniyi,,red_card
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Coventry City,60’,0:2,Sidiki Cherif,Ephron Mason-Clark,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,65’,0:2,Chema,Malick Yalcouye,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,70’,0:3,Pascal Groß,,penalty_goal
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Coventry City,73’,0:3,Brandon Thomas-Asante,Jack Rudoni,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Coventry City,73’,0:3,Caleb Yirenkyi,Frank Onyeka,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,78’,0:3,Ibrahim Osman,Olivier Boscagli,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,78’,0:3,Pascal Struijk,Luka Vušković,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,83’,0:4,Lewis Dunk,Chema,goal
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Coventry City,84’,0:4,Victor Torp,Matt Grimes,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,84’,0:4,Costinha,Diego Gómez,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,84’,0:4,Matt O'Riley,Charalampos Kostoulas,substitute_in
+ENG-Premier League,2627,2026-09-13 Coventry City-Brighton,Brighton & Hove Albion,90+4’,0:5,Yasin Ayari,Pascal Groß,goal
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester City,23’,0:0,Phil Foden,,red_card
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester City,46’,0:0,Iliman Ndiaye,Rayan Cherki,substitute_in
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester City,60’,0:1,Erling Haaland,,goal
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester United,67’,0:1,Benjamin Šeško,Youri Tielemans,substitute_in
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester City,79’,0:1,Joško Gvardiol,,yellow_card
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester City,80’,0:1,Enzo Fernández,,yellow_card
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester United,81’,0:1,Harry Maguire,,yellow_card
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester City,82’,0:1,Nico O'Reilly,Enzo Fernández,substitute_in
+ENG-Premier League,2627,2026-09-13 Manchester Utd-Manchester City,Manchester United,83’,0:1,Joshua Zirkzee,Marcus Rashford,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Newcastle United,19’,0:0,Sean Steur,Nicolás González,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,32’,1:0,Lewis Miley,,own_goal
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,34’,2:0,Jayden Bogle,Dominic Calvert-Lewin,goal
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,44’,2:0,Dominic Calvert-Lewin,,yellow_card
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,45+1’,3:0,Dominic Calvert-Lewin,Tarik Muharemovic,goal
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Newcastle United,54’,3:0,Jacob Murphy,,yellow_card
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Newcastle United,57’,3:0,Bazoumana Touré,Jacob Murphy,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Newcastle United,58’,3:0,Tino Livramento,Amar Dedić,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Newcastle United,58’,3:0,Joe Willock,Matias Fernandez-Pardo,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,59’,4:0,Noah Okafor,,goal
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,72’,4:0,Harry Wilson,Noah Okafor,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,72’,4:0,Melvin Bard,Gabriel Gudmundsson,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,72’,4:0,Brenden Aaronson,Ao Tanaka,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,78’,4:0,Lukas Nmecha,Dominic Calvert-Lewin,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Newcastle United,80’,4:0,Aladji Bamba,Lewis Miley,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,83’,4:0,Daniel James,Jayden Bogle,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Leeds United,88’,4:0,Sean Longstaff,Anton Stach,substitute_in
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Newcastle United,90+1’,4:1,Tino Livramento,,yellow_card
+ENG-Premier League,2627,2026-09-14 Leeds United-Newcastle,Newcastle United,90’,4:1,Bazoumana Touré,,goal
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,61’,1:0,Jaidon Anthony,Jannik Schuster,goal
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,69’,1:0,Aaron Hickey,Michael Kayode,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,69’,1:0,Mamadou Sangare,Yehor Yarmoliuk,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Chelsea,71’,1:0,Geovany Quenda,Danny Welbeck,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Chelsea,71’,1:0,Joshua Acheampong,Wesley Fofana,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,81’,1:0,El Hadji Malick Diouf,Keane Lewis-Potter,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,81’,1:0,Dango Ouattara,Jaidon Anthony,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,83’,2:0,Igor Thiago,,goal
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,84’,2:0,Igor Thiago,,yellow_card
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,85’,2:0,Mamadou Sangare,,yellow_card
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,87’,2:0,Fabio Carvalho,Mikkel Damsgaard,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Chelsea,87’,2:0,Mahdi Jazuli,Valentín Barco,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Chelsea,87’,2:0,Estêvão Willian,Pedro Neto,substitute_in
+ENG-Premier League,2627,2026-09-18 Brentford-Chelsea,Brentford,90+4’,3:0,Fabio Carvalho,,goal
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,31’,1:0,Pascal Groß,Charalampos Kostoulas,goal
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,33’,1:0,Charalampos Kostoulas,,yellow_card
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,45+1’,2:0,Ferdi Kadioglu,,yellow_card
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,45’,2:0,Charalampos Kostoulas,Diego Gómez,goal
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,57’,3:0,Chema,Pascal Groß,goal
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Arsenal,60’,3:0,Mikel Merino,Bruno Guimarães,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Arsenal,60’,3:0,Martín Zubimendi,Jurriën Timber,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,71’,3:0,Pascal Struijk,,yellow_card
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Arsenal,73’,3:0,Eberechi Eze,Christos Tzolis,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Arsenal,73’,3:0,Viktor Gyökeres,Martin Ødegaard,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,76’,3:0,Georginio Rutter,Charalampos Kostoulas,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,76’,3:0,Costinha,Ferdi Kadioglu,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Arsenal,81’,3:0,Max Dowman,Bukayo Saka,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,85’,3:0,Malick Yalcouye,Chema,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,86’,3:0,Michael Svoboda,Pascal Struijk,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,86’,3:0,Matt O'Riley,Diego Gómez,substitute_in
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Brighton & Hove Albion,90+1’,3:0,Maxim De Cuyper,,yellow_card
+ENG-Premier League,2627,2026-09-19 Brighton-Arsenal,Arsenal,90+7’,3:0,Declan Rice,,yellow_card
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Everton,11’,1:0,Thierno Barry,James Tarkowski,goal
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Ipswich Town,35’,1:0,Abdul Fatawu Issahaku,,yellow_card
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Everton,42’,1:0,Vitaliy Mykolenko,,yellow_card
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Everton,66’,1:0,Tyler Dibling,Brennan Johnson,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Ipswich Town,66’,1:0,Jaden Philogene Bidace,Jack Clarke,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Ipswich Town,67’,1:0,Abdul Fatawu Issahaku,,yellow_red_card
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Ipswich Town,73’,1:0,Florentino Luís,Saša Lukić,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Ipswich Town,74’,1:0,Daizen Maeda,Julio Enciso,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Everton,79’,1:0,Tyrique George,Jack Grealish,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Ipswich Town,81’,1:0,Zian Flemming,Emersonn,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Ipswich Town,81’,1:0,Chuba Akpom,Exequiel Palacios,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Everton,90+1’,1:0,Hayden Hackney,Kiernan Dewsbury-Hall,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Everton,90+1’,1:0,Jake O'Brien,Ainsley Maitland-Niles,substitute_in
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Ipswich Town,90+2’,1:0,Zian Flemming,,yellow_card
+ENG-Premier League,2627,2026-09-19 Everton-Ipswich Town,Everton,90+6’,1:0,Harrison Armstrong,,yellow_card
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,29’,2:0,Matt Crooks,,yellow_card
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,39’,2:0,Bachir Belloumi,,yellow_card
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Newcastle United,3’,1:0,Joe Willock,Harvey Barnes,goal
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Newcastle United,45+2’,2:0,Yoane Wissa,Kostas Tzolakis,penalty_miss
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,45+2’,2:0,Kostas Tzolakis,,yellow_card
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Newcastle United,45+3’,2:0,Jacob Murphy,,yellow_card
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,46’,2:0,Tim Iroegbunam,Matt Crooks,substitute_in
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,49’,2:0,Ryan Giles,,yellow_card
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,63’,2:0,Mohamed Ali Cho,Sorba Thomas,substitute_in
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Newcastle United,66’,2:0,Fabian Schär,Sean Steur,substitute_in
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,67’,2:1,Mohamed Ali Cho,Bachir Belloumi,goal
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Newcastle United,74’,2:1,Bazoumana Touré,Matias Fernandez-Pardo,substitute_in
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,78’,2:1,Lucas Gourna-Douath,Regan Slater,substitute_in
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,78’,2:1,Robinio Vaz,John Egan,substitute_in
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Newcastle United,7’,2:0,Lewis Hall,Harvey Barnes,goal
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,83’,2:1,Joe Gelhardt,Bachir Belloumi,substitute_in
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Newcastle United,87’,2:1,Aladji Bamba,Joe Willock,substitute_in
+ENG-Premier League,2627,2026-09-19 Newcastle-Hull City,Hull City,87’,2:1,Oliver McBurnie,,yellow_card
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Coventry City,46’,0:0,Loum Tchaouna,Ephron Mason-Clark,substitute_in
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Coventry City,55’,0:1,Jay Dasilva,Carl Rushworth,goal
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Nottingham Forest,59’,0:1,Liam Delap,,yellow_card
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Nottingham Forest,59’,0:1,Igor Jesus,Dan Ndoye,substitute_in
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Nottingham Forest,73’,0:1,Chris Wood,Ousmane Diomande,substitute_in
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Coventry City,74’,0:1,Ellis Simms,Jack Rudoni,substitute_in
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Nottingham Forest,83’,0:1,Luca Netz,Daniel Muñoz,substitute_in
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Nottingham Forest,83’,0:1,Ibrahim Sangaré,James Mcatee,substitute_in
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Coventry City,90+1’,0:1,Joël Latibeaudière,Caleb Yirenkyi,substitute_in
+ENG-Premier League,2627,2026-09-19 Nottingham-Coventry City,Nottingham Forest,90+4’,0:1,Jair Cunha,,yellow_card
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Tottenham Hotspur,19’,0:0,Archie Gray,Pedro Porro,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,45+4’,0:1,Johan Manzambi,Boubacar Kamara,goal
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Tottenham Hotspur,45+7’,0:1,Jan Paul van Hecke,,yellow_card
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Tottenham Hotspur,46’,0:1,Mohammed Kudus,Mateus Fernandes,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,46’,0:1,Matty Cash,Aaron Wan-Bissaka,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,46’,0:1,Nicolas Jackson,,yellow_card
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Tottenham Hotspur,66’,0:1,James Maddison,Dominic Solanke,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,67’,0:2,Nicolas Jackson,Johan Manzambi,goal
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,72’,0:2,George Hemmings,Johan Manzambi,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,79’,0:3,Emi Buendía,John McGinn,goal
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Tottenham Hotspur,84’,0:3,Lucas Bergvall,Rodrigo Bentancur,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Tottenham Hotspur,84’,0:3,Conor Gallagher,Sandro Tonali,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,84’,0:3,Ross Barkley,John McGinn,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,84’,0:3,Ibrahim Mbaye,Boubacar Kamara,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Tottenham Hotspur,86’,1:3,Conor Gallagher,Mohammed Kudus,goal
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,88’,1:3,Tammy Abraham,Nicolas Jackson,substitute_in
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Aston Villa,90+2’,1:3,Matty Cash,,yellow_card
+ENG-Premier League,2627,2026-09-19 Tottenham-Aston Villa,Tottenham Hotspur,90+8’,2:3,Jan Paul van Hecke,Andy Robertson,goal
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Liverpool,46’,0:0,Dominik Szoboszlai,,yellow_card
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Liverpool,57’,0:1,Alexander Isak,,goal
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Liverpool,58’,0:1,Alexander Isak,,yellow_card
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Liverpool,71’,0:1,Trey Nyoni,Florian Wirtz,substitute_in
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Liverpool,72’,0:1,Víctor Muñoz,Bradley Barcola,substitute_in
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Bournemouth,75’,0:1,David Brooks,Marcus Tavernier,substitute_in
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Bournemouth,75’,0:1,Daniel Jebbison,Ryan Christie,substitute_in
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Bournemouth,75’,0:1,Lewis Cook,Adam Smith,substitute_in
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Bournemouth,81’,0:1,António Silva,,yellow_card
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Liverpool,81’,0:1,Lewis Koumas,Alexander Isak,substitute_in
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Liverpool,81’,0:1,Ryan Gravenberch,Dominik Szoboszlai,substitute_in
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Bournemouth,88’,0:1,Alex Tóth,Rayan,substitute_in
+ENG-Premier League,2627,2026-09-20 Bournemouth-Liverpool,Bournemouth,88’,0:1,Ben Gannon-Doak,Tyler Adams,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,45’,0:0,Joshua King,,yellow_card
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,50’,0:0,Timothy Castagne,,yellow_card
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,63’,1:0,Lisandro Martínez,,own_goal
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,71’,1:0,Kevin,Oscar Bobb,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,71’,1:0,César Palacios,Alex Iwobi,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,77’,1:0,Hugo Larsson,Sander Berge,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Manchester United,77’,1:0,Joshua Zirkzee,Marcus Rashford,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,80’,1:0,Rodrigo Muniz,Gonzalo García,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,80’,1:0,Joachim Andersen,Joshua King,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Manchester United,80’,1:0,Mason Mount,Kobbie Mainoo,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Manchester United,84’,1:0,Patrick Dorgu,Luke Shaw,substitute_in
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Fulham,85’,1:0,Rodrigo Muniz,,yellow_card
+ENG-Premier League,2627,2026-09-20 Fulham-Manchester Utd,Manchester United,89’,1:1,Matheus Cunha,Patrick Dorgu,goal
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Leeds United,38’,0:0,Jayden Bogle,,yellow_card
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Crystal Palace,46’,0:0,Jefferson Lerma,Takehiro Tomiyasu,substitute_in
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Leeds United,62’,0:0,Ao Tanaka,,yellow_card
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Crystal Palace,64’,0:0,Adam Wharton,,yellow_card
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Leeds United,67’,0:0,Daniel James,Jayden Bogle,substitute_in
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Leeds United,68’,0:0,Brenden Aaronson,Ao Tanaka,substitute_in
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Leeds United,76’,0:0,Lukas Nmecha,Noah Okafor,substitute_in
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Crystal Palace,81’,0:0,Yéremy Pino,,yellow_card
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Crystal Palace,82’,0:0,Ismaila Sarr,Yéremy Pino,substitute_in
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Crystal Palace,82’,0:0,Eddie Nketiah,Jørgen Strand Larsen,substitute_in
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Leeds United,90+2’,0:0,Jean Mattéo Bahoya,Gabriel Gudmundsson,substitute_in
+ENG-Premier League,2627,2026-09-20 Leeds United-Crystal Palace,Crystal Palace,90+3’,0:0,Jefferson Lerma,,yellow_card
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Sunderland,12’,1:1,Brian Brobbey,Enzo Le Fée,goal
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Manchester City,29’,2:1,Rayan Cherki,Antoine Semenyo,goal
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Sunderland,33’,2:2,Brian Brobbey,Thomas Meunier,goal
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Manchester City,43’,3:2,Antoine Semenyo,Marc Guéhi,goal
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Manchester City,57’,4:2,Antoine Semenyo,,goal
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Sunderland,59’,4:3,Brian Brobbey,Nilson Angulo,goal
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Sunderland,60’,4:3,Malick Fofana,Nilson Angulo,substitute_in
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Sunderland,68’,4:3,Wilson Isidor,Noah Sadiki,substitute_in
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Manchester City,75’,4:3,Jeremy Doku,Iliman Ndiaye,substitute_in
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Sunderland,79’,4:3,Trai Hume,Thomas Meunier,substitute_in
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Manchester City,81’,5:3,Erling Haaland,Joško Gvardiol,goal
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Manchester City,85’,5:3,Nico O'Reilly,Rayan Cherki,substitute_in
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Sunderland,8’,0:0,Dayann Methalie,,yellow_card
+ENG-Premier League,2627,2026-09-20 Manchester City-Sunderland,Manchester City,9’,1:0,Enzo Fernández,,goal

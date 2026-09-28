@@ -87,10 +87,26 @@ def get_match_subs(match_id: int) -> pd.DataFrame:
     return run_query(sql, (match_id,))
 
 def get_team_match_performance(match_id: int) -> pd.DataFrame:
+    # WORKAROUND - remove once the Databricks gold job is fixed: in
+    # fact_team_match_performance every team's row carries its OPPONENT's
+    # stats and captain (only the formation columns are right), e.g. Arsenal
+    # 3-0 Coventry has Arsenal with 0 goals and Coventry's captain. Take the
+    # stats/captain from the other team's row; keep ids + formations.
+    # Once the ETL is fixed this would swap them back wrong - revert to a
+    # plain SELECT *.
     sql = f"""
-        SELECT *
-        FROM delta_scan('{TABLES["fact_team_match_performance"]}')
-        WHERE match_id = ?
+        WITH perf AS (
+            SELECT *
+            FROM delta_scan('{TABLES["fact_team_match_performance"]}')
+            WHERE match_id = ?
+        )
+        SELECT
+            own.match_id, own.team_id, own.season_id,
+            own.team_formation, own.opponent_formation,
+            opp.* EXCLUDE (match_id, team_id, season_id, team_formation, opponent_formation)
+        FROM perf AS own
+        JOIN perf AS opp
+          ON opp.match_id = own.match_id AND opp.team_id <> own.team_id
     """
     return run_query(sql, (match_id,))
 

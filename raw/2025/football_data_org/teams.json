@@ -37,18 +37,25 @@
       "venue": "Emirates Stadium",
       "runningCompetitions": [
         {
-          "id": 2056,
-          "name": "FA Community Shield",
-          "code": "COM",
-          "type": "SUPER_CUP",
-          "emblem": "https://crests.football-data.org/com.png"
-        },
-        {
           "id": 2021,
           "name": "Premier League",
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2001,
+          "name": "UEFA Champions League",
+          "code": "CL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/CL.png"
         }
       ],
       "coach": {
@@ -156,13 +163,6 @@
           "nationality": "England"
         },
         {
-          "id": 244120,
-          "name": "Myles Lewis-Skelly",
-          "position": "Defence",
-          "dateOfBirth": "2006-09-26",
-          "nationality": "England"
-        },
-        {
           "id": 270663,
           "name": "Josh Nichols",
           "position": "Defence",
@@ -219,6 +219,13 @@
           "nationality": "Spain"
         },
         {
+          "id": 244120,
+          "name": "Myles Lewis-Skelly",
+          "position": "Midfield",
+          "dateOfBirth": "2006-09-26",
+          "nationality": "England"
+        },
+        {
           "id": 290105,
           "name": "Harrison Dudziak",
           "position": "Midfield",
@@ -231,13 +238,6 @@
           "position": "Midfield",
           "dateOfBirth": "2008-01-20",
           "nationality": "England"
-        },
-        {
-          "id": 293115,
-          "name": "Ceadach O’Neill",
-          "position": "Midfield",
-          "dateOfBirth": "2008-04-10",
-          "nationality": "Northern Ireland"
         },
         {
           "id": 171,
@@ -310,6 +310,13 @@
           "nationality": "England"
         },
         {
+          "id": 293115,
+          "name": "Ceadach O’Neill",
+          "position": "Offence",
+          "dateOfBirth": "2008-04-10",
+          "nationality": "Northern Ireland"
+        },
+        {
           "id": 293640,
           "name": "Khari Ranson",
           "position": "null",
@@ -344,6 +351,20 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2001,
+          "name": "UEFA Champions League",
+          "code": "CL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/CL.png"
         }
       ],
       "coach": {
@@ -493,6 +514,13 @@
           "nationality": "France"
         },
         {
+          "id": 31941,
+          "name": "Emiliano Buendía",
+          "position": "Midfield",
+          "dateOfBirth": "1996-12-25",
+          "nationality": "Argentina"
+        },
+        {
           "id": 33525,
           "name": "Douglas Luiz",
           "position": "Midfield",
@@ -535,20 +563,6 @@
           "nationality": "Netherlands"
         },
         {
-          "id": 274024,
-          "name": "Bradley Burrowes",
-          "position": "Midfield",
-          "dateOfBirth": "2008-03-04",
-          "nationality": "England"
-        },
-        {
-          "id": 289528,
-          "name": "George Hemmings",
-          "position": "Midfield",
-          "dateOfBirth": "2007-03-04",
-          "nationality": "England"
-        },
-        {
           "id": 292504,
           "name": "Mohamed Koné",
           "position": "Midfield",
@@ -577,18 +591,25 @@
           "nationality": "England"
         },
         {
-          "id": 31941,
-          "name": "Emiliano Buendía",
-          "position": "Offence",
-          "dateOfBirth": "1996-12-25",
-          "nationality": "Argentina"
-        },
-        {
           "id": 260718,
           "name": "Alysson",
           "position": "Offence",
           "dateOfBirth": "2006-05-05",
           "nationality": "Brazil"
+        },
+        {
+          "id": 274024,
+          "name": "Bradley Burrowes",
+          "position": "Offence",
+          "dateOfBirth": "2008-03-04",
+          "nationality": "England"
+        },
+        {
+          "id": 289528,
+          "name": "George Hemmings",
+          "position": "Offence",
+          "dateOfBirth": "2007-03-04",
+          "nationality": "England"
         },
         {
           "id": 146,
@@ -625,6 +646,13 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
         }
       ],
       "coach": {
@@ -816,6 +844,13 @@
           "nationality": "Belgium"
         },
         {
+          "id": 247243,
+          "name": "Ollie Harrison",
+          "position": "Midfield",
+          "dateOfBirth": "2007-08-07",
+          "nationality": "England"
+        },
+        {
           "id": 276866,
           "name": "Reggie Walsh",
           "position": "Midfield",
@@ -912,13 +947,6 @@
           "position": "Offence",
           "dateOfBirth": "2009-02-27",
           "nationality": "England"
-        },
-        {
-          "id": 247243,
-          "name": "Ollie Harrison",
-          "position": "Defensive Midfield",
-          "dateOfBirth": "2007-08-07",
-          "nationality": "England"
         }
       ],
       "staff": [],
@@ -948,6 +976,13 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
         }
       ],
       "coach": {
@@ -997,6 +1032,13 @@
           "position": "Defence",
           "dateOfBirth": "1993-01-11",
           "nationality": "England"
+        },
+        {
+          "id": 7836,
+          "name": "Séamus Coleman",
+          "position": "Defence",
+          "dateOfBirth": "1988-10-11",
+          "nationality": "Ireland"
         },
         {
           "id": 16165,
@@ -1158,13 +1200,6 @@
           "position": "Offence",
           "dateOfBirth": "2006-02-04",
           "nationality": "England"
-        },
-        {
-          "id": 7836,
-          "name": "Séamus Coleman",
-          "position": "Right-Back",
-          "dateOfBirth": "1988-10-11",
-          "nationality": "Ireland"
         }
       ],
       "staff": [],
@@ -1194,6 +1229,13 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
         }
       ],
       "coach": {
@@ -1426,6 +1468,20 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2001,
+          "name": "UEFA Champions League",
+          "code": "CL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/CL.png"
         }
       ],
       "coach": {
@@ -1638,13 +1694,6 @@
           "nationality": "England"
         },
         {
-          "id": 274726,
-          "name": "Kieran Morrison",
-          "position": "Midfield",
-          "dateOfBirth": "2006-11-09",
-          "nationality": "Northern Ireland"
-        },
-        {
           "id": 286622,
           "name": "Tommy Pilling",
           "position": "Midfield",
@@ -1699,6 +1748,13 @@
           "position": "Offence",
           "dateOfBirth": "2008-08-29",
           "nationality": "England"
+        },
+        {
+          "id": 274726,
+          "name": "Kieran Morrison",
+          "position": "Offence",
+          "dateOfBirth": "2006-11-09",
+          "nationality": "Northern Ireland"
         },
         {
           "id": 288617,
@@ -1758,18 +1814,25 @@
       "venue": "Etihad Stadium",
       "runningCompetitions": [
         {
-          "id": 2056,
-          "name": "FA Community Shield",
-          "code": "COM",
-          "type": "SUPER_CUP",
-          "emblem": "https://crests.football-data.org/com.png"
-        },
-        {
           "id": 2021,
           "name": "Premier League",
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2001,
+          "name": "UEFA Champions League",
+          "code": "CL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/CL.png"
         }
       ],
       "coach": {
@@ -2051,6 +2114,20 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2001,
+          "name": "UEFA Champions League",
+          "code": "CL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/CL.png"
         }
       ],
       "coach": {
@@ -2142,13 +2219,6 @@
           "position": "Defence",
           "dateOfBirth": "2005-02-23",
           "nationality": "England"
-        },
-        {
-          "id": 211559,
-          "name": "Patrick Dorgu",
-          "position": "Defence",
-          "dateOfBirth": "2004-10-26",
-          "nationality": "Denmark"
         },
         {
           "id": 247644,
@@ -2277,6 +2347,13 @@
           "nationality": "Ivory Coast"
         },
         {
+          "id": 211559,
+          "name": "Patrick Dorgu",
+          "position": "Offence",
+          "dateOfBirth": "2004-10-26",
+          "nationality": "Denmark"
+        },
+        {
           "id": 275522,
           "name": "Chido Obi-Martin",
           "position": "Offence",
@@ -2325,6 +2402,13 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
         }
       ],
       "coach": {
@@ -2481,13 +2565,6 @@
           "nationality": "England"
         },
         {
-          "id": 176852,
-          "name": "Lewis Hall",
-          "position": "Midfield",
-          "dateOfBirth": "2004-09-08",
-          "nationality": "England"
-        },
-        {
           "id": 191939,
           "name": "Lewis Miley",
           "position": "Midfield",
@@ -2599,6 +2676,20 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2146,
+          "name": "UEFA Europa League",
+          "code": "EL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/EL.png"
         }
       ],
       "coach": {
@@ -2866,6 +2957,13 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
         }
       ],
       "coach": {
@@ -2966,6 +3064,13 @@
           "nationality": "Italy"
         },
         {
+          "id": 177040,
+          "name": "Archie Gray",
+          "position": "Defence",
+          "dateOfBirth": "2006-03-12",
+          "nationality": "England"
+        },
+        {
           "id": 249465,
           "name": "Souza",
           "position": "Defence",
@@ -3041,13 +3146,6 @@
           "position": "Midfield",
           "dateOfBirth": "2002-09-14",
           "nationality": "Senegal"
-        },
-        {
-          "id": 177040,
-          "name": "Archie Gray",
-          "position": "Midfield",
-          "dateOfBirth": "2006-03-12",
-          "nationality": "England"
         },
         {
           "id": 193622,
@@ -3185,12 +3283,12 @@
         }
       ],
       "coach": {
-        "id": null,
-        "firstName": null,
-        "lastName": null,
-        "name": null,
-        "dateOfBirth": null,
-        "nationality": null,
+        "id": 114276,
+        "firstName": "",
+        "lastName": "César Peixoto",
+        "name": "César Peixoto",
+        "dateOfBirth": "1980-05-12",
+        "nationality": "Portugal",
         "contract": {
           "start": null,
           "until": null
@@ -3247,11 +3345,39 @@
           "nationality": "Uruguay"
         },
         {
+          "id": 102223,
+          "name": "Toti Gomes",
+          "position": "Defence",
+          "dateOfBirth": "1999-01-16",
+          "nationality": "Portugal"
+        },
+        {
+          "id": 153570,
+          "name": "Yerson Mosquera",
+          "position": "Defence",
+          "dateOfBirth": "2001-05-02",
+          "nationality": "Colombia"
+        },
+        {
+          "id": 157709,
+          "name": "Hugo Bueno",
+          "position": "Defence",
+          "dateOfBirth": "2002-09-18",
+          "nationality": "Spain"
+        },
+        {
           "id": 205467,
           "name": "David Wolfe",
           "position": "Defence",
           "dateOfBirth": "2002-04-23",
           "nationality": "Norway"
+        },
+        {
+          "id": 249435,
+          "name": "Pedro Lima",
+          "position": "Defence",
+          "dateOfBirth": "2006-07-01",
+          "nationality": "Brazil"
         },
         {
           "id": 290067,
@@ -3282,6 +3408,13 @@
           "nationality": "Brazil"
         },
         {
+          "id": 145538,
+          "name": "André",
+          "position": "Midfield",
+          "dateOfBirth": "2001-07-16",
+          "nationality": "Brazil"
+        },
+        {
           "id": 213637,
           "name": "Ethan Sutherland",
           "position": "Midfield",
@@ -3301,6 +3434,13 @@
           "position": "Midfield",
           "dateOfBirth": "2006-05-18",
           "nationality": "England"
+        },
+        {
+          "id": 276066,
+          "name": "Mateus Mané",
+          "position": "Midfield",
+          "dateOfBirth": "2007-09-16",
+          "nationality": "Portugal"
         },
         {
           "id": 291972,
@@ -3331,6 +3471,13 @@
           "nationality": "Nigeria"
         },
         {
+          "id": 151521,
+          "name": "Rodrigo Gomes",
+          "position": "Offence",
+          "dateOfBirth": "2003-07-07",
+          "nationality": "Portugal"
+        },
+        {
           "id": 171027,
           "name": "Jackson Tchatchoua",
           "position": "Offence",
@@ -3338,67 +3485,18 @@
           "nationality": "Cameroon"
         },
         {
-          "id": 276066,
-          "name": "Mateus Mané",
-          "position": "Offence",
-          "dateOfBirth": "2007-09-16",
-          "nationality": "Portugal"
-        },
-        {
-          "id": 249435,
-          "name": "Pedro Lima",
-          "position": "Right-Back",
-          "dateOfBirth": "2006-07-01",
-          "nationality": "Brazil"
-        },
-        {
-          "id": 193014,
-          "name": "Enso Gonzalez",
-          "position": "Left Winger",
-          "dateOfBirth": "2005-01-20",
-          "nationality": "Paraguay"
-        },
-        {
           "id": 189575,
           "name": "Nathan Fraser",
-          "position": "Centre-Forward",
+          "position": "Offence",
           "dateOfBirth": "2005-02-22",
           "nationality": "England"
         },
         {
-          "id": 157709,
-          "name": "Hugo Bueno",
-          "position": "Left-Back",
-          "dateOfBirth": "2002-09-18",
-          "nationality": "Spain"
-        },
-        {
-          "id": 153570,
-          "name": "Yerson Mosquera",
-          "position": "Centre-Back",
-          "dateOfBirth": "2001-05-02",
-          "nationality": "Colombia"
-        },
-        {
-          "id": 151521,
-          "name": "Rodrigo Gomes",
-          "position": "Right Midfield",
-          "dateOfBirth": "2003-07-07",
-          "nationality": "Portugal"
-        },
-        {
-          "id": 145538,
-          "name": "André",
-          "position": "Defensive Midfield",
-          "dateOfBirth": "2001-07-16",
-          "nationality": "Brazil"
-        },
-        {
-          "id": 102223,
-          "name": "Toti Gomes",
-          "position": "Centre-Back",
-          "dateOfBirth": "1999-01-16",
-          "nationality": "Portugal"
+          "id": 193014,
+          "name": "Enso Gonzalez",
+          "position": "Offence",
+          "dateOfBirth": "2005-01-20",
+          "nationality": "Paraguay"
         }
       ],
       "staff": [],
@@ -3438,12 +3536,12 @@
         }
       ],
       "coach": {
-        "id": null,
-        "firstName": null,
-        "lastName": null,
-        "name": null,
-        "dateOfBirth": null,
-        "nationality": null,
+        "id": 78938,
+        "firstName": "Nicky",
+        "lastName": "Hayen",
+        "name": "Nicky Hayen",
+        "dateOfBirth": "1980-08-16",
+        "nationality": "Belgium",
         "contract": {
           "start": null,
           "until": null
@@ -3730,6 +3828,13 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
         }
       ],
       "coach": {
@@ -3828,6 +3933,13 @@
           "position": "Defence",
           "dateOfBirth": "1999-02-05",
           "nationality": "Slovenia"
+        },
+        {
+          "id": 295431,
+          "name": "Jayden Lienou",
+          "position": "Defence",
+          "dateOfBirth": "2008-04-08",
+          "nationality": "Wales"
         },
         {
           "id": 295551,
@@ -3947,13 +4059,6 @@
           "position": "null",
           "dateOfBirth": "2007-02-19",
           "nationality": "England"
-        },
-        {
-          "id": 295431,
-          "name": "Jayden Lienou",
-          "position": "null",
-          "dateOfBirth": "2008-04-08",
-          "nationality": "Wales"
         }
       ],
       "staff": [],
@@ -3983,6 +4088,13 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
         }
       ],
       "coach": {
@@ -4278,6 +4390,20 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2146,
+          "name": "UEFA Europa League",
+          "code": "EL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/EL.png"
         }
       ],
       "coach": {
@@ -4552,6 +4678,20 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2154,
+          "name": "UEFA Conference League",
+          "code": "UCL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/UCL.png"
         }
       ],
       "coach": {
@@ -4819,6 +4959,13 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
         }
       ],
       "coach": {
@@ -5082,12 +5229,12 @@
         }
       ],
       "coach": {
-        "id": null,
-        "firstName": null,
-        "lastName": null,
-        "name": null,
-        "dateOfBirth": null,
-        "nationality": null,
+        "id": 11315,
+        "firstName": "",
+        "lastName": "Nuno Espírito Santo",
+        "name": "Nuno Espírito Santo",
+        "dateOfBirth": "1974-01-25",
+        "nationality": "Portugal",
         "contract": {
           "start": null,
           "until": null
@@ -5235,6 +5382,13 @@
           "nationality": "France"
         },
         {
+          "id": 4221,
+          "name": "Adama Traoré",
+          "position": "Offence",
+          "dateOfBirth": "1996-01-25",
+          "nationality": "Spain"
+        },
+        {
           "id": 8251,
           "name": "Callum Wilson",
           "position": "Offence",
@@ -5282,13 +5436,6 @@
           "position": "Offence",
           "dateOfBirth": "2006-11-13",
           "nationality": "England"
-        },
-        {
-          "id": 4221,
-          "name": "Adama Traoré",
-          "position": "Right Winger",
-          "dateOfBirth": "1996-01-25",
-          "nationality": "Spain"
         }
       ],
       "staff": [],
@@ -5318,6 +5465,20 @@
           "code": "PL",
           "type": "LEAGUE",
           "emblem": "https://crests.football-data.org/PL.png"
+        },
+        {
+          "id": 2139,
+          "name": "Football League Cup",
+          "code": "FLC",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/carabao.png"
+        },
+        {
+          "id": 2146,
+          "name": "UEFA Europa League",
+          "code": "EL",
+          "type": "CUP",
+          "emblem": "https://crests.football-data.org/EL.png"
         }
       ],
       "coach": {

@@ -121,7 +121,8 @@ def _render_metric_section(title: str, stats: list, row: pd.Series, per_row: int
 
 
 def render_team_season_stats_tab(team_id: int, season_id: int):
-    row = get_team_season_stats(team_id, season_id)
+    with st.spinner("Loading team stats..."):
+        row = get_team_season_stats(team_id, season_id)
     if row is None:
         st.caption("Team stats aren't available for this season yet.")
         return
@@ -134,7 +135,8 @@ def render_team_season_stats_tab(team_id: int, season_id: int):
 
 
 def render_team_players_season_tab(team_id: int, season_id: int):
-    df = get_team_players_season_stats(team_id, season_id)
+    with st.spinner("Loading player stats..."):
+        df = get_team_players_season_stats(team_id, season_id)
     if df.empty:
         st.caption("Player stats aren't available for this season yet.")
         return
@@ -153,4 +155,4 @@ def render_team_players_season_tab(team_id: int, season_id: int):
 
     display_df = filtered[columns].copy()
     display_df.columns = [humanize_column(c) for c in display_df.columns]
-    st.dataframe(display_df, hide_index=True, use_container_width=True)
+    st.dataframe(display_df, hide_index=True, width="stretch")

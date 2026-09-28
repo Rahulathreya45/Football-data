@@ -72,16 +72,6 @@ def render_stat_row(label: str, home_val, away_val, fmt: str = "{:.0f}"):
     )
 
 
-def _render_clean_sheet_row(home_val, away_val):
-    home_txt = "✅ Clean sheet" if home_val == 1 else "—"
-    away_txt = "✅ Clean sheet" if away_val == 1 else "—"
-    c1, c2 = st.columns(2)
-    with c1:
-        st.markdown(f"<div style='text-align:center;'>{home_txt}</div>", unsafe_allow_html=True)
-    with c2:
-        st.markdown(f"<div style='text-align:center;'>{away_txt}</div>", unsafe_allow_html=True)
-
-
 def _render_team_meta(home: pd.Series, away: pd.Series, match: pd.Series):
     c1, c2 = st.columns(2)
     with c1:
@@ -89,17 +79,18 @@ def _render_team_meta(home: pd.Series, away: pd.Series, match: pd.Series):
             f"<div class='formation-label'>{match['home_team_name']} · {home.get('team_formation', '')}</div>",
             unsafe_allow_html=True,
         )
-        st.caption(f"Captain: {home.get('captain_name') or '-'}")
+        st.caption(f"**Captain:** {home.get('captain_name') or '-'}", text_alignment="center")
     with c2:
         st.markdown(
             f"<div class='formation-label'>{match['away_team_name']} · {away.get('team_formation', '')}</div>",
             unsafe_allow_html=True,
         )
-        st.caption(f"Captain: {away.get('captain_name') or '-'}")
+        st.caption(f"**Captain:** {away.get('captain_name') or '-'}", text_alignment="center")
 
 
 def render_team_stats_tab(match: pd.Series):
-    perf_df = get_team_match_performance(int(match["match_id"]))
+    with st.spinner("Loading team stats..."):
+        perf_df = get_team_match_performance(int(match["match_id"]))
     if perf_df.empty:
         st.caption("Team stats aren't available for this match yet.")
         return
@@ -156,7 +147,6 @@ def render_team_stats_tab(match: pd.Series):
     render_stat_row("Goals Against", home.get("gk_goals_against"), away.get("gk_goals_against"))
     render_stat_row("Saves", home.get("gk_saves"), away.get("gk_saves"))
     render_stat_row("Save %", home.get("gk_save_pct"), away.get("gk_save_pct"), fmt="{:.1f}%")
-    _render_clean_sheet_row(home.get("gk_clean_sheet"), away.get("gk_clean_sheet"))
     render_stat_row("Penalties Faced", home.get("gk_penalty_kicks_faced"), away.get("gk_penalty_kicks_faced"))
     render_stat_row("Penalties Allowed", home.get("gk_penalty_kicks_allowed"), away.get("gk_penalty_kicks_allowed"))
     render_stat_row("Penalties Saved", home.get("gk_penalty_kicks_saved"), away.get("gk_penalty_kicks_saved"))
@@ -174,7 +164,7 @@ def _render_team_table(df: pd.DataFrame, team_id: int, columns: list, sort_by: s
         team_df = team_df.sort_values(sort_by)
 
     team_df.columns = [humanize_column(c) for c in team_df.columns]
-    st.dataframe(team_df, hide_index=True, use_container_width=True)
+    st.dataframe(team_df, hide_index=True, width="stretch")
 
 
 def render_player_stats_tab(match: pd.Series):
@@ -184,12 +174,13 @@ def render_player_stats_tab(match: pd.Series):
     home_id = int(match["home_team_id"])
     away_id = int(match["away_team_id"])
 
-    if view == "Players":
-        df = get_player_match_performance(match_id)
-        columns, sort_by = PLAYER_COLUMNS, "jersey_number"
-    else:
-        df = get_goalkeeper_match_performance(match_id)
-        columns, sort_by = GOALKEEPER_COLUMNS, None
+    with st.spinner(f"Loading {view.lower()} stats..."):
+        if view == "Players":
+            df = get_player_match_performance(match_id)
+            columns, sort_by = PLAYER_COLUMNS, "jersey_number"
+        else:
+            df = get_goalkeeper_match_performance(match_id)
+            columns, sort_by = GOALKEEPER_COLUMNS, None
 
     if df.empty:
         st.caption(f"{view} stats aren't available for this match yet.")

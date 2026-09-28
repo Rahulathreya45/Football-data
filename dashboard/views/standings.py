@@ -3,15 +3,20 @@ import streamlit as st
 from components.ui import render_header
 from data.queries import get_seasons, get_standings
 
-seasons_df = get_seasons()
+with st.spinner("Loading seasons..."):
+    seasons_df = get_seasons()
 query_season = st.query_params.get("season_id")
 
 selected_season_id = render_header("Standings", seasons_df=seasons_df, selected_season_id=query_season)
-st.query_params["season_id"] = str(selected_season_id)
+
+if seasons_df.empty:
+    st.info("No season data available yet.")
+    st.stop()
 
 table_type = st.selectbox("Split", ["TOTAL", "HOME", "AWAY"], width=200)
 
-standings_df = get_standings(int(selected_season_id), table_type)
+with st.spinner("Loading standings..."):
+    standings_df = get_standings(int(selected_season_id), table_type)
 
 COL_WIDTHS = [0.5, 0.5, 3, 0.6, 0.6, 0.6, 0.6, 0.7, 0.7, 0.7, 0.7]
 

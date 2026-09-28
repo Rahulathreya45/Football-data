@@ -3,13 +3,18 @@ import streamlit as st
 from components.ui import render_header, render_team_grid_card
 from data.queries import get_seasons, get_teams_by_season
 
-seasons_df = get_seasons()
+with st.spinner("Loading seasons..."):
+    seasons_df = get_seasons()
 query_season = st.query_params.get("season_id")
 
 selected_season_id = render_header("Teams", seasons_df=seasons_df, selected_season_id=query_season)
-st.query_params["season_id"] = str(selected_season_id)
 
-teams_df = get_teams_by_season(int(selected_season_id))
+if seasons_df.empty:
+    st.info("No season data available yet.")
+    st.stop()
+
+with st.spinner("Loading teams..."):
+    teams_df = get_teams_by_season(int(selected_season_id))
 
 if teams_df.empty:
     st.caption("No teams found for this season.")

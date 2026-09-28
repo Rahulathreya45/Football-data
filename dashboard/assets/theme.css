@@ -322,3 +322,79 @@ div[data-testid="stVerticalBlockBorderWrapper"]:hover {
     color: var(--text-muted);
     margin: 18px 0 6px 0;
 }
+/* Match card (components/ui.py render_match_card): the whole card is
+   clickable. The keyed container is the positioning context and the
+   invisible "Open match" button is stretched over it. */
+[class*="st-key-matchcard_"] {
+    position: relative;
+    cursor: pointer;
+}
+/* Streamlit sizes element containers to their content (width: fit-content),
+   so width/height must be forced - inset alone doesn't stretch it. */
+[class*="st-key-matchopen_"] {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 2;
+    margin: 0 !important;
+}
+[class*="st-key-matchopen_"] .stButton,
+[class*="st-key-matchopen_"] button {
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0;
+    cursor: pointer;
+}
+.match-card-team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.match-card-team.home { justify-content: flex-end; text-align: right; }
+.match-card-team.away { justify-content: flex-start; text-align: left; }
+.match-card-crest {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Match detail header (components/ui.py _render_score_team): crest + name
+   in a keyed container; the name's page_link is stretched over the whole
+   container (::after) so the crest is clickable too. Wrappers between the
+   container and the link are made static so the ::after is positioned
+   against the container. */
+[class*="st-key-scoreteam_"] {
+    position: relative;
+}
+[class*="st-key-scoreteam_"] * {
+    position: static !important;
+}
+[class*="st-key-scoreteam_"] a {
+    justify-content: center;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+[class*="st-key-scoreteam_"] a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+[class*="st-key-scoreteam_"][class*="_win"] a,
+[class*="st-key-scoreteam_"][class*="_win"] a * {
+    color: var(--accent) !important;
+}
+
+/* Loaders: st.spinner's element container is content-width and left-aligned
+   in its (flex column) parent; centre it, with some breathing room. */
+.stElementContainer:has(> [data-testid="stSpinner"]) {
+    align-self: center;
+}
+[data-testid="stSpinner"] {
+    padding: 1.5rem 0;
+}
