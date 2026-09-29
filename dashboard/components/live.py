@@ -1,15 +1,14 @@
-import re
-
 import pandas as pd
 import streamlit as st
 
 from components.events import render_card_row, render_sub_row, render_time_marker
 from components.lineups import render_team_lineup
+from components.match_story import render_story_button
 from components.live_flow import render_leaderboard, render_match_flow
 from components.stats import render_stat_bar
 from components.ui import render_goal_row
 from data.live_history import split_halves
-from utils import format_minute
+from utils import format_minute, var_label
 
 # sportsapipro positions are just G/D/M/F; the shared lineup renderer
 # expects FBref-style codes.
@@ -75,24 +74,6 @@ def _minute(value):
     return int(value) if pd.notna(value) else None
 
 
-# A VAR decision the review didn't confirm was overturned.
-_OVERTURNED = {"goalAwarded": "Goal disallowed", "penaltyAwarded": "Penalty overturned"}
-
-
-def _var_label(incident_class, confirmed) -> str:
-    """'goalAwarded' + confirmed=False -> 'Goal disallowed'; otherwise the
-    humanized class ('goalAwarded' -> 'Goal awarded')."""
-    if incident_class in _OVERTURNED and confirmed is not None and pd.notna(confirmed) and not bool(confirmed):
-        return _OVERTURNED[incident_class]
-    return _humanize_class(incident_class)
-
-
-def _humanize_class(value) -> str:
-    """'goalAwarded' -> 'Goal awarded'."""
-    words = re.sub(r"(?<!^)(?=[A-Z])", " ", str(value or "")).lower()
-    return words.capitalize()
-
-
 def _feed_score(goals: pd.DataFrame) -> tuple[int, int]:
     """Score after the last goal the feed recorded (goal items carry the
     running score)."""
@@ -117,7 +98,7 @@ def _last_update(live: dict):
     return max(stamps) if stamps else pd.NaT
 
 
-def _render_summary(live: dict):
+def _render_summary(live: dict, match: pd.Series, live_match_id: int, flow: dict | None):
     home_score, away_score = _feed_score(live["goals"])
     home, away = _side_stats(live["stats"], "home"), _side_stats(live["stats"], "away")
 
@@ -130,7 +111,9 @@ def _render_summary(live: dict):
 
     last_update = _last_update(live)
     updated = last_update.strftime("%d %b %Y · %H:%M UTC") if pd.notna(last_update) else "unknown"
-    st.caption(f"Last updated {updated}")
+    with st.container(horizontal=True, vertical_alignment="center", horizontal_alignment="distribute"):
+        st.caption(f"Last updated {updated}")
+        render_story_button(match, live_match_id, flow)
 
 
 # ---------------------------------------------------------------- timeline
@@ -156,7 +139,7 @@ def _timeline_events(live: dict) -> list[dict]:
     for _, v in live["var"].iterrows():
         events.append(dict(
             kind="var", time=_minute(v.get("time")), id=v.get("id"), side=v.get("side"),
-            minute=_minute(v.get("time")), label=_var_label(v.get("incident_class"), v.get("confirmed")),
+            minute=_minute(v.get("time")), label=var_label(v.get("incident_class"), v.get("confirmed")),
         ))
     return sorted(events, key=lambda e: (e["time"] or 0, _KIND_ORDER[e["kind"]], e["id"] or 0))
 
@@ -323,11 +306,13 @@ def _flow_unavailable(error: Exception):
         st.exception(error)
 
 
-def render_live_tab(match: pd.Series, live: dict, flow: dict | None, flow_error: Exception | None = None):
+def render_live_tab(match: pd.Series, live_match_id: int, live: dict, flow: dict | None,
+                    flow_error: Exception | None = None):
     """Live tab on Match Detail, in sub-tabs. `live` is the latest state
     (DynamoDB, data/live.py); `flow` is the message history (S3 Delta,
-    data/live_history.py) behind Match flow, Leaderboard and the half filter."""
-    _render_summary(live)
+    data/live_history.py) behind Match flow, Leaderboard, the half filter and
+    the Match story button."""
+    _render_summary(live, match, live_match_id, flow)
 
     finished = pd.notna(match.get("full_time_home_team_score")) or (
         flow is not None and not flow["team"].empty

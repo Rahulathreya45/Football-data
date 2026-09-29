@@ -2,6 +2,7 @@ import base64
 import re
 from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 
 ASSETS_DIR = Path(__file__).resolve().parent / "assets"
@@ -79,3 +80,21 @@ def parse_int(value, default=None):
         return int(value)
     except (TypeError, ValueError):
         return default
+
+
+# A VAR decision the review didn't confirm was overturned.
+_OVERTURNED = {"goalAwarded": "Goal disallowed", "penaltyAwarded": "Penalty overturned"}
+
+
+def humanize_class(value) -> str:
+    """'goalAwarded' -> 'Goal awarded'."""
+    words = re.sub(r"(?<!^)(?=[A-Z])", " ", str(value or "")).lower()
+    return words.capitalize()
+
+
+def var_label(incident_class, confirmed) -> str:
+    """Live-feed VAR decision as text: 'goalAwarded' + confirmed=False ->
+    'Goal disallowed'; otherwise the humanized class ('Goal awarded')."""
+    if incident_class in _OVERTURNED and confirmed is not None and pd.notna(confirmed) and not bool(confirmed):
+        return _OVERTURNED[incident_class]
+    return humanize_class(incident_class)

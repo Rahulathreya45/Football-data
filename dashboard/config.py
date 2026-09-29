@@ -47,3 +47,9 @@ MATCHES_PER_PAGE = 10
 # (same env vars as the live/ scripts).
 LIVE_MATCH_TABLE = os.getenv("LIVE_MATCH_TABLE", "live_match_state")
 LIVE_REGION = os.getenv("AWS_REGION", S3_REGION)
+
+# AI match story (data/match_story.py), Gemini API free tier. Models are
+# tried in order; the next one is used when one is rate-limited or unavailable.
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_MODELS = [m.strip() for m in os.getenv("GEMINI_MODELS", "gemini-3.5-flash-lite,gemini-2.5-flash-lite").split(",") if m.strip()]
+STORY_MIN_MINUTE = 25        # no story before this much of the match is recorded

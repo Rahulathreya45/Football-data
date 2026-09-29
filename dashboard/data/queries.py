@@ -291,3 +291,49 @@ def get_live_incident_first_seen(live_match_id: int) -> pd.DataFrame:
         SELECT 'injury', NULL, time, max(length), min({_LIVE_TS}) FROM delta_scan('{TABLES["live_injury_time"]}') WHERE match_id = ? GROUP BY time
     """
     return run_query(sql, (live_match_id,) * 5)
+
+
+def get_live_incidents_history(live_match_id: int) -> pd.DataFrame:
+    """Every goal, card, sub and VAR decision the live feed sent for a match,
+    latest version of each, with names. Incidents messages carry the full
+    list, so `in_final` is False for anything missing from the newest
+    message - a goal ruled out after the feed first reported it, say."""
+    sql = f"""
+        WITH items AS (
+            SELECT 'goal' AS kind, id, time, side, scorer_name AS player, assist_name AS other_player,
+                   NULL AS incident_class, NULL::BOOLEAN AS confirmed, NULL AS reason,
+                   home_score, away_score, kafka_offset
+            FROM delta_scan('{TABLES["live_goals"]}') WHERE match_id = ?
+            UNION ALL
+            SELECT 'card', id, time, side, player_name, NULL, incident_class, NULL, reason, NULL, NULL, kafka_offset
+            FROM delta_scan('{TABLES["live_cards"]}') WHERE match_id = ?
+            UNION ALL
+            SELECT 'sub', id, time, side, player_in_name, player_out_name, NULL, NULL, NULL, NULL, NULL, kafka_offset
+            FROM delta_scan('{TABLES["live_subs"]}') WHERE match_id = ?
+            UNION ALL
+            SELECT 'var', id, time, side, NULL, NULL, incident_class, confirmed, NULL, NULL, NULL, kafka_offset
+            FROM delta_scan('{TABLES["live_var_decisions"]}') WHERE match_id = ?
+        ),
+        newest AS (
+            SELECT max(kafka_offset) AS last_offset FROM (
+                SELECT kafka_offset FROM items
+                UNION ALL
+                SELECT kafka_offset FROM delta_scan('{TABLES["live_injury_time"]}') WHERE match_id = ?
+            )
+        )
+        SELECT kind, id,
+               arg_max(time, kafka_offset) AS time,
+               arg_max(side, kafka_offset) AS side,
+               arg_max(player, kafka_offset) AS player,
+               arg_max(other_player, kafka_offset) AS other_player,
+               arg_max(incident_class, kafka_offset) AS incident_class,
+               arg_max(confirmed, kafka_offset) AS confirmed,
+               arg_max(reason, kafka_offset) AS reason,
+               arg_max(home_score, kafka_offset) AS home_score,
+               arg_max(away_score, kafka_offset) AS away_score,
+               max(kafka_offset) = (SELECT last_offset FROM newest) AS in_final
+        FROM items
+        GROUP BY kind, id
+        ORDER BY time, kind, id
+    """
+    return run_query(sql, (live_match_id,) * 5)

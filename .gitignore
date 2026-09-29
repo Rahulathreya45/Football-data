@@ -224,3 +224,6 @@ __marimo__/
 
 # Personal teaching workspace (/teach)
 learning/
+
+# Personal dev log (kept locally for the portfolio site)
+devlog.md

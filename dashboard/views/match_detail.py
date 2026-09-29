@@ -95,7 +95,7 @@ if show_live:
                     flow = get_match_flow(live_match_id, match["match_date"])
             except DataSourceError as e:
                 flow_error = e
-            render_live_tab(match, live, flow, flow_error)
+            render_live_tab(match, live_match_id, live, flow, flow_error)
         else:
             st.warning(
                 "Couldn't load the live feed right now. The live data store may be "
