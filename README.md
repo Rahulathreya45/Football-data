@@ -23,38 +23,7 @@ story of the match from the recorded data.
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    subgraph SRC["Sources"]
-        FD["football-data.org<br/>REST"]
-        FB["FBref<br/>via soccerdata"]
-        SP["sportsapipro<br/>REST + WebSocket"]
-    end
-
-    subgraph V1["v1 · Batch"]
-        NB["app.ipynb<br/>ingestion"] --> RAW[("S3 raw/<br/>bronze")]
-        RAW --> DBX["Databricks<br/>PySpark + Delta MERGE"]
-        DBX --> SILVER[("S3 silver/<br/>Delta")]
-        SILVER --> GOLD[("S3 gold/<br/>Delta")]
-    end
-
-    subgraph V2["v2 · Streaming"]
-        WS["ws_to_kafka.py<br/>producer"] --> K{{"Kafka topic<br/>raw.sportsapipro-events"}}
-        K --> KD["kafka_to_dynamo.py"] --> DDB[("DynamoDB<br/>live_match_state")]
-        K --> KS["kafka_to_s3.py"] --> LOG[("S3 live/<br/>raw message log")]
-        LOG --> DBX2["Databricks<br/>live cells"] --> LD[("S3 live_delta/<br/>Delta event logs")]
-    end
-
-    FD --> NB
-    FB --> NB
-    SP --> NB
-    SP --> WS
-
-    GOLD --> APP["Streamlit + DuckDB<br/>dashboard"]
-    DDB --> APP
-    LD --> APP
-    APP <--> GEM["Gemini API<br/>match story"]
-```
+![Architecture: three sources feed a batch pipeline (Python ingestion, S3 bronze, Databricks, silver and gold Delta) and a streaming pipeline (WebSocket producer, Kafka, DynamoDB and S3 raw log to Delta), both serving a Streamlit + DuckDB dashboard with a Gemini AI match story](architecture.png)
 
 **v1, batch.** Each source lands as-is in S3 under `raw/<year>/<source>/` (bronze). Databricks
 builds a conformed silver layer of shared dimensions and facts, then gold tables shaped for each
