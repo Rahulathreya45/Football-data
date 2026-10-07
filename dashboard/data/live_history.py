@@ -16,6 +16,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+from data.db import LIVE_TTL
 from data.queries import (
     get_live_incident_first_seen,
     get_live_player_stats_history,
@@ -100,7 +101,13 @@ def _with_minutes(df: pd.DataFrame, clock: MatchClock) -> pd.DataFrame:
     return df.join(clock.minutes(df["event_ts"]))
 
 
-@st.cache_data(ttl=300, show_spinner=False)
+def history_loaders(live_match_id: int) -> list[tuple]:
+    """The queries get_match_flow makes, for data/prefetch.py to run in parallel."""
+    return [(get_live_incident_first_seen, live_match_id), (get_live_team_stats_history, live_match_id),
+            (get_live_player_stats_history, live_match_id)]
+
+
+@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
 def get_match_flow(live_match_id: int, kickoff) -> dict:
     """Team and player stat histories with estimated match minutes, plus the
     clock used. `kickoff` is the scheduled kickoff (fallback anchor)."""

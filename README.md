@@ -9,7 +9,7 @@ from a WebSocket feed and fans them out to DynamoDB for current match state and 
 message history. The dashboard uses both to replay how each match unfolded, and Gemini writes the
 story of the match from the recorded data.
 
-> **Live dashboard:** _link coming soon_ · **Walkthrough video:** _link coming soon_
+> **Live dashboard:** [football-data-platform.streamlit.app](https://football-data-platform.streamlit.app/) · **Walkthrough video:** _link coming soon_
 
 | | |
 |---|---|
@@ -81,8 +81,9 @@ WebSocket ──> Kafka topic ────────┤
   - Delivery is at-least-once, and duplicates are removed downstream on `(partition, offset)`.
   - Databricks flattens the log into per-type Delta event tables: goals, cards, substitutions, VAR
     decisions, added time, lineups and team stats.
-- **Cost-efficient capture.** Consumers run as bounded replays: each reads from its committed
-  offset to the end of the topic, then exits. Nothing has to stay running in the cloud during a
+- **Cost-efficient capture.** Consumers run as bounded replays: each reads up to the end of the
+  topic as it was at startup, then exits. The S3 loader resumes from its committed offset; the
+  DynamoDB sink replays from the start, which is safe because its writes are idempotent. Nothing has to stay running in the cloud during a
   match.
 
 ---

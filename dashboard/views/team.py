@@ -2,8 +2,16 @@ import streamlit as st
 
 from components.ui import render_header, render_match_card, render_pagination, render_invalid_link
 from components.team_stats import render_team_season_stats_tab, render_team_players_season_tab
-from data.queries import get_team, get_seasons, get_team_matches, get_team_matches_count
-from data.live import recorded_match_ids
+from data.queries import (
+    get_seasons,
+    get_team,
+    get_team_matches,
+    get_team_matches_count,
+    get_team_players_season_stats,
+    get_team_season_stats,
+)
+from data.live import get_live_match_map, recorded_match_ids
+from data.prefetch import prefetch
 from config import MATCHES_PER_PAGE
 from utils import parse_int
 
@@ -21,12 +29,21 @@ if team_id is None:
     render_invalid_link("Invalid team link.", BACK_PAGE, BACK_LABEL)
 
 with st.spinner("Loading team..."):
-    team = get_team(team_id)
-
+    page = max(1, parse_int(st.query_params.get("page"), 1))
     season_id = parse_int(st.query_params.get("season_id"))
     if season_id is None:
         seasons_df = get_seasons()
         season_id = int(seasons_df["season_id"].iloc[0]) if not seasons_df.empty else None
+
+    # All three tabs render on every run, so load their data together (data/prefetch.py).
+    calls = [(get_team, team_id), (get_live_match_map,)]
+    if season_id is not None:
+        calls += [(get_team_matches_count, team_id, season_id),
+                  (get_team_matches, team_id, season_id, page, MATCHES_PER_PAGE),
+                  (get_team_season_stats, team_id, season_id),
+                  (get_team_players_season_stats, team_id, season_id)]
+    prefetch(*calls)
+    team = get_team(team_id)
 
 if team is None:
     render_invalid_link("Team not found.", BACK_PAGE, BACK_LABEL)
@@ -51,7 +68,6 @@ with tab_matches:
         st.caption("No season data available.")
     else:
         with st.spinner("Loading matches..."):
-            page = max(1, parse_int(st.query_params.get("page"), 1))
             total = get_team_matches_count(team_id, season_id)
             total_pages = max(1, -(-total // MATCHES_PER_PAGE))
             page = min(page, total_pages)

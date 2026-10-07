@@ -12,7 +12,9 @@ load_dotenv()
 BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "localhost:9092")
 TOPIC = os.getenv("KAFKA_TOPIC", "raw.sportsapipro-events")
 S3_BUCKET = os.getenv("S3_BUCKET")
-S3_PREFIX = os.getenv("LIVE_S3_PREFIX", "live")
+# Its own prefix (not live/, which also holds live_delta): the Databricks football-live job
+# is triggered by new files under it.
+S3_PREFIX = os.getenv("LIVE_S3_PREFIX", "live/raw")
 REGION = os.getenv("AWS_REGION", "ap-south-1")
 GROUP_ID = os.getenv("S3_LOADER_GROUP_ID", "s3-raw-loader-v1")
 MAX_RECORDS_PER_FILE = int(os.getenv("MAX_RECORDS_PER_FILE", "5000"))

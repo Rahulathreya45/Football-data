@@ -227,3 +227,10 @@ learning/
 
 # Personal dev log (kept locally for the portfolio site)
 devlog.md
+
+# Local scratch/exploration output (not project data)
+/kafka_op.csv
+/live_*.csv
+/match_*_filtered.csv
+/match_*_schema_samples.json
+sportsapipro_raw.jsonl

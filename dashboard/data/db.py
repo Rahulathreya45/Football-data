@@ -53,6 +53,9 @@ def get_connection() -> duckdb.DuckDBPyConnection:
     con.execute("INSTALL httpfs; LOAD httpfs;")
     con.execute("INSTALL aws; LOAD aws;")
     con.execute("INSTALL delta; LOAD delta;")
+    # Cache S3 file sizes/ETags between queries. Delta data files are never
+    # rewritten, so this only saves repeat HEAD requests.
+    con.execute("SET enable_http_metadata_cache = true;")
 
     if _has_deployed_secrets():
         # Streamlit Cloud / deployed environment
@@ -123,18 +126,35 @@ def get_connection() -> duckdb.DuckDBPyConnection:
     return con
 
 
-@st.cache_data(ttl=3600, show_spinner=False)
-def run_query(sql: str, params: tuple | None = None):
-    """Run SQL against the Gold layer and return a pandas DataFrame."""
+# Batch tables (silver/gold) only change when the Databricks batch job runs;
+# live_delta is appended every few minutes during matches.
+BATCH_TTL = 6 * 3600
+LIVE_TTL = 120
+
+
+def _execute(sql: str, params: tuple | None):
     try:
         # One cursor per query: the cached connection is shared by every
-        # session thread, and a DuckDB connection isn't safe to use from
-        # several threads at once (concurrent reruns got each other's -
-        # or empty - results). Cursors share the database, so the loaded
-        # extensions and the S3 secret still apply.
+        # session thread (and by data/prefetch.py's workers), and a DuckDB
+        # connection isn't safe to use from several threads at once
+        # (concurrent reruns got each other's - or empty - results). Cursors
+        # share the database, so the loaded extensions and the S3 secret
+        # still apply.
         with get_connection().cursor() as cur:
             if params:
                 return cur.execute(sql, list(params)).df()
             return cur.execute(sql).df()
     except duckdb.Error as e:
         raise DataSourceError(f"Query against the data store failed: {e}") from e
+
+
+@st.cache_data(ttl=BATCH_TTL, show_spinner=False)
+def run_query(sql: str, params: tuple | None = None):
+    """Run SQL against the silver/gold Delta tables; returns a pandas DataFrame."""
+    return _execute(sql, params)
+
+
+@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
+def run_live_query(sql: str, params: tuple | None = None):
+    """Same as run_query, for the live_delta tables (short cache)."""
+    return _execute(sql, params)

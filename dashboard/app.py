@@ -4,6 +4,7 @@ import streamlit as st
 
 from components.styling import load_css, fix_history_navigation
 from components.ui import render_error
+from data.prefetch import warm_cache
 
 st.set_page_config(
     page_title="Premier League Analytics",
@@ -25,6 +26,12 @@ pg = st.navigation(
     [matches_page, standings_page, match_detail_page, teams_list_page, team_page],
     position="hidden",
 )
+
+# Start loading the most common data in the background on the first visit.
+try:
+    warm_cache()
+except Exception:
+    logging.getLogger(__name__).exception("Cache warm-up failed to start")
 
 # Error boundary for every page. st.stop / st.switch_page / st.rerun raise
 # Streamlit control-flow exceptions that subclass BaseException, so they

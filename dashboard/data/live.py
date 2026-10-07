@@ -19,7 +19,7 @@ from boto3.dynamodb.conditions import Key
 from botocore.exceptions import BotoCoreError, ClientError
 
 from config import LIVE_MATCH_TABLE, LIVE_REGION
-from data.db import DataSourceError, get_aws_session
+from data.db import LIVE_TTL, DataSourceError, get_aws_session
 from data.queries import get_match_keys, get_team_sports_api_ids
 
 # Item event_ts is the last message's time, i.e. match day (or shortly after
@@ -59,7 +59,7 @@ def _read_all(operation, **kwargs) -> list[dict]:
         raise DataSourceError(f"Couldn't read the live table '{LIVE_MATCH_TABLE}': {e}") from e
 
 
-@st.cache_data(ttl=300, show_spinner=False)
+@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
 def _recorded_matches() -> pd.DataFrame:
     """One row per captured match: live_match_id, each side's sportsapipro
     team id, and the last message time. A full scan, but with a narrow
@@ -86,7 +86,7 @@ def _recorded_matches() -> pd.DataFrame:
     return out.rename_axis("live_match_id").reset_index()[columns]
 
 
-@st.cache_data(ttl=300, show_spinner=False)
+@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
 def get_live_match_map() -> pd.DataFrame:
     """match_id (dashboard) -> live_match_id for every capture that maps onto
     a known fixture. Captures from other competitions, or without lineups

@@ -1,0 +1,10 @@
+# Ingestion notebook (app.ipynb) and the live pipeline (live/). The dashboard has its own
+# dashboard/requirements.txt. Python 3.11+.
+requests==2.34.2
+boto3==1.43.72
+python-dotenv==1.2.2
+pandas==3.0.1
+soccerdata==1.9.1
+confluent-kafka==2.15.1
+websockets==16.1.1
+jupyter

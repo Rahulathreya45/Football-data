@@ -2,7 +2,8 @@ import streamlit as st
 
 from components.ui import render_header, render_pagination, render_match_card
 from data.queries import get_seasons, get_matches, get_matches_count
-from data.live import recorded_match_ids
+from data.live import get_live_match_map, recorded_match_ids
+from data.prefetch import prefetch
 from config import MATCHES_PER_PAGE
 from utils import parse_int
 
@@ -18,6 +19,8 @@ if seasons_df.empty:
 
 with st.spinner("Loading matches..."):
     page = max(1, parse_int(st.query_params.get("page"), 1))
+    prefetch((get_matches_count, selected_season_id), (get_matches, selected_season_id, page, MATCHES_PER_PAGE),
+             (get_live_match_map,))
     total_matches = get_matches_count(selected_season_id)
     total_pages = max(1, -(-total_matches // MATCHES_PER_PAGE))  # ceil division
     page = min(page, total_pages)

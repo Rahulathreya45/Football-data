@@ -12,10 +12,13 @@ from data.queries import (
     get_match_lineups,
     get_match_cards,
     get_match_subs,
+    get_player_match_performance,
+    get_team_match_performance,
 )
 from data.db import DataSourceError
-from data.live import find_live_match_id, get_live_match_data
-from data.live_history import get_match_flow
+from data.live import find_live_match_id, get_live_match_data, get_live_match_map
+from data.live_history import get_match_flow, history_loaders
+from data.prefetch import prefetch
 from utils import parse_int
 
 BACK_PAGE, BACK_LABEL = "views/home_matches.py", "Back to matches"
@@ -32,6 +35,14 @@ if match_id is None:
     render_invalid_link("Invalid match link.", BACK_PAGE, BACK_LABEL)
 
 with st.spinner("Loading match..."):
+    # Everything below except the live feed depends only on match_id, so load
+    # it all at once instead of tab by tab (data/prefetch.py).
+    prefetch(
+        (get_match, match_id), (get_match_goals, match_id), (get_match_lineups, match_id),
+        (get_match_cards, match_id), (get_match_subs, match_id),
+        (get_team_match_performance, match_id), (get_player_match_performance, match_id),
+        (get_live_match_map,),
+    )
     match = get_match(match_id)
 
 if match is None:
@@ -83,6 +94,7 @@ if show_live:
         if live_error is None:
             try:
                 with st.spinner("Loading live feed..."):
+                    prefetch((get_live_match_data, live_match_id), *history_loaders(live_match_id))
                     live = get_live_match_data(live_match_id)
             except DataSourceError as e:
                 live_error = e

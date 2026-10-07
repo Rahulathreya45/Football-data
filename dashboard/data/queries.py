@@ -1,7 +1,7 @@
 import pandas as pd
 
 from config import TABLES, LIVE_DELTA_TS_ZONE
-from data.db import run_query
+from data.db import run_live_query, run_query
 
 def get_seasons() -> pd.DataFrame:
     sql = f"""
@@ -258,7 +258,7 @@ def get_live_team_stats_history(live_match_id: int) -> pd.DataFrame:
         WHERE match_id = ?
         ORDER BY event_ts, side
     """
-    return run_query(sql, (live_match_id,))
+    return run_live_query(sql, (live_match_id,))
 
 
 def get_live_player_stats_history(live_match_id: int) -> pd.DataFrame:
@@ -272,7 +272,7 @@ def get_live_player_stats_history(live_match_id: int) -> pd.DataFrame:
         WHERE match_id = ?
         ORDER BY event_ts
     """
-    return run_query(sql, (live_match_id,))
+    return run_live_query(sql, (live_match_id,))
 
 
 def get_live_incident_first_seen(live_match_id: int) -> pd.DataFrame:
@@ -290,7 +290,7 @@ def get_live_incident_first_seen(live_match_id: int) -> pd.DataFrame:
         UNION ALL
         SELECT 'injury', NULL, time, max(length), min({_LIVE_TS}) FROM delta_scan('{TABLES["live_injury_time"]}') WHERE match_id = ? GROUP BY time
     """
-    return run_query(sql, (live_match_id,) * 5)
+    return run_live_query(sql, (live_match_id,) * 5)
 
 
 def get_live_incidents_history(live_match_id: int) -> pd.DataFrame:
@@ -336,4 +336,4 @@ def get_live_incidents_history(live_match_id: int) -> pd.DataFrame:
         GROUP BY kind, id
         ORDER BY time, kind, id
     """
-    return run_query(sql, (live_match_id,) * 5)
+    return run_live_query(sql, (live_match_id,) * 5)
