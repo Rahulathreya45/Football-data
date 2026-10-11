@@ -1,4 +1,4 @@
-import asyncio, json, os, re
+import asyncio, json, os, re, time
 import requests
 import websockets
 from confluent_kafka import Producer
@@ -17,7 +17,17 @@ TOURNAMENT_CATEGORY_SLUG = os.getenv("TOURNAMENT_CATEGORY_SLUG", "england")
 RAW_LOG_FILE = os.getenv("RAW_LOG_FILE", "sportsapipro_raw.jsonl")
 
 MATCH_CHANNEL_SUFFIXES = ("", ":incidents", ":stats", ":lineups", ":odds")
-ACTIVE_STATUSES = ("notstarted", "inprogress")
+# Match discovery. The sportsapipro key allows 100 REST calls a day in total (resets 00:00 UTC), /today
+# lists only matches already in progress, and live-scores:football pushes no score updates on
+# WebSocket v3.2. So the fixture list is read a few times a day and each match is subscribed on a
+# timer around its kick-off - never by polling.
+FOOTBALL_BASE = REST_BASE.rsplit("/api", 1)[0]                 # .../v2/football (fixture endpoints)
+SEASON_ID = os.getenv("SPORTSAPIPRO_SEASON_ID")                # optional; else resolved via /seasons
+FIXTURE_REFRESH_SECONDS = int(os.getenv("FIXTURE_REFRESH_SECONDS", str(6 * 3600)))
+SUBSCRIBE_BEFORE_KICKOFF = 15 * 60                             # lineups arrive before kick-off
+UNSUBSCRIBE_AFTER_KICKOFF = 3 * 3600
+# Manual override, e.g. MATCH_IDS=16363879 when the REST quota is used up: subscribed while running.
+MATCH_IDS = {int(m) for m in os.getenv("MATCH_IDS", "").split(",") if m.strip()}
 
 producer = Producer({
     "bootstrap.servers": KAFKA_BOOTSTRAP_SERVERS,
@@ -49,20 +59,88 @@ def is_tracked_tournament(tournament: dict) -> bool:
     return tournament.get("slug") == TOURNAMENT_SLUG and category == TOURNAMENT_CATEGORY_SLUG
 
 
-def get_todays_matches():
-    """One-off REST call at startup — seeds any tracked matches already live/upcoming today."""
-    resp = requests.get(f"{REST_BASE}/today", headers={"x-api-key": API_KEY})
-    resp.raise_for_status()
-    events = resp.json()["events"]
+def rest_get(url):
+    resp = requests.get(url, headers={"x-api-key": API_KEY}, timeout=30)
+    if resp.status_code == 429:
+        raise RuntimeError(f"REST quota used up ({resp.headers.get('x-ratelimit-limit')}/day, "
+                           f"resets {resp.headers.get('x-ratelimit-reset')})")
+    return resp
 
-    matches = {}
-    for e in events:
-        if is_tracked_tournament(e.get("tournament")):
-            matches[e["id"]] = e["status"]["type"]
-            print(f"tracking: id={e['id']} {describe_tournament(e.get('tournament'))}")
-        else:
-            print(f"skipped (not tracked): id={e.get('id')} {describe_tournament(e.get('tournament'))}")
-    return matches
+
+def _label(e):
+    return f"{(e.get('homeTeam') or {}).get('name')} v {(e.get('awayTeam') or {}).get('name')}"
+
+
+def get_live_now():
+    """Tracked matches already in progress (/today lists only live matches) -> {id: (kickoff, label)}. 1 call."""
+    resp = rest_get(f"{REST_BASE}/today")
+    resp.raise_for_status()
+    return {e["id"]: (e["startTimestamp"], _label(e)) for e in resp.json()["events"]
+            if is_tracked_tournament(e.get("tournament"))}
+
+
+def get_upcoming_fixtures():
+    """The tracked tournament's next fixtures -> {id: (kickoff, label)}. 1-3 calls."""
+    season_id = SEASON_ID
+    if not season_id:
+        resp = rest_get(f"{REST_BASE}/tournaments/{TOURNAMENT_ID}/seasons")
+        resp.raise_for_status()
+        season_id = resp.json()["seasons"][0]["id"]
+    fixtures = {}
+    for page in range(2):
+        resp = rest_get(f"{FOOTBALL_BASE}/tournament/{TOURNAMENT_ID}/season/{season_id}/events/next/{page}")
+        if resp.status_code == 404:
+            break
+        resp.raise_for_status()
+        data = resp.json()
+        for e in data.get("events", []):
+            fixtures[e["id"]] = (e["startTimestamp"], _label(e))
+        if not data.get("hasNextPage"):
+            break
+    return fixtures
+
+
+def load_schedule(include_live_now):
+    """Fixtures to subscribe around kick-off. Each source is best effort: a failed call (quota,
+    network) is logged and the producer keeps running with whatever it already has."""
+    schedule = {}
+    sources = [("upcoming fixtures", get_upcoming_fixtures)]
+    if include_live_now:
+        sources.append(("in progress now", get_live_now))
+    for name, fetch in sources:
+        try:
+            found = fetch()
+            schedule.update(found)
+            print(f"{name}: {len(found)} tracked")
+        except Exception as e:
+            print(f"{name}: lookup failed ({e})")
+    for mid, (kickoff, label) in sorted(schedule.items(), key=lambda kv: kv[1][0]):
+        when = time.strftime("%a %H:%M UTC", time.gmtime(kickoff))
+        print(f"tracking: id={mid} {label} kick-off {when}")
+    return schedule
+
+
+async def apply_schedule(ws, schedule, subscribed):
+    """Every 30 s: subscribe from SUBSCRIBE_BEFORE_KICKOFF before kick-off until
+    UNSUBSCRIBE_AFTER_KICKOFF after; MATCH_IDS stay subscribed. No REST calls."""
+    while True:
+        now = time.time()
+        for mid in MATCH_IDS:
+            await subscribe_match(ws, mid, subscribed)
+        for mid, (kickoff, _) in list(schedule.items()):
+            if mid in MATCH_IDS:
+                continue
+            if kickoff - SUBSCRIBE_BEFORE_KICKOFF <= now <= kickoff + UNSUBSCRIBE_AFTER_KICKOFF:
+                await subscribe_match(ws, mid, subscribed)
+            else:
+                await unsubscribe_match(ws, mid, subscribed)
+        await asyncio.sleep(30)
+
+
+async def refresh_schedule(schedule):
+    while True:
+        await asyncio.sleep(FIXTURE_REFRESH_SECONDS)
+        schedule.update(await asyncio.to_thread(load_schedule, False))
 
 
 match_key_re = re.compile(r"match:(\d+)")
@@ -108,7 +186,10 @@ async def keepalive(ws):
 
 async def watch():
     uri = f"{WS_URL}?x-api-key={API_KEY}"
-    live_matches = get_todays_matches()
+    schedule = load_schedule(include_live_now=True)      # {match id: (kick-off ts, label)}
+    if MATCH_IDS:
+        print(f"MATCH_IDS override: {sorted(MATCH_IDS)}")
+    refresh_task = asyncio.create_task(refresh_schedule(schedule))
     backoff = 1
 
     with open(RAW_LOG_FILE, "a", encoding="utf-8") as f:
@@ -122,11 +203,8 @@ async def watch():
                     subscribed.add("live-scores:football")
                     print("subscribed: live-scores:football")
 
-                    for mid, status in list(live_matches.items()):
-                        if status in ACTIVE_STATUSES:
-                            await subscribe_match(ws, mid, subscribed)
-
                     ping_task = asyncio.create_task(keepalive(ws))
+                    schedule_task = asyncio.create_task(apply_schedule(ws, schedule, subscribed))
                     try:
                         async for message in ws:
                             kafka_send(message, f)
@@ -136,25 +214,20 @@ async def watch():
                                 print(f"non-JSON frame (still saved raw): {message[:100]}")
                                 continue
 
-                            print(f"→ {frame.get('channel')} [{frame.get('type')}]")
+                            print(f"\u2192 {frame.get('channel')} [{frame.get('type')}]")
 
+                            # Older feed versions push live scores here; if any arrive, a tracked match
+                            # missing from the schedule is added from its kick-off time.
                             if frame.get("channel") == "live-scores:football":
                                 for game in frame.get("data", {}).get("games", []):
-                                    mid = game["id"]
-                                    if not is_tracked_tournament(game.get("tournament")):
-                                        continue
-                                    status = game["status"]["type"]
-                                    prev = live_matches.get(mid)
-                                    live_matches[mid] = status
-                                    if status == "inprogress" and prev != "inprogress":
-                                        await subscribe_match(ws, mid, subscribed)
-                                    elif status == "finished" and prev == "inprogress":
-                                        await unsubscribe_match(ws, mid, subscribed)
+                                    if is_tracked_tournament(game.get("tournament")) and game["id"] not in schedule:
+                                        schedule[game["id"]] = (game.get("startTimestamp") or time.time(), _label(game))
                     finally:
                         ping_task.cancel()
+                        schedule_task.cancel()
 
             except (websockets.exceptions.ConnectionClosed, OSError) as e:
-                print(f"disconnected ({e}) — retrying in {backoff}s")
+                print(f"disconnected ({e}) - retrying in {backoff}s")
                 await asyncio.sleep(backoff)
                 backoff = min(backoff * 2, 30)
 
