@@ -19,7 +19,12 @@ from boto3.dynamodb.conditions import Key
 from botocore.exceptions import BotoCoreError, ClientError
 
 from config import LIVE_MATCH_TABLE, LIVE_REGION
-from data.db import LIVE_TTL, DataSourceError, get_aws_session
+from data.db import DataSourceError, get_aws_session
+
+# DynamoDB is the Live tab's real-time source: keep these caches shorter than the
+# tab's 30 s auto-refresh (views/match_detail.py) so every refresh can see new data.
+MAP_TTL = 30
+STATE_TTL = 15
 from data.queries import get_match_keys, get_team_sports_api_ids
 
 # Item event_ts is the last message's time, i.e. match day (or shortly after
@@ -29,7 +34,7 @@ MATCH_DATE_TOLERANCE = pd.Timedelta(days=3)
 _ITEM_KINDS = {
     "STATS": "stats", "LINEUP": "lineups",
     "INC#GOAL": "goals", "INC#CARD": "cards", "INC#SUB": "subs",
-    "INC#VAR": "var", "INC#INJURYTIME": "injury_time",
+    "INC#VAR": "var", "INC#INJURYTIME": "injury_time", "INC#PEN": "penalty_misses",
 }
 
 
@@ -59,7 +64,7 @@ def _read_all(operation, **kwargs) -> list[dict]:
         raise DataSourceError(f"Couldn't read the live table '{LIVE_MATCH_TABLE}': {e}") from e
 
 
-@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
+@st.cache_data(ttl=MAP_TTL, show_spinner=False)
 def _recorded_matches() -> pd.DataFrame:
     """One row per captured match: live_match_id, each side's sportsapipro
     team id, and the last message time. A full scan, but with a narrow
@@ -86,7 +91,7 @@ def _recorded_matches() -> pd.DataFrame:
     return out.rename_axis("live_match_id").reset_index()[columns]
 
 
-@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
+@st.cache_data(ttl=MAP_TTL, show_spinner=False)
 def get_live_match_map() -> pd.DataFrame:
     """match_id (dashboard) -> live_match_id for every capture that maps onto
     a known fixture. Captures from other competitions, or without lineups
@@ -138,10 +143,11 @@ def recorded_match_ids() -> set[int]:
         return set()
 
 
-@st.cache_data(ttl=60, show_spinner=False)
+@st.cache_data(ttl=STATE_TTL, show_spinner=False)
 def get_live_match_data(live_match_id: int) -> dict[str, pd.DataFrame]:
     """Every item for one captured match, split by kind: stats, lineups,
-    goals, cards, subs, var, injury_time (one DataFrame each, possibly empty)."""
+    goals, cards, subs, var, injury_time, penalty_misses (one DataFrame
+    each, possibly empty)."""
     items = _read_all(_table().query, KeyConditionExpression=Key("match_id").eq(live_match_id))
     df = pd.DataFrame(items)
     if df.empty:
@@ -155,3 +161,39 @@ def get_live_match_data(live_match_id: int) -> dict[str, pd.DataFrame]:
     if not data["stats"].empty:
         data["stats"]["side"] = data["stats"]["sk"].str.split("#").str[1]
     return data
+
+
+# ---------------------------------------------------------------- live state
+IN_PLAY_BEFORE = pd.Timedelta(minutes=15)
+IN_PLAY_AFTER = pd.Timedelta(hours=3)
+
+
+def is_in_play(match_date, full_time_home_score) -> bool:
+    """A fixture is "in play" from 15 min before kick-off to 3 h after, until
+    the batch pipeline records its final score. Combined with a recorded live
+    feed this is the "live state": the dashboard then shows the feed's score
+    and the live view, refreshing itself."""
+    if pd.isna(match_date) or pd.notna(full_time_home_score):
+        return False
+    kickoff = pd.to_datetime(match_date, utc=True)
+    return kickoff - IN_PLAY_BEFORE <= pd.Timestamp.now(tz="UTC") <= kickoff + IN_PLAY_AFTER
+
+
+def awaits_batch(match_date, full_time_home_score) -> bool:
+    """The fixture has started (from 15 min before kick-off) but the batch
+    pipeline hasn't recorded its result yet. With a recorded feed the
+    dashboard shows only the live data until the batch data arrives; while
+    is_in_play it also refreshes itself."""
+    if pd.isna(match_date) or pd.notna(full_time_home_score):
+        return False
+    return pd.Timestamp.now(tz="UTC") >= pd.to_datetime(match_date, utc=True) - IN_PLAY_BEFORE
+
+
+def feed_score(goals: pd.DataFrame) -> tuple[int, int]:
+    """Score after the last goal the feed recorded (goal items carry the
+    running score); 0-0 before any goal."""
+    if goals.empty or "home_score" not in goals:
+        return 0, 0
+    last = goals.sort_values(["time", "id"]).iloc[-1]
+    return int(last["home_score"]), int(last["away_score"])
+

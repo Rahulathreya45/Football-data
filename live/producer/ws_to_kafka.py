@@ -80,24 +80,18 @@ def get_live_now():
 
 
 def get_upcoming_fixtures():
-    """The tracked tournament's next fixtures -> {id: (kickoff, label)}. 1-3 calls."""
+    """The tracked tournament's next fixtures, including ones in progress -> {id: (kickoff, label)}.
+    One page holds ~30 events (about three rounds), so 1 call (+1 if the season id isn't set)."""
     season_id = SEASON_ID
     if not season_id:
         resp = rest_get(f"{REST_BASE}/tournaments/{TOURNAMENT_ID}/seasons")
         resp.raise_for_status()
         season_id = resp.json()["seasons"][0]["id"]
-    fixtures = {}
-    for page in range(2):
-        resp = rest_get(f"{FOOTBALL_BASE}/tournament/{TOURNAMENT_ID}/season/{season_id}/events/next/{page}")
-        if resp.status_code == 404:
-            break
-        resp.raise_for_status()
-        data = resp.json()
-        for e in data.get("events", []):
-            fixtures[e["id"]] = (e["startTimestamp"], _label(e))
-        if not data.get("hasNextPage"):
-            break
-    return fixtures
+    resp = rest_get(f"{FOOTBALL_BASE}/tournament/{TOURNAMENT_ID}/season/{season_id}/events/next/0")
+    resp.raise_for_status()
+    body = resp.json()
+    data = body.get("data", body)            # this endpoint wraps the payload: {"success", "data": {"events", ...}}
+    return {e["id"]: (e["startTimestamp"], _label(e)) for e in data.get("events", [])}
 
 
 def load_schedule(include_live_now):

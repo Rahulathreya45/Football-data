@@ -7,6 +7,7 @@ from components.match_story import render_story_button
 from components.live_flow import render_leaderboard, render_match_flow
 from components.stats import render_stat_bar
 from components.ui import render_goal_row
+from data.live import feed_score
 from data.live_history import split_halves
 from utils import format_minute, var_label
 
@@ -15,7 +16,7 @@ from utils import format_minute, var_label
 _POSITION_CODES = {"G": "GK", "D": "DF", "M": "MF", "F": "FW"}
 
 # Same-minute events: goals first, then VAR, cards, subs.
-_KIND_ORDER = {"goal": 0, "var": 1, "card": 2, "sub": 3}
+_KIND_ORDER = {"goal": 0, "penalty_miss": 0, "var": 1, "card": 2, "sub": 3}
 
 TEAM_STAT_SECTIONS = [
     ("Attack", [
@@ -74,15 +75,6 @@ def _minute(value):
     return int(value) if pd.notna(value) else None
 
 
-def _feed_score(goals: pd.DataFrame) -> tuple[int, int]:
-    """Score after the last goal the feed recorded (goal items carry the
-    running score)."""
-    if goals.empty or "home_score" not in goals:
-        return 0, 0
-    last = goals.sort_values(["time", "id"]).iloc[-1]
-    return int(last["home_score"]), int(last["away_score"])
-
-
 def _side_stats(stats: pd.DataFrame, side: str) -> pd.Series:
     rows = stats[stats["side"] == side] if not stats.empty else stats
     if rows.empty:
@@ -98,8 +90,8 @@ def _last_update(live: dict):
     return max(stamps) if stamps else pd.NaT
 
 
-def _render_summary(live: dict, match: pd.Series, live_match_id: int, flow: dict | None):
-    home_score, away_score = _feed_score(live["goals"])
+def _render_summary(live: dict, match: pd.Series, live_match_id: int, flow: dict | None, show_story: bool):
+    home_score, away_score = feed_score(live["goals"])
     home, away = _side_stats(live["stats"], "home"), _side_stats(live["stats"], "away")
 
     with st.container(horizontal=True, key="live_summary"):
@@ -113,16 +105,25 @@ def _render_summary(live: dict, match: pd.Series, live_match_id: int, flow: dict
     updated = last_update.strftime("%d %b %Y · %H:%M UTC") if pd.notna(last_update) else "unknown"
     with st.container(horizontal=True, vertical_alignment="center", horizontal_alignment="distribute"):
         st.caption(f"Last updated {updated}")
-        render_story_button(match, live_match_id, flow)
+        if show_story:
+            render_story_button(match, live_match_id, flow)
 
 
 # ---------------------------------------------------------------- timeline
 def _timeline_events(live: dict) -> list[dict]:
     events = []
     for _, g in live["goals"].iterrows():
+        goal_class = g.get("incident_class")
         events.append(dict(
             kind="goal", time=_minute(g.get("time")), id=g.get("id"), side=g.get("side"),
             minute=_minute(g.get("time")), scorer=g.get("scorer_name", ""), assist=g.get("assist_name"),
+            is_own_goal=goal_class == "ownGoal", is_penalty=goal_class == "penalty",
+        ))
+    for _, p in live.get("penalty_misses", pd.DataFrame()).iterrows():
+        events.append(dict(
+            kind="penalty_miss", time=_minute(p.get("time")), id=p.get("id"), side=p.get("side"),
+            minute=_minute(p.get("time")), scorer=p.get("player_name", ""), assist=None,
+            is_penalty_miss=True,
         ))
     for _, c in live["cards"].iterrows():
         card_class = c.get("incident_class")
@@ -155,7 +156,7 @@ def _render_event(event: dict):
     c1, c2 = st.columns(2)
     align = "left" if event["side"] == "home" else "right"
     with c1 if align == "left" else c2:
-        if event["kind"] == "goal":
+        if event["kind"] in ("goal", "penalty_miss"):
             render_goal_row(event, align=align)
         elif event["kind"] == "card":
             render_card_row(event, align=align)
@@ -176,7 +177,7 @@ def _added_time(injury: pd.DataFrame, minute: int) -> str:
 
 def _score_at(goals: pd.DataFrame, minute: int) -> str:
     before = goals[goals["time"] <= minute] if not goals.empty else goals
-    home, away = _feed_score(before)
+    home, away = feed_score(before)
     return f"{home} - {away}"
 
 
@@ -307,12 +308,12 @@ def _flow_unavailable(error: Exception):
 
 
 def render_live_tab(match: pd.Series, live_match_id: int, live: dict, flow: dict | None,
-                    flow_error: Exception | None = None):
+                    flow_error: Exception | None = None, show_story: bool = True):
     """Live tab on Match Detail, in sub-tabs. `live` is the latest state
     (DynamoDB, data/live.py); `flow` is the message history (S3 Delta,
     data/live_history.py) behind Match flow, Leaderboard, the half filter and
     the Match story button."""
-    _render_summary(live, match, live_match_id, flow)
+    _render_summary(live, match, live_match_id, flow, show_story)
 
     finished = pd.notna(match.get("full_time_home_team_score")) or (
         flow is not None and not flow["team"].empty

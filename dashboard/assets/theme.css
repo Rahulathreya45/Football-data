@@ -412,3 +412,28 @@ div[data-testid="stVerticalBlockBorderWrapper"]:hover {
 [class*="st-key-page_jump_"] input {
     text-align: center;
 }
+
+/* Live state (data/live.py is_in_play + a recorded feed): the feed's score. */
+.score-pill.live {
+    background: rgba(255, 69, 58, 0.14);
+    color: #ff6b61;
+}
+.live-marker {
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ff6b61;
+    margin-top: -2px;
+    animation: live-pulse 1.6s ease-in-out infinite;
+}
+@keyframes live-pulse {
+    50% { opacity: 0.45; }
+}
+.live-marker.done {
+    color: var(--text-muted);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    animation: none;
+}
+

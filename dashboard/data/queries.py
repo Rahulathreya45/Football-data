@@ -34,10 +34,22 @@ def get_matches(season_id: int, page: int = 1, page_size: int = 10) -> pd.DataFr
             winner
         FROM delta_scan('{TABLES["fact_match_summary"]}')
         WHERE season_id = ?
-        ORDER BY match_date
+        ORDER BY match_date, match_id
         LIMIT ? OFFSET ?
     """
     return run_query(sql, (season_id, page_size, offset))
+
+
+def get_season_schedule(season_id: int) -> pd.DataFrame:
+    """Every match of a season in the same order as get_matches (so a row's
+    position gives its page), with what decides the landing page."""
+    sql = f"""
+        SELECT match_id, match_date, full_time_home_team_score
+        FROM delta_scan('{TABLES["fact_match_summary"]}')
+        WHERE season_id = ?
+        ORDER BY match_date, match_id
+    """
+    return run_query(sql, (season_id,))
  
  
 def get_matches_count(season_id: int) -> int:

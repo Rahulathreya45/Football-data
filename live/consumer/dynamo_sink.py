@@ -26,7 +26,8 @@ PLAYER_STATS = {
     "totalClearance": "clearances", "ballRecovery": "recoveries",
 }
 
-INCIDENT_TYPE_PREFIX = {"goal": "GOAL", "card": "CARD", "substitution": "SUB", "varDecision": "VAR"}
+INCIDENT_TYPE_PREFIX = {"goal": "GOAL", "card": "CARD", "substitution": "SUB", "varDecision": "VAR",
+                        "inGamePenalty": "PEN"}
 
 
 def _r3(v):
@@ -143,6 +144,8 @@ def write_incidents(table, match_id, env, team_ids, offset):
 
         if itype not in INCIDENT_TYPE_PREFIX or inc.get("id") is None:
             continue                       # period / anything unmapped
+        if itype == "inGamePenalty" and inc.get("incidentClass") != "missed":
+            continue                       # "awarded": the goal (or the miss) follows as its own incident
 
         prefix = INCIDENT_TYPE_PREFIX[itype]
         side = "home" if inc.get("isHome") else "away"
@@ -151,6 +154,7 @@ def write_incidents(table, match_id, env, team_ids, offset):
 
         if itype == "goal":
             row.update(home_score=inc.get("homeScore"), away_score=inc.get("awayScore"),
+                       incident_class=inc.get("incidentClass"),   # regular / ownGoal / penalty
                        scorer_name=inc.get("player", {}).get("name"),
                        scorer_short_name=inc.get("player", {}).get("shortName"),
                        scorer_position=inc.get("player", {}).get("position"),
@@ -174,6 +178,9 @@ def write_incidents(table, match_id, env, team_ids, offset):
                        player_out_jersey_number=inc.get("playerOut", {}).get("jerseyNumber"))
         elif itype == "varDecision":
             row.update(incident_class=inc.get("incidentClass"), confirmed=inc.get("confirmed"))
+        elif itype == "inGamePenalty":     # missed penalty: no score change
+            row.update(incident_class=inc.get("incidentClass"), reason=inc.get("reason"),
+                       player_name=inc.get("player", {}).get("name"))
 
         put_incident(table, match_id, f"INC#{prefix}#{inc['id']}", row)
 

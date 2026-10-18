@@ -89,11 +89,13 @@ def render_pagination(current_page: int, total_pages: int):
             st.rerun()
 
 
-def render_match_card(row, season_id, has_live=False):
+def render_match_card(row, season_id, has_live=False, live_score=None, live_now=True):
     """The whole card is clickable: an invisible button (key matchopen_*) is
     stretched over the bordered container by the rules in theme.css and
     opens Match Detail - for scheduled matches too. has_live adds a badge
-    for matches whose v2 live feed was recorded."""
+    for matches whose v2 live feed was recorded; live_score (home, away)
+    shows the feed's score while the batch result isn't in yet - marked
+    Live while live_now (in play), else as the feed's full time."""
     match_id = row["match_id"]
     played = pd.notna(row["full_time_home_team_score"])
 
@@ -104,11 +106,13 @@ def render_match_card(row, season_id, has_live=False):
             _render_team(row["home_team_crest"], row["home_team_name"], side="home")
 
         with c2:
-            if played:
-                score = f"{int(row['full_time_home_team_score'])} - {int(row['full_time_away_team_score'])}"
+            if live_score is not None:
+                score, pill = f"{live_score[0]} - {live_score[1]}", "score-pill live" if live_now else "score-pill"
+            elif played:
+                score, pill = f"{int(row['full_time_home_team_score'])} - {int(row['full_time_away_team_score'])}", "score-pill"
             else:
-                score = "vs"
-            st.markdown(f"<div class='score-pill'>{score}</div>", unsafe_allow_html=True)
+                score, pill = "vs", "score-pill"
+            st.markdown(f"<div class='{pill}'>{score}</div>", unsafe_allow_html=True)
 
         with c3:
             _render_team(row["away_team_crest"], row["away_team_name"], side="away")
@@ -117,6 +121,10 @@ def render_match_card(row, season_id, has_live=False):
         gw_txt = f" · Gameweek {int(gw)}" if pd.notna(gw) else ""
         status = "Full time" if played else "Scheduled"
         live_txt = " · :red-badge[:material/sensors: Live feed]" if has_live else ""
+        if live_score is not None and live_now:
+            status, live_txt = ":red-badge[:material/sensors: Live]", ""
+        elif live_score is not None:
+            status = "Full time"
         st.caption(f"📅 {format_match_date(row['match_date'])}{gw_txt} · {status}{live_txt}")
 
         if st.button("Open match", key=f"matchopen_{match_id}"):
@@ -154,7 +162,10 @@ def render_team_grid_card(row, season_id):
             )
 
 
-def render_score_header(match: pd.Series, season_id=None):
+def render_score_header(match: pd.Series, season_id=None, live_score=None, live_now=True):
+    """live_score (home, away) shows the live feed's score instead of the
+    batch result (not in yet), with a LIVE marker while live_now (in play),
+    else a static "Full time · live feed" one."""
     played = pd.notna(match.get("full_time_home_team_score"))
 
     with st.container(border=True):
@@ -164,7 +175,9 @@ def render_score_header(match: pd.Series, season_id=None):
             _render_score_team(match, "home", season_id)
 
         with c2:
-            if played:
+            if live_score is not None:
+                score_txt = f"{live_score[0]} - {live_score[1]}"
+            elif played:
                 score_txt = (
                     f"{int(match['full_time_home_team_score'])} - "
                     f"{int(match['full_time_away_team_score'])}"
@@ -172,6 +185,10 @@ def render_score_header(match: pd.Series, season_id=None):
             else:
                 score_txt = "vs"
             st.markdown(f"<div class='big-score'>{score_txt}</div>", unsafe_allow_html=True)
+            if live_score is not None and live_now:
+                st.markdown("<div class='live-marker'>&#9679; LIVE</div>", unsafe_allow_html=True)
+            elif live_score is not None:
+                st.markdown("<div class='live-marker done'>Full time · live feed</div>", unsafe_allow_html=True)
 
             ht_home = match.get("half_time_home_team_score")
             ht_away = match.get("half_time_away_team_score")
